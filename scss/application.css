@@ -1,6 +1,10 @@
 html {
   font-family: 'Open Sans', sans-serif; }
 
+.wrapper_super {
+  width: 95%;
+  margin: 0 auto; }
+
 .wrapper_wide {
   width: 90%;
   margin: 0 auto; }
@@ -19,7 +23,7 @@ html {
 #logo {
   display: block;
   margin: 0 auto;
-  padding: 1rem 0 1rem 0; }
+  padding: 2rem 0; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -48,7 +52,7 @@ nav ul {
     transition: all .4s ease-in-out; }
 
 .banner {
-  background-image: url(../images/city.jpg);
+  background-image: url(../images/city.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -57,7 +61,9 @@ nav ul {
     background: rgba(98, 114, 139, 0.7);
     width: 60%;
     float: left;
-    margin: 9rem 0 4rem 4rem; }
+    margin: 9rem 0 4rem 4rem;
+    -webkit-box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+    box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55); }
     .banner .headline_block h1 {
       padding: 1rem 0 0 1rem;
       color: #ffffff;
@@ -106,7 +112,7 @@ nav ul {
 
 #more_stories {
   font-weight: 500;
-  width: 45%;
+  width: 75%;
   border-bottom: 1px solid #000000; }
 
 .row {
@@ -115,8 +121,9 @@ nav ul {
   .row .thumbnail_image {
     float: left;
     width: 45%;
-    padding: .5rem 2% 1rem 0;
-    margin-right: 5%; }
+    margin: .5rem 7% 1rem 0;
+    -webkit-box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+    box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55); }
     .row .thumbnail_image:hover {
       opacity: .7; }
   .row .thumbnail_article {
