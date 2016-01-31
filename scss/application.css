@@ -112,7 +112,8 @@ nav ul {
 
 .pagination {
   text-align: center;
-  margin: 5rem 0 3rem 0; }
+  margin: 5rem 0 3rem 0;
+  max-width: 100%; }
   .pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
     padding: 0.75rem 1rem;
     margin: 0 .35rem;
@@ -147,11 +148,15 @@ nav ul {
 /* Other Page Imports */
 /* News Banner */
 .banner {
-  background-image: url(../images/city.jpeg);
+  background-image: url(#);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 0; }
+  padding: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
   .banner .headline_block {
     background: rgba(50, 83, 112, 0.7);
     width: 50%;

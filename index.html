@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="scss/application.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Hind:400,600,500' rel='stylesheet' type='text/css'>
+
 	</head>
 	<body>
 		<div class="wrapper_super clearfix" id="upper_buttons">
@@ -71,4 +72,26 @@
 
 		</div>
 	</body>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	
+<script type="text/javascript">	
+
+$(function() {
+  	var banner = $('.banner');
+  	var backgrounds = ['url(images/city.jpeg)', 'url(images/forest.jpeg)', 'url(images/fog.jpeg)'];
+var current = 0;
+
+function nextBackground() {
+  banner.css(
+   'background',
+    backgrounds[current = ++current % backgrounds.length]
+ );
+
+ setTimeout(nextBackground, 7000);
+ }
+ setTimeout(nextBackground, 7000);
+   banner.css('background', backgrounds[0]);
+ }); </script>
+
+
 </html>

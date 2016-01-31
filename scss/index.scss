@@ -1,11 +1,15 @@
 /* News Banner */
 
 .banner {	
-	background-image: url(../images/city.jpeg);
+	background-image: url(#);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	padding: 0;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 	.headline_block {
 		background: rgba(50, 83, 112, .7);
 		width: 50%;	

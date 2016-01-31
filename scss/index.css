@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 18 of /Users/Admin/Documents/Rails/Politipub/scss/index.scss
+        on line 22 of /Users/Admin/Documents/Rails/Politipub/scss/index.scss
 
-13: 		margin: 10rem 0 3rem 4rem;
-14: 		-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
-15: 		box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
-16: 		h1 {
-17: 			padding: 1rem 0 0 0rem;
-18: 			color: $white;
-19: 			font-weight: 300;
-20: 			margin: 0 0 0 1rem;
-21: 			border-bottom: 1px solid $white;
-22: 			width: 80%;
-23: 			&:hover{
+17: 		margin: 10rem 0 3rem 4rem;
+18: 		-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+19: 		box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+20: 		h1 {
+21: 			padding: 1rem 0 0 0rem;
+22: 			color: $white;
+23: 			font-weight: 300;
+24: 			margin: 0 0 0 1rem;
+25: 			border-bottom: 1px solid $white;
+26: 			width: 80%;
+27: 			&:hover{
 
 Backtrace:
-/Users/Admin/Documents/Rails/Politipub/scss/index.scss:18
+/Users/Admin/Documents/Rails/Politipub/scss/index.scss:22
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -90,4 +90,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 18 of /Users/Admin/Documents/Rails/Politipub/scss/index.scss\A \A 13: 		margin: 10rem 0 3rem 4rem;\A 14: 		-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);\A 15: 		box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);\A 16: 		h1 {\A 17: 			padding: 1rem 0 0 0rem;\A 18: 			color: $white;\A 19: 			font-weight: 300;\A 20: 			margin: 0 0 0 1rem;\A 21: 			border-bottom: 1px solid $white;\A 22: 			width: 80%;\A 23: 			&:hover{"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 22 of /Users/Admin/Documents/Rails/Politipub/scss/index.scss\A \A 17: 		margin: 10rem 0 3rem 4rem;\A 18: 		-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);\A 19: 		box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);\A 20: 		h1 {\A 21: 			padding: 1rem 0 0 0rem;\A 22: 			color: $white;\A 23: 			font-weight: 300;\A 24: 			margin: 0 0 0 1rem;\A 25: 			border-bottom: 1px solid $white;\A 26: 			width: 80%;\A 27: 			&:hover{"; }
