@@ -23,7 +23,14 @@ html {
 #logo {
   display: block;
   margin: 0 auto;
-  padding: 2rem 0; }
+  padding: 0 0 1rem 0; }
+
+#upper_buttons p {
+  font-size: 1rem;
+  margin: .5rem 0 -1rem 0;
+  font-weight: 600; }
+#upper_buttons img {
+  margin: .5rem 0 -1rem 0; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -31,6 +38,12 @@ html {
 
 .clearfix:after {
   clear: both; }
+
+.pull_right {
+  float: right; }
+
+.pull_left {
+  float: left; }
 
 nav ul {
   list-style: none;
@@ -59,7 +72,7 @@ nav ul {
   background-position: center center;
   padding: 0; }
   .banner .headline_block {
-    background: rgba(62, 95, 119, 0.7);
+    background: rgba(50, 83, 112, 0.7);
     width: 50%;
     float: left;
     margin: 10rem 0 3rem 4rem;
@@ -129,7 +142,8 @@ nav ul {
 #more_stories {
   font-weight: 500;
   width: 75%;
-  border-bottom: 1px solid #000000; }
+  border-bottom: 1px solid #000000;
+  margin-top: 3.5rem; }
 
 .row {
   width: 100%;
