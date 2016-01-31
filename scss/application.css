@@ -42,14 +42,15 @@ nav ul {
     float: left;
     color: #ffffff;
     text-align: center;
-    padding: .60rem 0;
+    padding: .25rem 0 .2rem 0;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.25rem;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out; }
+    font-family: 'Hind', sans-serif;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
 
 .banner {
   background-image: url(../images/city.jpeg);
@@ -58,59 +59,72 @@ nav ul {
   background-position: center center;
   padding: 0; }
   .banner .headline_block {
-    background: rgba(98, 114, 139, 0.7);
+    background: rgba(62, 95, 119, 0.7);
     width: 50%;
     float: left;
     margin: 10rem 0 3rem 4rem;
     -webkit-box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
     box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55); }
     .banner .headline_block h1 {
-      padding: 1rem 0 0 1rem;
+      padding: 1rem 0 0 0rem;
       color: #ffffff;
-      font-weight: 400;
-      margin: 0; }
+      font-weight: 300;
+      margin: 0 0 0 1rem;
+      border-bottom: 1px solid #ffffff;
+      width: 80%; }
       .banner .headline_block h1:hover {
         color: #8dc7ea; }
-    .banner .headline_block h4 {
-      padding-left: 1rem;
-      margin: 0;
-      width: 10%;
-      float: left; }
+    .banner .headline_block #author_title {
+      display: inline-block;
+      margin: 0; }
+      .banner .headline_block #author_title h4 {
+        padding-left: 1rem;
+        margin: 0;
+        float: left;
+        color: #ffffff;
+        font-size: 1.25rem;
+        font-weight: 400; }
+      .banner .headline_block #author_title p {
+        padding-left: .5rem;
+        float: left;
+        margin: .5rem 0 -.5rem 0;
+        color: #ffffff;
+        font-size: .8rem; }
     .banner .headline_block p {
-      padding-left: 1rem;
-      float: left;
-      width: 80%;
-      margin: 0 0 3rem 0; }
+      color: white;
+      padding: 0 2rem 0 1rem;
+      margin: -.25rem 0 1.25rem 0;
+      font-weight: 200; }
 
 #home_button {
   background-color: #082136; }
   #home_button:hover {
-    background-color: #8dc7ea; }
+    background-color: #78bce6; }
 
 #about_button {
   background-color: #0d3552; }
   #about_button:hover {
-    background-color: #8dc7ea; }
+    background-color: #78bce6; }
 
 #articles_button {
   background-color: #134665; }
   #articles_button:hover {
-    background-color: #8dc7ea; }
+    background-color: #78bce6; }
 
 #contact_button {
   background-color: #4b6d89; }
   #contact_button:hover {
-    background-color: #8dc7ea; }
+    background-color: #78bce6; }
 
 #sponsor_button {
   background-color: #728da5; }
   #sponsor_button:hover {
-    background-color: #8dc7ea; }
+    background-color: #78bce6; }
 
 #ontap_button {
   background-color: #0a2135; }
   #ontap_button:hover {
-    background-color: #8dc7ea; }
+    background-color: #78bce6; }
 
 #more_stories {
   font-weight: 500;
@@ -126,10 +140,10 @@ nav ul {
     margin: .5rem 7% 1rem 0;
     -webkit-box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
     box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
-    -webkit-transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    -o-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out; }
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
     .row .thumbnail_image:hover {
       opacity: .7; }
   .row .thumbnail_article {
@@ -179,10 +193,10 @@ nav ul {
     font-weight: 700;
     font-size: .8rem;
     color: #ffffff;
-    -webkit-transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    -o-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out; }
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
     .pagination a:hover, .pagination .previous_page:hover, .pagination .current:hover, .pagination .next_page:hover {
       background: #8dc7ea;
       color: #ffffff; }
