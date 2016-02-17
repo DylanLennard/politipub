@@ -1,0 +1,121 @@
+/** Variables **/
+$black: #000000;
+$white: #ffffff;
+
+/* News Banner */
+
+.banner {	
+	background-image: url(#);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 0;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+	.headline_block {
+		background: rgba(50, 83, 112, .7);
+		width: 50%;	
+		float: left;
+		margin: 10rem 0 3rem 4rem;
+		-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+		box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+		h1 {
+			padding: 1rem 0 0 0rem;
+			color: $white;
+			font-weight: 300;
+			margin: 0 0 0 1rem;
+			border-bottom: 1px solid $white;
+			width: 80%;
+			&:hover{
+				color: lighten(#134665, 50%);
+			}
+		}
+		#author_title{
+			display: inline-block;
+			margin: 0;
+			h4 {
+				padding-left: 1rem;
+				margin: 0;
+				float: left;
+				color: $white;
+				font-size: 1.25rem;
+				font-weight: 400;
+			}
+			p {
+				padding-left: .5rem;
+				float: left;
+				margin: .5rem 0 -.5rem 0;
+				color: $white;
+				font-size: .8rem;
+			}
+		}
+		p {
+			color: white;
+			padding:0 2rem 0 1rem;
+			margin: -.25rem 0 1.25rem 0;
+			font-weight: 200;
+		}
+	}
+}
+
+/* Index Body */
+
+#more_stories {
+	font-weight: 500;
+	width: 75%;
+	border-bottom: 1px solid $black;
+	margin-top: 3.5rem;
+}
+
+.row {
+	.thumbnail_image {
+		float: left;
+		width: 45%;
+		margin: .5rem 7% 1rem 0;
+		-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+		box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+		-webkit-transition: all .3s ease-in-out;
+  		-moz-transition: all .3s ease-in-out;
+  		-o-transition: all .3s ease-in-out;
+ 		transition: all .3s ease-in-out;
+		&:hover {
+			opacity: .7;
+		}
+	}
+	.thumbnail_article {
+		margin: 0;
+		float: left;
+		width: 45%;	
+		h2, h4, p{
+			margin: 0;
+		}
+		h2 {
+			font-weight: 500;
+			font-size: 1.8rem;
+			margin-bottom: .1rem;
+			&:hover {
+				color: lighten(#134665, 50%);
+			}
+		}
+		h4, p {
+			font-weight: 300;
+		}
+		h4 {
+			color: #728da5;
+			font-size: 1.2rem;
+		}
+		p{
+			color: #828283;
+			font-size: .8rem;
+		}
+		a {
+			color: #858ea3;
+			text-decoration: none;
+			padding-top: 1.3rem;
+			font-weight: 600;
+			font-size: .8rem;
+		}
+	}
+}

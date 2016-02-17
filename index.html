@@ -9,6 +9,9 @@
 
 	</head>
 	<body>
+
+	<!-- Upper Banner -->
+
 		<div class="wrapper_super clearfix" id="upper_buttons">
 			<img src="images/menu_block.png">
 			<p class="pull_right">Login//Sign Up</p>
@@ -16,6 +19,9 @@
 		<div class="wrapper_wide">
 			<a href=""><img src="images/banner.png" id="logo"></a>
 		</div>
+
+	<!-- Navigation Bar -->
+
 		<header>
 			<nav class="clearfix">
 				<ul>
@@ -28,6 +34,9 @@
 				</ul>
 			</nav>
 		</header>
+
+	<!-- Banner -->
+
 		<div class="banner clearfix">
 			<div class="headline_block">
 				<h1>Major News Headline</h1>
@@ -38,6 +47,9 @@
 				<p>Breaking news that gives a little snippet of what the reader can expect in this article.</p>
 			</div>
 		</div>
+
+	<!-- Index Body -->
+
 		<div class="wrapper">
 			<h1 id="more_stories">More Stories</h1>
 
@@ -61,6 +73,8 @@
 				</div>
 			</div>
 
+	<!-- Pagination -->
+
 			<div class="pagination">
 				<span class="previous_page disabled">Previous</span>
 				<em class="current">1</em>
@@ -71,27 +85,34 @@
 			</div>
 
 		</div>
+
 	</body>
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<!-- JQuery -->
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	
-<script type="text/javascript">	
+	<!-- Banner Carousel -->
 
-$(function() {
-  	var banner = $('.banner');
-  	var backgrounds = ['url(images/city.jpeg)', 'url(images/forest.jpeg)', 'url(images/fog.jpeg)'];
-var current = 0;
+	<script type="text/javascript">	
 
-function nextBackground() {
-  banner.css(
-   'background',
-    backgrounds[current = ++current % backgrounds.length]
- );
+	$(function() {
+	  	var banner = $('.banner');
+	  	var backgrounds = ['url(images/city.jpeg)', 'url(images/forest.jpeg)', 'url(images/fog.jpeg)'];
+	var current = 0;
 
- setTimeout(nextBackground, 7000);
- }
- setTimeout(nextBackground, 7000);
-   banner.css('background', backgrounds[0]);
- }); </script>
+	function nextBackground() {
+	  banner.css(
+	   'background',
+	    backgrounds[current = ++current % backgrounds.length]
+	 );
 
+	 setTimeout(nextBackground, 7000);
+	 }
+	 setTimeout(nextBackground, 7000);
+	   banner.css('background', backgrounds[0]);
+	 }); 
+
+	</script>
 
 </html>
