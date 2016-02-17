@@ -2,24 +2,26 @@
 <html>
 <head>
   <title>Politipub</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hind:400,600,500' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	
 	<div class="wrapper_super clearfix" id="upper_buttons">
-		<img src="images/menu_block.png">
+		<a href=""><%= image_tag("menu_block.png") %></a>
 		<p class="pull_right">Login//Sign Up</p>
 	</div>
 	<div class="wrapper_wide">
-		<a href=""><img src="images/banner.png" id="logo"></a>
+		<%= link_to image_tag("banner.png", id: "logo"), root_path %></a>
 	</div>
 
 	<header>
 		<nav class="clearfix">
 			<ul>
-				<li id="home_button">Home</li>
+				<li id="home_button"><%= link_to "Home", root_path, class: "nav_button" %></li>
 				<li id="about_button">About</li>
 				<li id="articles_button">Articles</li>
 				<li id="contact_button">Contact</li>

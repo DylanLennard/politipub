@@ -1,0 +1,12 @@
+<%= form_for @article do |f| %>
+	<%= f.label :title, "Title" %>
+	<%= f.text_field :title, label: "Title" %>
+
+	<%= f.label :author, label: "Author" %>
+	<%= f.text_field :author, label: "Author" %>
+
+	<%= f.label :body, label: "Body" %>
+	<%= f.text_area :body, label: "Body" %>
+
+	<%= f.submit "Create Article"%>
+<% end %>

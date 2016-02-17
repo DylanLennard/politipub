@@ -88,7 +88,7 @@ $white: #ffffff;
 		margin: 0;
 		float: left;
 		width: 45%;	
-		h2, h4, p{
+		h2, h4, p {
 			margin: 0;
 		}
 		h2 {
@@ -110,9 +110,17 @@ $white: #ffffff;
 			color: #828283;
 			font-size: .8rem;
 		}
+
 		a {
-			color: #858ea3;
 			text-decoration: none;
+			color: $black;
+			&:hover {
+				color: lighten(#134665, 50%);
+			}
+		}
+
+		#see_more {
+			color: #858ea3;
 			padding-top: 1.3rem;
 			font-weight: 600;
 			font-size: .8rem;

@@ -1,13 +1,13 @@
 <div class="wrapper">
 	<h1 id="more_stories">More Stories</h1>
-
+	<% @articles.each do |article| %>
 	<div class="row clearfix">
 		<img src="images/fog.jpeg" class="thumbnail_image">
 		<div class="thumbnail_article">
-			<h2>First Article Title</h2>
-			<h4>Author</h4>
-			<p>Poutine deep v mumblecore tattooed, normcore bushwick hashtag. Retro mustache kitsch, tofu keffiyeh green juice bespoke. 8-bit green juice 3 wolf moon, stumptown fixie flexitarian mlkshk chillwave mustache biodiesel brooklyn seitan twee before they sold out disrupt. Mlkshk meditation freegan, hashtag kombucha cronut roof party. Lo-fi trust fund beard farm-to-table bespoke, pinterest sustainable street art green juice fingerstache. </p>
-			<a href="#">See More</a>
+			<h2><%= link_to article.title, article %></h2>
+			<h4><%= article.author %></h4>
+			<p><%= article.body %></p>
+			<%= link_to "See More", article, id: "see_more" %>
 		</div>
 	</div>
 
@@ -20,6 +20,7 @@
 			<a href="#">See More</a>
 		</div>
 	</div>
+	<% end %>
 
 	<!-- Pagination -->
 
