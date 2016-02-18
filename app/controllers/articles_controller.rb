@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
+	before_action :find_article, only: [:show, :edit, :update, :destroy]
 
-	
+
 	def home
 		@articles = Article.all
 	end
@@ -29,7 +30,11 @@ class ArticlesController < ApplicationController
 	end
 
 	def update
-
+		if @article.update(article_params)
+			redirect_to @article
+		else
+			render 'edit'
+		end
 	end
 
 	def search
@@ -41,7 +46,7 @@ class ArticlesController < ApplicationController
 	private
 
 	def article_params
-		params.require(:article).permit(:title, :author, :body)
+		params.require(:article).permit(:title, :author, :body, :banner_image)
 	end
 
 	def find_article

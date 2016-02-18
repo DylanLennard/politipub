@@ -1,13 +1,30 @@
+<!-- Banner -->
+
+<div class="banner clearfix" style="background-image: url(<%=@articles.last.banner_image %>)">
+	<div class="headline_block">
+		<h1><%= @articles.last.title %></h1>
+		<div id="author_title">
+			<h4><%= @articles.last.author %></h4>
+			<p><%= @articles.last.created_at %></p>
+		</div>
+		<p><%= truncate(@articles.last.body, length: 250) %></p>
+	</div>
+</div>
+
+<!-- Article Index -->
+
 <div class="wrapper">
 	
 	<h1 id="more_stories">More Stories</h1>
 	
 	<% @articles.each do |article| %>
 	<div class="row clearfix">
-		<img src="images/fog.jpeg" class="thumbnail_image">
+		<%= image_tag(article.banner_image, class: "thumbnail_image") %>
 		<div class="thumbnail_article">
 			<h2><%= link_to article.title, article %></h2>
-			<h4><%= article.author %></h4>
+			<div class="inline clearfix">
+				<h4><%= article.author %></h4><h5>| Date: <%= article.created_at %></h5>
+			</div>
 			<p><%= article.body %></p>
 			<%= link_to "See More", article, id: "see_more" %>
 		</div>
