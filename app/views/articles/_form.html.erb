@@ -1,16 +1,15 @@
-<%= form_for @article do |f| %>
-	<%= f.label :title, "Title" %>
-	<%= f.text_field :title, label: "Title" %>
+<div class="wrapper_skinny">
+	<%= bootstrap_form_for(@article) do |f| %>
 
-	<%= f.label :author, label: "Author" %>
-	<%= f.text_field :author, label: "Author" %>
+		<%= f.text_field :title, label: "Title", class: "form-control" %>
 
-	<%= f.label :body, label: "Body" %>
-	<%= f.text_area :body, label: "Body" %>
+		<%= f.text_field :author, label: "Author", class: "form-control" %>
 
-	<%= f.label :banner_image, label: "Banner" %>
-	<%= f.file_field :banner_image %>
+		<%= f.text_area :body, label: "Body", class: "text_area" %>
 
-	<%= f.submit "Create Article"%>
+		<%= f.file_field :banner_image %>
 
-<% end %>
+		<%= f.submit "Submit", class: "btn btn-primary" %>
+
+	<% end %>
+</div>

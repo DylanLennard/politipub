@@ -1,7 +1,9 @@
 /*
  *= require_tree .
  *= require_self
+ *= require rails_bootstrap_forms
  */
+ 
 /** Variables **/
 $black: #000000;
 $white: #ffffff;
@@ -66,7 +68,7 @@ html {
 	p {
 		font-size: 1rem;
 		margin: 1rem 0 -1.5rem 0;
-		font-weight: 600;
+		font-weight: 400;
 		&:hover {
 			color:lighten(#134665, 50%);
 		}
@@ -91,7 +93,7 @@ nav {
 			text-align: center;
 			padding: .25rem 0 .2rem 0;
 			letter-spacing: 1px;
-			font-weight: 400;
+			font-weight: 200;
 			font-size: 1.25rem;
 			font-family:'Hind', sans-serif;
 			-webkit-transition: all .3s ease-in-out;
