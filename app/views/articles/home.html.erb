@@ -2,12 +2,15 @@
 
 <div class="banner clearfix" style="background-image: url(<%=@articles.last.banner_image %>)">
 	<div class="headline_block">
-		<h1><%= link_to @articles.last.title, @articles.last %></h1>
+		<h1><%= link_to @articles.last.title.capitalize, @articles.last %></h1>
 		<div id="author_title">
 			<h4><%= @articles.last.author %></h4>
 			<p><%= @articles.last.created_at.strftime("%B %d, %Y") %></p>
 		</div>
-		<p><%= truncate(@articles.last.body, length: 250) %></p>
+		<p>
+			<%= truncate(@articles.last.body, length: 250) %>
+			<%= link_to "See More", @articles.last, id: "see_more" %>
+		</p>
 	</div>
 </div>
 
@@ -22,7 +25,7 @@
 			<div class="row clearfix">
 				<%= link_to image_tag(article.banner_image, class: "thumbnail_image"), article %>
 				<div class="thumbnail_article">
-					<h2><%= link_to article.title, article %></h2>
+					<h2><%= link_to article.title.capitalize, article %></h2>
 					<div class="inline clearfix">
 						<h4><%= article.author %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
 					</div>

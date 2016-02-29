@@ -18,7 +18,7 @@ $white: #ffffff;
 		background: rgba(50, 83, 112, .7);
 		width: 50%;	
 		float: left;
-		margin: 10rem 0 3rem 4rem;
+		margin: 10rem 0 4rem 4rem;
 		-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
 		box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
 		h1 {
@@ -56,10 +56,21 @@ $white: #ffffff;
 		}
 		p {
 			color: white;
-			padding:0 2rem 0 1rem;
-			margin: -.25rem 0 1.25rem 0;
+			padding:0 2rem 1rem 1rem;
+			margin: -.25rem 0 0 0;
 			font-weight: 200;
 		}
+		#see_more {
+			color: #858ea3;
+			font-weight: 600;
+			font-size: .8rem;
+			text-decoration: none;
+			border: none;
+			&:hover {
+				color: lighten(#134665, 50%);
+			}
+		}
+
 	}
 }
 
@@ -85,6 +96,7 @@ $white: #ffffff;
  		transition: all .3s ease-in-out;
 		&:hover {
 			opacity: .7;
+			transform:scale(1.02);
 		}
 	}
 	.thumbnail_article {

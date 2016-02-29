@@ -4,13 +4,21 @@
  *= require rails_bootstrap_forms
  */
  
+ @font-face {
+  font-family: 'Open Sans';
+  src:url('OpenSans-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /** Variables **/
 $black: #000000;
 $white: #ffffff;
 
 /* General Page Properties */
 
-html {
+*	 {
 	font-family:'Open Sans', sans-serif;
 }
 
@@ -69,14 +77,27 @@ html {
 		font-size: 1rem;
 		margin: 1rem 0 -1.5rem 0;
 		font-weight: 400;
-		&:hover {
-			color:lighten(#134665, 50%);
+		a {
+			text-decoration: none;
+			&:hover {
+				color:lighten(#134665, 50%);
+			}
 		}
 	}
 	img {
 		margin: .5rem 0 -1.5rem 0;
+		-webkit-transition-duration: .5s;
+    	-moz-transition-duration: .5s;
+    	-o-transition-duration: .5s;
+    	transition-duration: .5s;
 	}
 }
+.rotated{
+		transition-property: transform;
+		-webkit-transform:rotate(180deg);
+		-moz-transform:rotate(180deg); 
+		-o-transform:rotate(180deg);
+		}
 
 /* Navigation Bar */
 
