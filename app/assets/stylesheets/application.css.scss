@@ -64,12 +64,14 @@ $white: #ffffff;
 	float: left;
 }
 
+
 /* Upper Banner */
 
 #logo {
 	display: block;
 	margin: 0 auto;
 	padding: 0 0 1rem 0;
+	max-width: 100%;
 }
 
 #upper_buttons{

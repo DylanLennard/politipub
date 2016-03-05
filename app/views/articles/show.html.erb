@@ -15,8 +15,19 @@
 				<li><%= link_to "Back", root_path %></li>
 			</ul>
 		<% end %>
-		<p>
-			<%= @article.body %>
-		</p>
+		<!-- Twitter -->
+		<%= link_to image_tag("twitter.png", class: "share-button"), @article%>
+		 <!-- Facebook -->
+		<%= link_to image_tag("Facebook.png", class: "share-button"), @article%>
+		<!-- Google+ -->
+		<%= link_to image_tag("Google.png", class: "share-button"), @article%>
+		<!-- StumbleUpon -->
+		<%= link_to image_tag("stumbleupon.svg", class: "share-button"), @article%>
+		<!-- LinkedIn --> 
+		<%= link_to image_tag("linkedin.png", class: "share-button"), @article%>
+		<div class="article-body">
+			<%= simple_format(@article.body) %>
+			<p><em> - <%= @article.author %></em></p>
+		</div>
 	</div>
 </div>
