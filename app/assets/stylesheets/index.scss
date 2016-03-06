@@ -1,0 +1,39 @@
+#index-title {
+	font-weight: 500;
+	width: 75%;
+	border-bottom: 1px solid black;
+	margin-top: 3.5rem;
+}
+
+
+.article-block{
+	display: inline-block;
+	float:left;
+	padding: 1%;
+	margin: 1%;
+	.thumbnail_image {
+		max-width: 70%;
+	}
+}
+
+.searchbar {
+	float: right;
+	display: inline;
+	.search-form {
+		padding: 5px 12px;
+		margin-right: 2px;
+		min-width: 250px;
+	}
+	.btn {
+		background-color: #728da5;
+		border: 1px solid #728da5;
+		-webkit-transition: all .3s ease-in-out;
+  		-moz-transition: all .3s ease-in-out;
+  		-o-transition: all .3s ease-in-out;
+ 		transition: all .3s ease-in-out;
+		&:hover{
+			background-color: lighten(#134665, 45%);
+			border: 1px solid lighten(#134665, 45%);
+		}
+	}
+}

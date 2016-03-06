@@ -20,11 +20,11 @@
 		<nav class="clearfix">
 			<ul>
 				<li id="home_button"><%= link_to "Home", root_path %></li>
-				<li id="about_button"><%= link_to "About", root_path %></li>
+				<li id="about_button"><%= link_to "About", pages_about_path %></li>
 				<li id="articles_button"><%= link_to "Articles", articles_path %></li>
-				<li id="contact_button">Contact</li>
-				<li id="sponsor_button">Sponsor</li>
-				<li id="ontap_button">On Tap</li>
+				<li id="contact_button"><%= link_to "Contact", pages_contact_path %></li>
+				<li id="sponsor_button"><%= link_to "Sponsor", pages_sponsor_path %></li>
+				<li id="ontap_button"><%= link_to "On Tap", articles_path %></li>
 			</ul>
 		</nav>
 	</header>

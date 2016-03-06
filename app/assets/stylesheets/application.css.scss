@@ -42,6 +42,20 @@ $white: #ffffff;
 	margin: 0 auto;
 }
 
+.wrapper_more_skinny {
+	width: 50%;
+	margin: auto;
+}
+
+.wrapper_super_skinny {
+	width: 40%;
+	margin: auto;
+}
+
+.margin-top {
+	margin-top: 10px;
+}
+
 .row {
 	width: 100%;
 	margin: 1rem 0 2rem 0;
@@ -216,6 +230,40 @@ nav {
 	}
 }
 
+/* Devise */
+
+.devise-link {
+	text-decoration: none;
+	margin: 0;
+	color: #728da5;
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+/* About Page */
+
+.about_banner {
+	min-height: 350px;
+	background: image-url("about_banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+	box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+}
+
+.mission_statement {
+	text-align:center;
+	h1 {
+		font-weight: 200;
+		border-bottom: 1px solid black;
+		margin: 2rem 0 2rem 10%;
+		padding-bottom: 1rem;
+		max-width: 80%;
+	}
+
+}
+
 /* Media Queries */
 
 @media (max-width: 640px) {
@@ -230,3 +278,4 @@ nav {
 
 @import 'normalize';
 @import 'articles';
+@import 'index';

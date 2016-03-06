@@ -1,5 +1,5 @@
 <div class="wrapper_skinny ">
-	<h1 id="index-title">All Articles</h1>
+	<h1 id="index-title">Search Results</h1>
 	<div class="clearfix">
 		<%= form_tag search_articles_path, method: :get, class: "searchbar", role: "search" do %>
 			<p>
@@ -8,13 +8,11 @@
 			</p>
 		<% end %>
 	</div>
-	<div class="row">
-		<div class="article-block">
-			<% @articles.each do |article| %>
-				<%= link_to image_tag(article.banner_image, class: "thumbnail_image"), article %>
-				<%= link_to article.title, article %>
-			<% end %>
-		</div>
+	<div class="article-block">
+	<% @articles.each do |article| %>
+		<%= link_to image_tag(article.banner_image, class: "thumbnail_image"), article %>
+		<%= link_to article.title, article %>
+	<% end %>
 	</div>
 	<%= paginate @articles %>
 </div>

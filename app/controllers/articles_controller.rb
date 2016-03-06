@@ -3,11 +3,11 @@ class ArticlesController < ApplicationController
 
 
 	def home
-		@articles = Article.all
+		@articles = Article.all.order(:id).page params[:page]
 	end
 
 	def index
-		@articles = Article.all
+		@articles = Article.all.order(:id).page params[:page]
 	end
 
 	def new
@@ -38,6 +38,11 @@ class ArticlesController < ApplicationController
 	end
 
 	def search
+		if params[:search].present?
+	      @articles = Article.search(params[:search])
+	    else
+	      @articles = Article.all.order(:id).page params[:page]
+	    end
 	end
 
 	def destroy
