@@ -31,3 +31,15 @@
 		</div>
 	</div>
 </div>
+<div class="wrapper_skinny check_out">
+	<h3>Check out more from Politipub</h4>
+	<div class="row">
+		<% @random_article.each do |article| %>
+		<div class="col-3">
+			<%= link_to image_tag(article.banner_image), @article %>
+			<h4><%= article.title %></h4>
+			<p><%= article.author %></p>
+		</div>
+		<% end %>
+	</div>
+</div>

@@ -1,15 +1,15 @@
 <!-- Banner -->
 
-<div class="banner clearfix" style="background-image: url(<%=@articles.last.banner_image %>)">
+<div class="banner clearfix" style="background-image: url(<%=@article_banner.banner_image %>)">
 	<div class="headline_block">
-		<h1><%= link_to @articles.last.title.capitalize, @articles.last %></h1>
+		<h1><%= link_to @article_banner.title.capitalize, @article_banner %></h1>
 		<div id="author_title">
-			<h4><%= @articles.last.author %></h4>
-			<p><%= @articles.last.created_at.strftime("%B %d, %Y") %></p>
+			<h4><%= @article_banner.author %></h4>
+			<p><%= @article_banner.created_at.strftime("%B %d, %Y") %></p>
 		</div>
 		<p>
-			<%= truncate(@articles.last.body, length: 250) %>
-			<%= link_to "See More", @articles.last, id: "see_more" %>
+			<%= truncate(@article_banner.body, length: 250) %>
+			<%= link_to "See More", @article_banner, id: "see_more" %>
 		</p>
 	</div>
 </div>

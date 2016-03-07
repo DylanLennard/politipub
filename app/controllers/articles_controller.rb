@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
 
 
 	def home
+		@article_banner = Article.last
 		@articles = Article.all.order(:id).page params[:page]
 	end
 
@@ -24,6 +25,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def show
+		@random_article = Article.limit(3).order("RANDOM()")
 	end
 
 	def edit

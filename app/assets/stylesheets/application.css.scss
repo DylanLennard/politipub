@@ -254,6 +254,7 @@ nav {
 
 .mission_statement {
 	text-align:center;
+	margin-bottom: 4rem;
 	h1 {
 		font-weight: 200;
 		border-bottom: 1px solid black;
@@ -263,6 +264,37 @@ nav {
 	}
 
 }
+
+.about_body{
+	text-align: center;
+	h1 {
+		font-weight: 200;
+		border-bottom: 1px solid black;
+		margin: 2rem 0 2rem 10%;
+		padding-bottom: 1rem;
+		max-width: 80%;
+	}
+	.row{
+		margin: 3.5rem 0;
+		.col-16 {
+			float: left;
+			width: 16%;
+			padding: 0 7%;
+			img {
+				border-radius: 50%;
+				max-width: 100%;
+			}
+		}
+		.col-66 {
+			float:left;
+			width: 66%;
+			p {
+			 margin: 0;
+			}
+		}
+	}
+}
+
 
 /* Media Queries */
 

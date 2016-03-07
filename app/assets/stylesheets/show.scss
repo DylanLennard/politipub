@@ -1,6 +1,6 @@
 #links {
 	margin: -20% 0 0 0;
-	padding: 1rem 0;
+	padding: 1rem 0 .5rem 0;
 	.wrapper_skinny {
 		background-color: #ffffff;
 		padding: 1rem;
@@ -84,6 +84,26 @@
 
 .banner-show {
 	min-height: 450px;
+}
+.check_out {
+	h3{
+		border-bottom: 1px solid black;
+		padding-bottom: 1rem;
+		font-weight: 400;
+	}
+	.col-3 {
+		float: left;
+		width: 31%;
+		padding: 0 2% 0 0;
+		img {
+			max-width:100%;
+			max-height: 150px;
+		}
+		h4, p {
+			margin: 0;
+		}
+		margin-bottom: 4rem;
+	}
 }
 
 .share-button {
