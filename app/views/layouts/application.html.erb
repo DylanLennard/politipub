@@ -8,35 +8,49 @@
   	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="wrapper_super clearfix" id="upper_buttons">
-		<a href=""><%= image_tag("menu_block.png", id: "squares") %></a>
-		<p class="pull_right"><%= link_to "Login", new_admin_session_path %> | <%= link_to "Sign Up", new_admin_registration_path %> </p>
+	<div class="main">
+		<div class="wrapper_super clearfix" id="upper_buttons">
+			<a href=""><%= image_tag("menu_block.png", id: "squares") %></a>
+			<p class="pull_right"><%= link_to "Login", new_admin_session_path %> | <%= link_to "Sign Up", new_admin_registration_path %> </p>
+		</div>
+		<div class="wrapper_wide">
+			<%= link_to image_tag("banner.png", id: "logo"), root_path %></a>
+		</div>
+
+		<header>
+			<nav class="clearfix">
+				<ul>
+					<li id="home_button"><%= link_to "Home", root_path %></li>
+					<li id="about_button"><%= link_to "About", pages_about_path %></li>
+					<li id="articles_button"><%= link_to "Articles", articles_path %></li>
+					<li id="contact_button"><%= link_to "Contact", pages_contact_path %></li>
+					<li id="sponsor_button"><%= link_to "Sponsor", pages_sponsor_path %></li>
+					<li id="ontap_button"><%= link_to "On Tap", articles_path %></li>
+				</ul>
+			</nav>
+			<nav class="side-menu">
+				<ul>
+					<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "About", pages_about_path %></li>
+					<li><%= link_to "Articles", articles_path %></li>
+					<li><%= link_to "Contact", pages_contact_path %></li>
+					<li><%= link_to "Sponsor", pages_sponsor_path %></li>
+					<li><%= link_to "On Tap", articles_path %></li>
+				</ul>
+			</nav>
+		</header>
+		<%= yield %>
+		<script type="text/javascript">
+			$(document).ready(function() {
+		        $("#squares").bind('click',function(){
+		        	$(this).toggleClass("rotated");
+		        	$(".side-menu").toggleClass("menu-open");
+		        	$(".main").toggleClass("main-open");
+		        	return false;
+		        });
+		    });
+
+		</script>
 	</div>
-	<div class="wrapper_wide">
-		<%= link_to image_tag("banner.png", id: "logo"), root_path %></a>
-	</div>
-
-	<header>
-		<nav class="clearfix">
-			<ul>
-				<li id="home_button"><%= link_to "Home", root_path %></li>
-				<li id="about_button"><%= link_to "About", pages_about_path %></li>
-				<li id="articles_button"><%= link_to "Articles", articles_path %></li>
-				<li id="contact_button"><%= link_to "Contact", pages_contact_path %></li>
-				<li id="sponsor_button"><%= link_to "Sponsor", pages_sponsor_path %></li>
-				<li id="ontap_button"><%= link_to "On Tap", articles_path %></li>
-			</ul>
-		</nav>
-	</header>
-	<%= yield %>
-	<script type="text/javascript">
-		$(document).ready(function() {
-	        $("#squares").click(function(){
-	        	$(this).addClass("rotated");
-	        });
-	    });
-
-	</script>
-
 </body>
 </html>

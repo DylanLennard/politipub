@@ -21,7 +21,7 @@
 	<h1 id="more_stories">More Stories</h1>
 	
 	<% @articles.each do |article| %>
-		<% unless article == @articles.last %>
+		<% unless article == @article_banner %>
 			<div class="row clearfix">
 				<%= link_to image_tag(article.banner_image, class: "thumbnail_image"), article %>
 				<div class="thumbnail_article">
@@ -36,7 +36,11 @@
 		<% end %>
 	<% end %>
 
-	<!-- Pagination -->
+<!-- See More -->
+<div class="wrapper_skinny clearfix">
+	<div class="pull_right">
+	<h1><%=link_to "See More >>", articles_path %></h1>
+	</div>
+</div>
 
-	<%= paginate @articles %>
 </div>

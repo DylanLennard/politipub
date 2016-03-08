@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
 
 	def home
 		@article_banner = Article.last
-		@articles = Article.all.order(:id).page params[:page]
+		@articles = Article.all.order("created_at DESC").limit(8)
 	end
 
 	def index
