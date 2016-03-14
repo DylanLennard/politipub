@@ -159,6 +159,13 @@ $white: #ffffff;
 			font-weight:200;
 			color: #000000;
 			text-decoration: none;
+			-webkit-transition: all .2s ease-in-out;
+  			-moz-transition: all .2s ease-in-out;
+  			-o-transition: all .2s ease-in-out;
+ 			transition: all .2s ease-in-out;
+			&:hover {
+				color: lighten(#134665, 50%);
+			}
 		}
 	}
 }

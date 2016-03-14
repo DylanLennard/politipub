@@ -14,6 +14,8 @@ gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'bootstrap_form', '~> 2.3'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'kaminari', '~> 0.16.3'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 
 group :development, :test do
   gem 'byebug'
