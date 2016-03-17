@@ -126,9 +126,6 @@ $white: #ffffff;
     	transition-duration: .5s;
 	}
 }
-.rotated {
-	transition-property: transform;
-}
 
 /* Navigation Bar */
 
@@ -189,6 +186,13 @@ nav {
 
 .menu-open {
 	left: 0px;
+}
+
+.rotated {
+	transition-property: transform;
+	-webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg); 
+    -o-transform:rotate(180deg);
 }
 
 #home_button {
