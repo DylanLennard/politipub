@@ -15,6 +15,7 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'kaminari', '~> 0.16.3'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'byebug'
