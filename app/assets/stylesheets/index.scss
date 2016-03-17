@@ -12,7 +12,17 @@
 	padding: 1%;
 	margin: 1%;
 	.thumbnail_image {
-		max-width: 70%;
+		width: 70%;
+	}
+	h2 {
+		width: 50%;
+		font-weight: 200;
+		a {
+			text-decoration: none;
+			&:hover {
+				color: lighten(#134665, 50%);
+			}
+		}
 	}
 }
 

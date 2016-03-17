@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def index
-		@articles = Article.all.order(:id).page params[:page]
+		@articles = Article.all.order("created_at DESC").page params[:page]
 	end
 
 	def new

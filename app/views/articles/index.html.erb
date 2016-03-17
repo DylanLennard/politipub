@@ -12,7 +12,7 @@
 		<div class="article-block">
 			<% @articles.each do |article| %>
 				<%= link_to image_tag(article.banner_image.url(), class: "thumbnail_image"), article %>
-				<%= link_to article.title, article %>
+				<h2><%= link_to article.title, article %></h2>
 			<% end %>
 		</div>
 	</div>
