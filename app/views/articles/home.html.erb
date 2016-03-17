@@ -1,6 +1,6 @@
 <!-- Banner -->
 
-<div class="banner clearfix" style="background-image: url(<%=@article_banner.banner_image %>)">
+<div class="banner clearfix" style="background-image: url(<%=@article_banner.banner_image.url() %>)">
 	<div class="headline_block">
 		<h1><%= link_to @article_banner.title.capitalize, @article_banner %></h1>
 		<div id="author_title">
@@ -23,7 +23,7 @@
 	<% @articles.each do |article| %>
 		<% unless article == @article_banner %>
 			<div class="row clearfix">
-				<%= link_to image_tag(article.banner_image, class: "thumbnail_image"), article %>
+				<%= link_to image_tag(article.banner_image.url(), class: "thumbnail_image"), article %>
 				<div class="thumbnail_article">
 					<h2><%= link_to article.title.capitalize, article %></h2>
 					<div class="inline clearfix">
