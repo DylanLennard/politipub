@@ -7,8 +7,9 @@
 	<h4>Contact Information</h4>
 	<p>This where contact information will go</p>
 	<h4>About Me</h4>
-	<p><%= @author.bio %></p>
-
+	<div class="author_bio">
+		<p><%= @author.bio %></p>
+	</div>
 </div>
 
 <div class="wrapper clearfix">
@@ -16,7 +17,8 @@
 		<% @articles.each do |article| %>
 			<div class="article_profile_block">
 			<%= link_to image_tag(article.banner_image, class: "profile_article_image"), article %>
-			<p><%= article.title %></p>
+			<p><%= link_to article.title, article %></p>
+			<p><%= article.created_at.strftime("%B %d, %Y") %></p>
 			</div>
 		<% end %>
 </div>

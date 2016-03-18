@@ -2,7 +2,7 @@
 	background-color: #ffffff;
 	padding: 1rem 1rem 3.5rem 1rem;
 	text-align: center;
-	margin: 3rem auto;
+	margin: 4.5rem auto 3rem auto;
 	-webkit-box-shadow: 3px -3px 28px 0px rgba(50, 50, 50, 0.55);
 	-moz-box-shadow:    3px -3px 28px 0px rgba(50, 50, 50, 0.55);
 	box-shadow:         3px -3px 28px 0px rgba(50, 50, 50, 0.55);
@@ -27,8 +27,12 @@
 		margin: .25rem auto;
 		padding-bottom: .2rem;
 	}
-	p {
-		margin: .3rem 0 1.25rem 0;
+	.author_bio {
+		width: 80%;
+		margin: 1rem auto;
+		p {
+			margin: .3rem 0 1.25rem 0;
+		}	
 	}
 }	
 
@@ -60,6 +64,16 @@
 		p {
 			width: 100%;
 			float:left;
+			font-size: .7rem;
+			margin: 0;
+			a {
+				text-decoration: none;
+				color: #000000;
+				font-size: 1rem;
+				&:hover {
+				color:lighten(#134665, 50%);
+				}
+			}
 		}
 	}
 }
