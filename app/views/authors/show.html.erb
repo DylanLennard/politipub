@@ -1,5 +1,22 @@
-<%= @author.name %>
+<div class="wrapper profile_block">
 
-<% @articles.each do |article| %>
-	<h1><%= article.title %></h1>
-	<% end %>
+	<h1 id="profile_name"><%= @author.name %></h1>
+	<%= image_tag(@author.profile_image, class: "profile_picture") %>
+	<h4>Member Since</h4>
+	<p><%= time_ago_in_words(@author.created_at) %></p>
+	<h4>Contact Information</h4>
+	<p>This where contact information will go</p>
+	<h4>About Me</h4>
+	<p><%= @author.bio %></p>
+	
+</div>
+
+<div class="wrapper clearfix">
+	<h1><%= @author.name %>'s Articles</h1>
+		<% @articles.each do |article| %>
+			<div class="article_profile_block">
+			<%= image_tag(article.banner_image, class: "profile_article_image") %>
+			<p><%= article.title %></p>
+			</div>
+		<% end %>
+</div>

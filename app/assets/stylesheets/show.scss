@@ -67,6 +67,14 @@
 		max-height: 100px;
 		max-width: 100px;
 		border-radius: 50%;
+		-webkit-transition: all .3s ease-in-out;
+  		-moz-transition: all .3s ease-in-out;
+  		-o-transition: all .3s ease-in-out;
+ 		transition: all .3s ease-in-out;
+		&:hover {
+			opacity: .7;
+			transform:scale(1.02);
+		}
 	}
 	ul {
 		list-style:none;
