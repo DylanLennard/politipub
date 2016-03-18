@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   	end
   end
 
+  resources :authors
+
   get 'pages/about'
   get 'pages/contact'
   get 'pages/sponsor'

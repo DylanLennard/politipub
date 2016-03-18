@@ -3,7 +3,7 @@
 
 		<%= f.text_field :title, label: "Title", class: "form-control" %>
 
-		<%= f.text_field :author, label: "Author", class: "form-control" %>
+		<%= f.collection_select :author_id, Author.all, :id, :name, label: "Author", class: "form-control" %>
 
 		<%= f.text_area :body, label: "Body", class: "text_area" %>
 

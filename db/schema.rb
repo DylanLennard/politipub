@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160228224317) do
+ActiveRecord::Schema.define(version: 20160318143319) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 20160228224317) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
-    t.string   "author"
     t.text     "body"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
@@ -41,6 +40,20 @@ ActiveRecord::Schema.define(version: 20160228224317) do
     t.string   "banner_image_content_type"
     t.integer  "banner_image_file_size"
     t.datetime "banner_image_updated_at"
+    t.integer  "author_id"
+  end
+
+  add_index "articles", ["author_id"], name: "index_articles_on_author_id"
+
+  create_table "authors", force: :cascade do |t|
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "name"
+    t.string   "profile_image_file_name"
+    t.string   "profile_image_content_type"
+    t.integer  "profile_image_file_size"
+    t.datetime "profile_image_updated_at"
+    t.text     "bio"
   end
 
 end
