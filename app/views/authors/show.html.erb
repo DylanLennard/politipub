@@ -3,7 +3,7 @@
 	<h1 id="profile_name"><%= @author.name %></h1>
 	<%= image_tag(@author.profile_image, class: "profile_picture") %>
 	<h4>Member Since</h4>
-	<p><%= time_ago_in_words(@author.created_at) %></p>
+	<p><%= time_ago_in_words(@author.created_at) %> ago</p>
 	<h4>Contact Information</h4>
 	<p>This where contact information will go</p>
 	<h4>About Me</h4>
