@@ -26,6 +26,13 @@
 			}
 			h4 {
 				color: #728da5;
+				a {
+					text-decoration: none;
+					color: #000000;
+					&:hover {
+						color:lighten(#134665, 50%);
+					}
+				}
 			}
 			h5 {
 				margin: 5px 0 0 5px;

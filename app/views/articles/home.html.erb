@@ -4,7 +4,7 @@
 	<div class="headline_block">
 		<h1><%= link_to @article_banner.title.capitalize, @article_banner %></h1>
 		<div id="author_title">
-			<h4><%= @article_banner.author %></h4>
+			<h4><%= @article_banner.author.name %></h4>
 			<p><%= @article_banner.created_at.strftime("%B %d, %Y") %></p>
 		</div>
 		<p>
@@ -27,7 +27,7 @@
 				<div class="thumbnail_article">
 					<h2><%= link_to article.title.capitalize, article %></h2>
 					<div class="inline clearfix">
-						<h4><%= article.author %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
+						<h4><%= article.author.name %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
 					</div>
 					<p><%= truncate(article.body, length: 250) %></p>
 					<%= link_to "See More", article, id: "see_more" %>

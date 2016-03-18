@@ -1,0 +1,11 @@
+<div class="wrapper_skinny">
+	<%= bootstrap_form_for(@author) do |f| %>
+
+		<%= f.text_field :name, label: "Name", class: "form-control" %>
+
+		<%= f.file_field :profile_image %>
+
+		<%= f.submit "Submit", class: "btn btn-primary" %>
+
+	<% end %>
+</div>

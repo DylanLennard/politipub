@@ -3,9 +3,9 @@
 <div id="links">
 	<div class="wrapper_skinny">
 		<h1><%= @article.title.upcase %></h1>
-		<%=image_tag("person.jpeg", class: "author-image") %>
+		<%= link_to image_tag(@article.author.profile_image, class: "author-image"), @article.author %>
 		<div class="inline clearfix wrapper">
-			<h4><%= @article.author %></h4>
+			<h4><%= link_to @article.author.name, @article.author %></h4>
 			<h5><%= @article.created_at.strftime("%B %d, %Y") %></h5>
 		</div>
 		<% if admin_signed_in? %>
@@ -27,7 +27,7 @@
 		<%= link_to image_tag("linkedin.png", class: "share-button"), @article%>
 		<div class="article-body">
 			<%= simple_format(@article.body) %>
-			<p><em> - <%= @article.author %></em></p>
+			<p><em> - <%= @article.author.name %></em></p>
 		</div>
 	</div>
 </div>
@@ -38,7 +38,7 @@
 		<div class="col-3">
 			<%= link_to image_tag(article.banner_image), @article %>
 			<h4><%= article.title %></h4>
-			<p><%= article.author %></p>
+			<p><%= article.author.name %></p>
 		</div>
 		<% end %>
 	</div>
