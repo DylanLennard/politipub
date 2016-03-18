@@ -48,6 +48,14 @@
 		.profile_article_image {
 			width: 100%;
 			float: left;
+			-webkit-transition: all .3s ease-in-out;
+  			-moz-transition: all .3s ease-in-out;
+  			-o-transition: all .3s ease-in-out;
+ 			transition: all .3s ease-in-out;
+			&:hover {
+				opacity: .7;
+				transform:scale(1.02);
+			}
 		}
 		p {
 			width: 100%;

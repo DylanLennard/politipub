@@ -8,14 +8,14 @@
 	<p>This where contact information will go</p>
 	<h4>About Me</h4>
 	<p><%= @author.bio %></p>
-	
+
 </div>
 
 <div class="wrapper clearfix">
 	<h1><%= @author.name %>'s Articles</h1>
 		<% @articles.each do |article| %>
 			<div class="article_profile_block">
-			<%= image_tag(article.banner_image, class: "profile_article_image") %>
+			<%= link_to image_tag(article.banner_image, class: "profile_article_image"), article %>
 			<p><%= article.title %></p>
 			</div>
 		<% end %>
