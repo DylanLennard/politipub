@@ -26,6 +26,7 @@ $white: #ffffff;
 	overflow-x: hidden;
 	position: relative;
 	left:0;
+	min-height: 100vh;
 }
 
 .main, .rotated, .side-menu{
@@ -286,6 +287,15 @@ nav {
 	}
 }
 
+/* Footer */
+
+#footer {
+	width: 100%;
+	min-height: 50px;
+	background-color: #134665;
+	margin-top: 2rem;
+}
+
 /* Devise */
 
 .devise-link {
@@ -309,14 +319,14 @@ nav {
 }
 
 .mission_statement {
-	text-align:center;
+	text-align: center;
 	margin-bottom: 4rem;
-	h1 {
+	.about_title {
 		font-weight: 200;
 		border-bottom: 1px solid black;
-		margin: 2rem 0 2rem 10%;
+		margin: 2rem 0 2rem 0 !important;
 		padding-bottom: 1rem;
-		max-width: 80%;
+		margin: 0;
 	}
 
 }

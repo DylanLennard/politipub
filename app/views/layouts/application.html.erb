@@ -44,7 +44,10 @@
 			</nav>
 		</header>
 		<%= yield %>
-		<script type="text/javascript">
+	</div>
+	<div id="footer">		
+		</div>
+	<script type="text/javascript">
 			$(document).ready(function() {
 		        $("#squares").bind('click',function(){
 		        	$(this).toggleClass("rotated");
@@ -55,6 +58,5 @@
 		    });
 
 		</script>
-	</div>
 </body>
 </html>
