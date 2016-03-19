@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160318143319) do
+ActiveRecord::Schema.define(version: 20160319001034) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -54,6 +54,12 @@ ActiveRecord::Schema.define(version: 20160318143319) do
     t.integer  "profile_image_file_size"
     t.datetime "profile_image_updated_at"
     t.text     "bio"
+    t.string   "political_views"
+    t.string   "email_link"
+    t.string   "facebook_link"
+    t.string   "linkedin_link"
+    t.string   "twitter_link"
+    t.string   "google_plus_link"
   end
 
 end

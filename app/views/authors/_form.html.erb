@@ -2,7 +2,13 @@
 	<%= bootstrap_form_for(@author) do |f| %>
 
 		<%= f.text_field :name, label: "Name", class: "form-control" %>
-		<%= f.text_area :bio, label: "About Me", class: "form-control" %>
+		<%= f.text_area :email_link, label: "Email", class: "form-control" %>
+		<%= f.text_area :twitter_link, label: "Twitter", class: "form-control" %>
+		<%= f.text_area :google_plus_link, label: "Google Plus", class: "form-control" %>
+		<%= f.text_area :facebook_link, label: "Facebook", class: "form-control" %>
+		<%= f.text_area :linkedin_link, label: "Linkedin", class: "form-control" %>
+		<%= f.text_area :political_views, label: "Political Views", class: "form-control" %>
+		<%= f.text_area :bio, label: "About Me", class: "form-control aboutme_text" %>
 		<%= f.file_field :profile_image %>
 
 		<%= f.submit "Submit", class: "btn btn-primary" %>

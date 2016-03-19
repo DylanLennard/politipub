@@ -2,10 +2,17 @@
 
 	<h1 id="profile_name"><%= @author.name %></h1>
 	<%= image_tag(@author.profile_image, class: "profile_picture") %>
+		<div class="author_contact">
+		<% @links.each do |k,v| %>
+			<% unless v.nil? || v.blank? %>
+				<%= link_to image_tag(k, class: "share-button"), url_with_protocol(v)%>
+			<% end%>
+		<% end %>
+	</div>
 	<h4>Member Since</h4>
 	<p><%= time_ago_in_words(@author.created_at) %> ago</p>
-	<h4>Contact Information</h4>
-	<p>This where contact information will go</p>
+	<h4>Political Views</h4>
+	<p><%= @author.political_views %></p>
 	<h4>About Me</h4>
 	<div class="author_bio">
 		<p><%= @author.bio %></p>

@@ -21,6 +21,11 @@ class AuthorsController < ApplicationController
 
 	def show
 		@articles = Article.where(:author_id => @author.id)
+		@links = {
+			"twitter.png"=> @author.twitter_link, "stumbleupon.svg" => @author.email_link,
+			"Google.png"=> @author.google_plus_link, 
+			"linkedin.png"=> @author.linkedin_link, "Facebook.png"=> @author.facebook_link,
+		}
 	end
 
 	def edit
@@ -44,6 +49,8 @@ class AuthorsController < ApplicationController
 	end
 
 	def author_params
-		params.require(:author).permit(:name, :profile_image, :bio)
+		params.require(:author).permit(:name, :profile_image, :bio, :political_views, 
+			:google_plus_link, :twitter_link, :linkedin_link, :facebook_link, :email_link
+			)
 	end
 end
