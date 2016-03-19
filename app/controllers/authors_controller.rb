@@ -22,7 +22,7 @@ class AuthorsController < ApplicationController
 	def show
 		@articles = Article.where(:author_id => @author.id)
 		@links = {
-			"twitter.png"=> @author.twitter_link, "stumbleupon.svg" => @author.email_link,
+			"twitter.png"=> @author.twitter_link,
 			"Google.png"=> @author.google_plus_link, 
 			"linkedin.png"=> @author.linkedin_link, "Facebook.png"=> @author.facebook_link,
 		}
@@ -34,7 +34,7 @@ class AuthorsController < ApplicationController
 	def update
 		if @author.update(author_params)
 			redirect_to @author
-		else
+		else		
 			render 'edit'
 		end
 	end

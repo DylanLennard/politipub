@@ -11,7 +11,11 @@
 	<div class="main">
 		<div class="wrapper_super clearfix" id="upper_buttons">
 			<a href=""><%= image_tag("menu_block.png", id: "squares") %></a>
+			<% if admin_signed_in? %>
+				<p class="pull_right"><%= link_to "Logout", destroy_admin_session_path, method: :delete, confirm: ("Are you sure you want to logout?") %></p>
+			<% else %>
 			<p class="pull_right"><%= link_to "Login", new_admin_session_path %> | <%= link_to "Sign Up", new_admin_registration_path %> </p>
+			<% end %>
 		</div>
 		<div class="wrapper_wide">
 			<%= link_to image_tag("banner.png", id: "logo"), root_path %></a>
