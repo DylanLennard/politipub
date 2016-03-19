@@ -79,6 +79,11 @@ $white: #ffffff;
 	margin: 1rem 0 2rem 0;
 }
 
+.col-50 {
+	width: 50%;
+	float:left;
+}
+
 .clearfix:before, .clearfix:after {
 	content: " ";
 	display: table;
@@ -113,6 +118,7 @@ $white: #ffffff;
 		font-weight: 400;
 		a {
 			text-decoration: none;
+			color: #000000;
 			&:hover {
 				color:lighten(#134665, 50%);
 			}
@@ -342,6 +348,36 @@ nav {
 			 margin: 0;
 			}
 		}
+	}
+}
+
+/* Dashboard */
+
+.dashboard_banner {
+	text-align: center;
+	background-color: #404040;
+	margin: 0;
+	h1 {
+		font-weight: 200;
+		color: #ffffff;
+		padding: 4rem;
+		margin: 0;
+	}
+}
+
+.dashboard_row {
+	margin: 0;
+}
+
+.dashboard_column {
+	width: 100%;
+	p, h4 {
+		float: left;
+		margin-right: .5rem;
+	}
+	.dashboard_title {
+		font-weight: 600;
+		margin-right: .75rem;
 	}
 }
 

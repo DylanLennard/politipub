@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get 'pages/contact'
   get 'pages/sponsor'
   get 'pages/ontap'
+  get 'pages/dashboard'
 
 end
