@@ -375,6 +375,25 @@ nav {
 	}
 }
 
+.dashboard_body {
+	h1 {
+		color: #0d3552;
+		font-size: 2rem;
+		font-weight: 200;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid black;
+	}
+	p, h4 {
+		font-weight: 200;
+		a {
+			color: #000000;
+			&:hover {
+				color:lighten(#134665, 50%);
+			}
+		}
+	}
+}
+
 .dashboard_row {
 	margin: 0;
 }

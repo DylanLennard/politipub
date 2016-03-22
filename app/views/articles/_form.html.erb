@@ -9,6 +9,10 @@
 
 		<%= f.file_field :banner_image %>
 
+		<% if current_admin.superadmin == true %>
+			<%= f.check_box :published, label: "Published" %>
+		<% end %>
+
 		<%= f.submit "Submit", class: "btn btn-primary" %>
 
 	<% end %>

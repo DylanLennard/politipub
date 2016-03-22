@@ -4,8 +4,8 @@ class ArticlesController < ApplicationController
 
 
 	def home
-		@article_banner = Article.last
-		@articles = Article.all.order("created_at DESC").limit(8)
+		@article_banner = Article.where(:published => true).last
+		@articles = Article.all.order("created_at DESC").limit(8).where(:published => true)
 	end
 
 	def index
@@ -13,11 +13,11 @@ class ArticlesController < ApplicationController
 	end
 
 	def new
-		@article = Article.new
+		@article = current_admin.articles.build
 	end
 
 	def create
-		@article = Article.new(article_params)
+		@article = current_admin.articles.build(article_params)
 		if @article.save
 			redirect_to @article
 		else
@@ -49,12 +49,14 @@ class ArticlesController < ApplicationController
 	end
 
 	def destroy
+		@article.destroy
+		redirect_to :back
 	end
 
 	private
 
 	def article_params
-		params.require(:article).permit(:title, :author, :body, :banner_image, :author_id)
+		params.require(:article).permit(:title, :author, :body, :banner_image, :author_id, :published, :admin_id)
 	end
 
 	def find_article

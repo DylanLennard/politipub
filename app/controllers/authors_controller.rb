@@ -7,25 +7,37 @@ class AuthorsController < ApplicationController
 	end
 
 	def new
-		@author = Author.new
+		if Author.exists?(:admin_id => current_admin.id)
+			redirect_to edit_author_path(:id => current_admin.author.id)
+		else
+			@author = current_admin.build_author
+		end
 	end
 
 	def create
-		@author = Author.new(author_params)
-		if @author.save
-			redirect_to @author
+		if Author.exists?(:admin_id => current_admin.id)
+			redirect_to edit_author_path(:id => current_admin.author.id)
 		else
-			render 'new'
+			@author = current_admin.build_author(author_params)
+			if @author.save
+				redirect_to @author
+			else
+				render 'new'
+			end
 		end
 	end
 
 	def show
-		@articles = Article.where(:author_id => @author.id)
-		@links = {
-			"twitter.png"=> @author.twitter_link,
-			"Google.png"=> @author.google_plus_link, 
-			"linkedin.png"=> @author.linkedin_link, "Facebook.png"=> @author.facebook_link,
-		}
+		if @author.validated?
+			@articles = Article.where(:author_id => @author.id)
+			@links = {
+				"twitter.png"=> @author.twitter_link,
+				"Google.png"=> @author.google_plus_link, 
+				"linkedin.png"=> @author.linkedin_link, "Facebook.png"=> @author.facebook_link,
+			}
+		else
+			redirect_to '/pages/dashboard'
+		end
 	end
 
 	def edit
@@ -40,6 +52,8 @@ class AuthorsController < ApplicationController
 	end
 
 	def destroy
+		@author.destroy
+		redirect_to :back
 	end
 
 	private
@@ -50,7 +64,8 @@ class AuthorsController < ApplicationController
 
 	def author_params
 		params.require(:author).permit(:name, :profile_image, :bio, :political_views, 
-			:google_plus_link, :twitter_link, :linkedin_link, :facebook_link, :email_link
+			:google_plus_link, :twitter_link, :linkedin_link, :facebook_link, :email_link, :admin_id,
+			:validated
 			)
 	end
 end

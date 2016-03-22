@@ -11,6 +11,10 @@
 		<%= f.text_area :bio, label: "About Me", class: "form-control aboutme_text" %>
 		<%= f.file_field :profile_image %>
 
+		<% if current_admin.superadmin? %>
+			<%= f.check_box :validated, label: "Validate" %>
+		<% end %>
+
 		<%= f.submit "Submit", class: "btn btn-primary" %>
 
 	<% end %>

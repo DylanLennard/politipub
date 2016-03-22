@@ -1,4 +1,5 @@
 class Article < ActiveRecord::Base
+	belongs_to :admin
 	belongs_to :author
 	searchkick
 	paginates_per 8
