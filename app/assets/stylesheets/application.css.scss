@@ -369,6 +369,9 @@ nav {
 		padding-bottom: 1rem;
 		max-width: 80%;
 	}
+	h2 {
+		font-weight: 400;
+	}
 	.row{
 		margin: 3.5rem 0;
 		.col-16 {
@@ -378,6 +381,7 @@ nav {
 			img {
 				border-radius: 50%;
 				max-width: 100%;
+				margin-top: 4rem;
 			}
 		}
 		.col-66 {
