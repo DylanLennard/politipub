@@ -8,12 +8,14 @@
 			<h4><%= link_to @article.author.name, @article.author %></h4>
 			<h5><%= @article.created_at.strftime("%B %d, %Y") %></h5>
 		</div>
-		<% if current_admin.id == @article.admin_id && (@article.published? == false) || current_admin.superadmin? %>
-			<ul>
-				<li><%=link_to "Edit Article", edit_article_path %></li>
-				<li><a href="#">Delete Article</a></li>
-				<li><%= link_to "Back", root_path %></li>
-			</ul>
+		<% if admin_signed_in? %>
+			<% if current_admin.id == @article.admin_id && (@article.published? == false) || current_admin.superadmin? %>
+				<ul>
+					<li><%=link_to "Edit Article", edit_article_path %></li>
+					<li><a href="#">Delete Article</a></li>
+					<li><%= link_to "Back", root_path %></li>
+				</ul>
+			<% end %>
 		<% end %>
 		<!-- Twitter -->
 		<%= link_to image_tag("twitter.png", class: "share-button"), @article%>

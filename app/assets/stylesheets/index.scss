@@ -8,17 +8,19 @@
 
 .article-block{
 	display: inline-block;
-	float:left;
-	padding: 1%;
+	float: left;
 	margin: 1%;
+	width: 30%;
 	.thumbnail_image {
 		width: 70%;
+		height: 100px;
 	}
 	h2 {
 		width: 50%;
 		font-weight: 200;
 		a {
 			text-decoration: none;
+			color: #000000;
 			&:hover {
 				color: lighten(#134665, 50%);
 			}
@@ -37,6 +39,7 @@
 	.btn {
 		background-color: #728da5;
 		border: 1px solid #728da5;
+		margin: 0;
 		-webkit-transition: all .3s ease-in-out;
   		-moz-transition: all .3s ease-in-out;
   		-o-transition: all .3s ease-in-out;

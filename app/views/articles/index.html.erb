@@ -9,12 +9,12 @@
 		<% end %>
 	</div>
 	<div class="row">
-		<div class="article-block">
-			<% @articles.each do |article| %>
+		<% @articles.each do |article| %>
+			<div class="article-block">
 				<%= link_to image_tag(article.banner_image.url(), class: "thumbnail_image"), article %>
 				<h2><%= link_to article.title, article %></h2>
-			<% end %>
-		</div>
+			</div>
+		<% end %>
 	</div>
 	<%= paginate @articles %>
 </div>

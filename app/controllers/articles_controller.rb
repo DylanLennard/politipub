@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
 	before_action :find_article, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_admin!, except: [:index, :home, :show, :search]	
+	before_action :article_show, only: [:show]
 
 
 	def home
@@ -26,7 +27,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def show
-		@random_article = Article.limit(3).order("RANDOM()")
+		@random_article = Article.where(:published => true).limit(3).order("RANDOM()")
 	end
 
 	def edit
@@ -54,6 +55,13 @@ class ArticlesController < ApplicationController
 	end
 
 	private
+
+	def article_show
+		@article = Article.find(params[:id])
+		unless admin_signed_in? || @article.published?
+			redirect_to root_path
+		end
+	end
 
 	def article_params
 		params.require(:article).permit(:title, :author, :body, :banner_image, :author_id, :published, :admin_id)

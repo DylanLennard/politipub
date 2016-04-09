@@ -1,6 +1,6 @@
 class AuthorsController < ApplicationController
 	before_action :find_author, only: [:show, :edit, :update, :destroy]
-	before_action :authenticate_admin!
+	before_action :authenticate_admin!, except: [:show]
 
 	def index
 		@authors = Author.all.order('name DESC')
@@ -29,7 +29,7 @@ class AuthorsController < ApplicationController
 
 	def show
 		if @author.validated?
-			@articles = Article.where(:author_id => @author.id)
+			@articles = Article.where(:author_id => @author.id).where(:published => true)
 			@links = {
 				"twitter.png"=> @author.twitter_link,
 				"Google.png"=> @author.google_plus_link, 
