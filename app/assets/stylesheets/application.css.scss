@@ -328,7 +328,17 @@ nav {
 	}
 }
 
-.btn-primary, .devise-link, .form-control {
+.btn-danger {
+	margin: 20px 0;
+	background-color: #AA3939;
+	border-radius: 0;
+	color: #ffffff;
+    &:hover {
+		background-color:lighten(#AA3939, 10%);
+	}
+}
+
+.btn-primary, .btn-danger, .devise-link, .form-control {
 	-webkit-transition-duration: .3s;
     -moz-transition-duration: .3s;
     -o-transition-duration: .3s;
@@ -411,6 +421,18 @@ nav {
 	}
 }
 
+.account_settings {
+	float:right;
+	margin-top: .5rem;
+	padding: 0;
+	text-decoration: none;
+	color: #000000;
+	&:hover {
+		color:lighten(#134665, 50%);
+	}
+
+}
+
 .dashboard_body {
 	h1 {
 		color: #0d3552;
@@ -459,7 +481,7 @@ nav {
 	color: #550000;
 	background-color: rgba(212, 106, 106, .7);
 	padding: .5rem;
-
+	position: relative;
 }
 
 
