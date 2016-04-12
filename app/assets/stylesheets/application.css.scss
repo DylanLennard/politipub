@@ -349,13 +349,16 @@ nav {
 
 .mission_statement {
 	text-align: center;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	.about_title {
 		font-weight: 200;
 		border-bottom: 1px solid black;
 		margin: 2rem 0 2rem 0 !important;
 		padding-bottom: 1rem;
 		margin: 0;
+	}
+	#beer {
+		height: 45px;
 	}
 
 }
@@ -449,6 +452,16 @@ nav {
 	min-height:300px;
 }
 
+/* Alerts */
+
+.alert {
+	text-align: center;
+	color: #550000;
+	background-color: rgba(212, 106, 106, .7);
+	padding: .5rem;
+
+}
+
 
 /* Media Queries */
 
@@ -461,8 +474,3 @@ nav {
 		}
 	}
 }
-
-@import 'normalize';
-@import 'articles';
-@import 'index';
-@import 'author_show';

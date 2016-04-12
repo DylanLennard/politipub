@@ -1,4 +1,4 @@
-<div class="wrapper_skinny ">
+<div class="wrapper">
 	<h1 id="index-title">All Articles</h1>
 	<div class="clearfix">
 		<%= form_tag search_articles_path, method: :get, class: "searchbar", role: "search" do %>
@@ -13,6 +13,7 @@
 			<div class="article-block">
 				<%= link_to image_tag(article.banner_image.url(), class: "thumbnail_image"), article %>
 				<h2><%= link_to article.title, article %></h2>
+				<p><%= link_to article.author.name, article.author %></p>
 			</div>
 		<% end %>
 	</div>

@@ -16,6 +16,7 @@ gem 'kaminari', '~> 0.16.3'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'aws-sdk', '< 2.0'
+gem 'sendgrid-ruby'
 
 group :development, :test do
   gem 'byebug'
