@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   end
 
   resources :authors
+  resources :admins
 
   get 'about', :to => 'pages#about', :as => :pages_about
   get 'contact', :to => 'pages#contact', :as => :pages_contact

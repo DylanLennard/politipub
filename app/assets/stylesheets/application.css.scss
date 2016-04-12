@@ -421,6 +421,18 @@ nav {
 	}
 }
 
+.admin_account {
+	float:left;
+	margin-top: .5rem;
+	padding: 0;
+	text-decoration: none;
+	color: #000000;
+	&:hover {
+		color:lighten(#134665, 50%);
+	}
+
+}
+
 .account_settings {
 	float:right;
 	margin-top: .5rem;
