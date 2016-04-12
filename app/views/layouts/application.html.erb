@@ -10,7 +10,7 @@
 <body>
 	<div class="main">
 		<div class="wrapper_super clearfix" id="upper_buttons">
-			<a href=""><%= image_tag("menu_block.png", id: "squares") %></a>
+			<!-- <a href=""><%= image_tag("menu_block.png", id: "squares") %></a> -->
 			<% if admin_signed_in? %>
 				<p class="pull_right"><%= link_to "Admin Dashboard", pages_dashboard_path %> | <%= link_to "Logout", destroy_admin_session_path, method: :delete, confirm: ("Are you sure you want to logout?") %></p>
 			<% else %>
