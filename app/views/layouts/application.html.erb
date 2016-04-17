@@ -29,7 +29,7 @@
 					<li id="articles_button"><%= link_to "Articles", articles_path %></li>
 					<li id="contact_button"><%= link_to "Contact", pages_contact_path %></li>
 					<li id="sponsor_button"><%= link_to "Sponsor", pages_sponsor_path %></li>
-					<li id="ontap_button"><%= link_to "On Tap", pages_ontap_path %></li>
+					<li id="ontap_button"><%= link_to "On Tap", ontap_index_path %></li>
 				</ul>
 			</nav>
 			<nav class="side-menu">
@@ -44,7 +44,7 @@
 			</nav>
 		</header>
 		<% flash.each do |name, msg| %>
-		<%= content_tag(:div, msg, class: "alert") %>
+		<%= content_tag(:div, msg, class: "alert overlay") %>
 		<% end %>
 		<%= yield %>
 	</div>
@@ -58,8 +58,9 @@
 		        	$(".main").toggleClass("main-open");
 		        	return false;
 		        });
+		        $(".overlay").ready(function() { 
+				$('.overlay').fadeOut(2500)});
 		    });
-
 		</script>
 </body>
 </html>

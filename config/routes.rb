@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   devise_for :admins
+  scope "/admin" do
+    resources :admins
+  end
   
   root 'articles#home'
   resources :articles do
@@ -9,7 +12,7 @@ Rails.application.routes.draw do
   end
 
   resources :authors
-  resources :admins
+  resources :ontap, as: :ontap, controller: :ontaps
 
   get 'about', :to => 'pages#about', :as => :pages_about
   get 'contact', :to => 'pages#contact', :as => :pages_contact

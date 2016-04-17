@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160412000759) do
+ActiveRecord::Schema.define(version: 20160417150343) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -74,5 +74,13 @@ ActiveRecord::Schema.define(version: 20160412000759) do
   end
 
   add_index "authors", ["admin_id"], name: "index_authors_on_admin_id", unique: true
+
+  create_table "ontaps", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.boolean  "published"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
