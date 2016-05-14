@@ -12,6 +12,7 @@
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
 	.headline_block {
 		background: rgba(50, 83, 112, .7);
 		width: 50%;	
@@ -72,4 +73,17 @@
 		}
 
 	}
+}
+
+.ontap_body_title {
+	h1{
+	font-weight: 200;
+	width: 75%;
+	border-bottom: 1px solid #000000;
+	margin-top: 3.5rem;
+	}
+}
+
+.ontap_body{
+	margin-top: 3rem !important;
 }
