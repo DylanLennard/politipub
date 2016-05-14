@@ -1,0 +1,28 @@
+<div class="banner clearfix banner-show" style="background-image: url(<%= @ontap.banner %>)">
+</div>
+<div id="links">
+	<div class="wrapper_skinny">
+		<h1><%= @ontap.title.upcase %></h1>
+		<%= link_to image_tag(@ontap.author.profile_image, class: "author-image"), @ontap.author %>
+		<div class="inline clearfix wrapper">
+			<h4><%= link_to @ontap.author.name, @ontap.author %></h4>
+			<h5><%= @ontap.created_at.strftime("%B %d, %Y") %></h5>
+		</div>
+		<% if admin_signed_in? %>
+			<% if current_admin.id == @ontap.admin_id && (@ontap.published? == false) || current_admin.superadmin? %>
+				<ul>
+					<li><%=link_to "Edit Article", edit_ontap_path %></li>
+					<li><a href="#">Delete Article</a></li>
+					<li><%= link_to "Back", root_path %></li>
+				</ul>
+			<% end %>
+		<% end %>
+		<div class="article-body">
+			<%= simple_format(@ontap.body) %>
+			<p><em> - <%= @ontap.author.name %></em></p>
+		</div>
+	</div>
+</div>
+<!--<div class="wrapper_skinny check_out">
+	<h3>Check out more from Politipub</h4>
+</div> -->

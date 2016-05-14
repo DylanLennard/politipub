@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   end
 
   resources :authors
-  resources :ontap, as: :ontap, controller: :ontaps
+  resources :ontaps
 
   get 'about', :to => 'pages#about', :as => :pages_about
   get 'contact', :to => 'pages#contact', :as => :pages_contact

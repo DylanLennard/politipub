@@ -1,3 +1,75 @@
 // Place all the styles related to the Ontaps controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.ontap_banner {	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 0;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+	.headline_block {
+		background: rgba(50, 83, 112, .7);
+		width: 50%;	
+		float: right;
+		text-align: right;
+		margin: 12rem 4rem 2rem 0;
+		-webkit-box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+		box-shadow: 10px 15px 40px -8px rgba(0,0,0,0.55);
+		h1 {
+			padding: 1rem 0 0 0rem;
+			margin: 0 1rem .5rem 0;
+		}
+		a {
+			color: #ffffff;
+			font-weight: 300;
+			text-decoration: none;
+			border-bottom: 1px solid #ffffff;
+			width: 80%;
+			&:hover{
+				color: lighten(#134665, 50%);
+			}
+		}
+		#author_title{
+			display: inline-block;
+			margin: 0 1rem .25rem 0;
+			h4 {
+				padding-left: 1rem;
+				margin: 0;
+				float: left;
+				color: #ffffff;
+				font-size: 1.25rem;
+				font-weight: 400;
+			}
+			p {
+				padding: 0 0 0 .5rem;
+				float: left;
+				margin: .38rem 0 -.5rem 0;
+				color: #ffffff;
+				font-size: .8rem;
+			}
+		}
+		p {
+			color: white;
+			padding:0 2rem 1rem 0;
+			margin: 0 0 0 0;
+			font-weight: 200;
+		}
+		#see_more {
+			color: #858ea3;
+			font-weight: 600;
+			font-size: .8rem;
+			text-decoration: none;
+			border: none;
+			margin-right: -.75rem;
+			&:hover {
+				color: lighten(#134665, 50%);
+			}
+		}
+
+	}
+}

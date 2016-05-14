@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160417150343) do
+ActiveRecord::Schema.define(version: 20160417205349) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -78,9 +78,18 @@ ActiveRecord::Schema.define(version: 20160417150343) do
   create_table "ontaps", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
-    t.boolean  "published"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "published",           default: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.string   "banner_file_name"
+    t.string   "banner_content_type"
+    t.integer  "banner_file_size"
+    t.datetime "banner_updated_at"
+    t.integer  "author_id"
+    t.integer  "admin_id"
   end
+
+  add_index "ontaps", ["admin_id"], name: "index_ontaps_on_admin_id"
+  add_index "ontaps", ["author_id"], name: "index_ontaps_on_author_id"
 
 end

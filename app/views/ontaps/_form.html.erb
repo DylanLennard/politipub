@@ -1,0 +1,19 @@
+<div class="wrapper_skinny">
+	<%= bootstrap_form_for @ontap do |f| %>
+
+		<%= f.text_field :title, label: "Title", class: "form-control" %>
+
+		<%= f.collection_select :author_id, Author.all, :id, :name, label: "Author", class: "form-control" %>
+
+		<%= f.text_area :body, label: "Body", class: "text_area" %>
+
+		<%= f.file_field :banner %>
+
+		<% if current_admin.superadmin == true %>
+			<%= f.check_box :published, label: "Published" %>
+		<% end %>
+
+		<%= f.submit "Submit", class: "btn btn-primary" %>
+
+	<% end %>
+</div>

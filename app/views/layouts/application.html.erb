@@ -5,6 +5,7 @@
   	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   	<%= csrf_meta_tags %>
+  	<%= favicon_link_tag 'PP_favicon.png' %>
   	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -29,7 +30,7 @@
 					<li id="articles_button"><%= link_to "Articles", articles_path %></li>
 					<li id="contact_button"><%= link_to "Contact", pages_contact_path %></li>
 					<li id="sponsor_button"><%= link_to "Sponsor", pages_sponsor_path %></li>
-					<li id="ontap_button"><%= link_to "On Tap", ontap_index_path %></li>
+					<li id="ontap_button"><%= link_to "On Tap", ontaps_path %></li>
 				</ul>
 			</nav>
 			<nav class="side-menu">

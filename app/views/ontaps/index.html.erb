@@ -1,12 +1,35 @@
 <div class="wrapper">
 	<h1 id="more_stories">On Tap, Homies</h1>
-		<div class="row clearfix">
-			<div class="thumbnail_article">
-				<h2></h2>
-				<div class="inline clearfix">
-					<h5></h5>
-				</div>
-				<p>What's on Tap????</p>
+	<div class="clearfix">
+		<%= form_tag search_articles_path, method: :get, class: "searchbar", role: "search" do %>
+			<p>
+			  <%= text_field_tag :search, params[:search], class: "search-form" %>
+			  <%= submit_tag "Search", name: nil, class: "btn btn-primary searchbar" %>
+			</p>
+		<% end %>
+	</div>
+	<div class="ontap_banner clearfix" style="background-image: url(<%=@ontap_banner.banner.url() %>)">
+		<div class="headline_block">
+			<h1><%= link_to @ontap_banner.title.capitalize, @ontap_banner %></h1>
+			<div id="author_title">
+				<h4><%= @ontap_banner.author.name %></h4>
+				<p><%= @ontap_banner.created_at.strftime("%B %d, %Y") %></p>
 			</div>
+			<p>
+				<%= truncate(@ontap_banner.body, length: 250) %>
+				<%= link_to "See More", @ontap_banner, id: "see_more" %>
+			</p>
 		</div>
+	</div>
+	<% @ontaps.each do |article| %>
+	<div class="row clearfix">
+		<div class="thumbnail_article">
+			<h2><%= article.title %></h2>
+			<div class="inline clearfix">
+				<h5></h5>
+			</div>
+			<p><%= article.body %></p>
+		</div>
+	</div>
+	<% end %>
 </div>
