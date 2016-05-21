@@ -9,22 +9,57 @@
 .article-block{
 	display: inline-block;
 	float: left;
-	margin: 1%;
-	width: 30%;
+	margin: 0;
+	width: 45%;
 	.thumbnail_image {
-		width: 70%;
-		height: 100px;
+		width: 45%;
+	}
+	h2, h4, h5, p {
+			margin: 0;
 	}
 	h2 {
-		width: 50%;
-		font-weight: 200;
-		a {
-			text-decoration: none;
-			color: #000000;
-			&:hover {
-				color: lighten(#134665, 50%);
-			}
+		font-weight: 500;
+		font-size: 1.8rem;
+		margin-bottom: .1rem;
+		&:hover {
+			color: lighten(#134665, 50%);
 		}
+	}
+	h4, p {
+			font-weight: 300;
+		}
+		h4 {
+			color: #728da5;
+			font-size: 1.2rem;
+	}
+	.inline {
+		margin-bottom: .5rem;
+		h4 {
+			float:left;
+		}
+		h5 {
+			float:left;
+			margin: 5px 0 0 5px;
+			font-weight: 200;
+		}
+	}
+	p {
+		color: #828283;
+		font-size: .8rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: #000000;
+		&:hover {
+			color: lighten(#134665, 50%);
+		}
+	}
+	#see_more {
+			color: #858ea3;
+			padding-top: 1.3rem;
+			font-weight: 600;
+			font-size: .8rem;
 	}
 }
 
