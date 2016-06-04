@@ -1,0 +1,9 @@
+<div class="wrapper_skinny">
+	<%= bootstrap_form_for(@category) do |f| %>
+
+		<%= f.text_field :name, label: "Name", class: "form-control" %>
+
+		<%= f.submit "Submit", class: "btn btn-primary" %>
+
+	<% end %>
+</div>
