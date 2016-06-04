@@ -1,0 +1,20 @@
+<div class="wrapper">
+	<h1 id="index-title">All Articles in <%= @category.name %></h1>
+	<% @category_articles.each do |article| %>
+		<div class="row clearfix">
+			<%= link_to image_tag(article.banner_image.url(), class: "thumbnail_image"), article %>
+			<div class="article-block">
+				<h2><%= link_to article.title, article %></h2>
+				<div class="inline clearfix">
+					<h4><%= article.author.name %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
+				</div>
+				<p><%= link_to article.author.name, article.author %></p>
+				<p><%= truncate(article.body, length: 250) %></p>
+				<% if article.categories.any? %>
+					<p><%= render article.categories %><p>
+				<% end %>
+				<%= link_to "See More", article, id: "see_more" %>
+			</div>
+		</div>
+	<% end %>
+</div>

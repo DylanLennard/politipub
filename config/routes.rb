@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   resources :authors
   resources :ontaps
-  resources :categories, only: [:index, :new, :create]
+  resources :categories, only: [:index, :new, :create, :show]
 
   get 'about', :to => 'pages#about', :as => :pages_about
   get 'contact', :to => 'pages#contact', :as => :pages_contact

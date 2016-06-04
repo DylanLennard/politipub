@@ -1,6 +1,7 @@
 class CategoriesController < ApplicationController
 
 	before_action :authenticate_admin!, except: [:index]
+	before_action :find_category, only: [:show]
 	
 	def index
 	end
@@ -19,10 +20,18 @@ class CategoriesController < ApplicationController
 		end
 	end
 
+	def show
+		@category_articles = @category.articles
+	end
+
 	private
 
 	def category_params
 		params.require(:category).permit(:name)
+	end
+
+	def find_category
+		@category = Category.find(params[:id])
 	end
 
 end

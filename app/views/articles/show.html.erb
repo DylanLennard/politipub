@@ -30,6 +30,10 @@
 		<div class="article-body">
 			<%= simple_format(@article.body) %>
 			<p><em> - <%= @article.author.name %></em></p>
+			<br>
+			<% if @article.categories.any? %>
+				<p><%= render @article.categories %><p>
+			<% end %>
 		</div>
 	</div>
 </div>
@@ -38,7 +42,7 @@
 	<div class="row">
 		<% @random_article.each do |article| %>
 		<div class="col-3">
-			<%= link_to image_tag(article.banner_image), @article %>
+			<%= link_to image_tag(article.banner_image), article %>
 			<h4><%= article.title %></h4>
 			<p><%= article.author.name %></p>
 		</div>
