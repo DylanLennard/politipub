@@ -30,10 +30,10 @@
 						<h4><%= article.author.name %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
 					</div>
 					<p><%= truncate(article.body, length: 250) %></p>
-					<% if article.categories.any? %>
-						<p><%= render article.categories %><p>
-					<% end %>
 					<%= link_to "See More", article, id: "see_more" %>
+					<% if article.categories.any? %>
+						<p class="category_label"><%= render article.categories %><p>
+					<% end %>
 				</div>
 			</div>
 		<% end %>
