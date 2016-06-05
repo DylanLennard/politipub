@@ -25,7 +25,7 @@
 	<h1 class="author_name"><%= @author.name %>'s Articles</h1>
 		<% @articles.each do |article| %>
 			<div class="article_profile_block">
-			<%= link_to image_tag(article.banner_image, class: "profile_article_image"), article %>
+			<%= link_to image_tag(article.banner_image.url(:small), class: "profile_article_image"), article %>
 			<p><%= link_to article.title, article %></p>
 			<p><%= article.created_at.strftime("%B %d, %Y") %></p>
 			</div>

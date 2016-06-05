@@ -1,5 +1,6 @@
 <div class="wrapper_skinny ">
 	<h1 id="index-title">Search Results</h1>
+	<!-- Search Bar -->
 	<div class="clearfix">
 		<%= form_tag search_articles_path, method: :get, class: "searchbar", role: "search" do %>
 			<p>
@@ -8,6 +9,7 @@
 			</p>
 		<% end %>
 	</div>
+	<!-- Results -->
 	<div class="article-block">
 	<% @articles.each do |article| %>
 		<%= link_to image_tag(article.banner_image, class: "thumbnail_image"), article %>

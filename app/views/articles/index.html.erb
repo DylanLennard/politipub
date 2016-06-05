@@ -10,7 +10,7 @@
 	</div>
 	<% @articles.each do |article| %>
 		<div class="row clearfix">
-			<%= link_to image_tag(article.banner_image.url(), class: "thumbnail_image"), article %>
+			<%= link_to image_tag(article.banner_image.url(:medium), class: "thumbnail_image"), article %>
 			<div class="article-block">
 				<h2><%= link_to article.title, article %></h2>
 				<div class="inline clearfix">

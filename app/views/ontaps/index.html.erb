@@ -33,20 +33,21 @@
 	<div class="ontap_body_title">
 		<h1>See More Articles</h1>
 	</div>
+	
 	<div class="wrapper_wide ontap_body">
 		<% @ontaps.each do |article| %>
-		<div class="row clearfix">
-			<%= link_to image_tag(article.banner.url(), class: "thumbnail_image"), article %>
-			<div class="thumbnail_article">
-				<h2><%= link_to article.title, article %></h2>
-				<div class="inline clearfix">
-					<h4><%= article.author.name %></h4><h5> | <%= article.created_at.strftime("%B %d, %Y") %> </h5>
+			<div class="row clearfix">
+				<%= link_to image_tag(article.banner.url(:medium), class: "thumbnail_image"), article %>
+				<div class="thumbnail_article">
+					<h2><%= link_to article.title, article %></h2>
+					<div class="inline clearfix">
+						<h4><%= article.author.name %></h4><h5> | <%= article.created_at.strftime("%B %d, %Y") %> </h5>
+					</div>
+					<p><%= article.body %></p>
+					<%= link_to "See More", article, id: "see_more" %>
 				</div>
-				<p><%= article.body %></p>
-				<%= link_to "See More", article, id: "see_more" %>
 			</div>
-		</div>
 		<% end %>
 	</div>
-
+	<%= paginate @ontaps %>
 </div>

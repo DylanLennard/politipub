@@ -23,7 +23,7 @@
 	<% @articles.each do |article| %>
 		<% unless article == @article_banner %>
 			<div class="row clearfix">
-				<%= link_to image_tag(article.banner_image.url(), class: "thumbnail_image"), article %>
+				<%= link_to image_tag(article.banner_image.url(:medium), class: "thumbnail_image"), article %>
 				<div class="thumbnail_article">
 					<h2><%= link_to article.title.capitalize, article %></h2>
 					<div class="inline clearfix">

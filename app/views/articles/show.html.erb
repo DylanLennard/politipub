@@ -27,6 +27,8 @@
 		<%= link_to image_tag("stumbleupon.svg", class: "share-button"), @article%>
 		<!-- LinkedIn --> 
 		<%= link_to image_tag("linkedin.png", class: "share-button"), @article%>
+
+		<!-- Article Body -->
 		<div class="article-body">
 			<%= simple_format(@article.body) %>
 			<p><em> - <%= @article.author.name %></em></p>
@@ -35,8 +37,11 @@
 				<p><%= render @article.categories %><p>
 			<% end %>
 		</div>
+		
 	</div>
 </div>
+
+<!-- Random Articles -->
 <div class="wrapper_skinny check_out">
 	<h3>Check out more from Politipub</h4>
 	<div class="row">

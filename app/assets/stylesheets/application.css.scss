@@ -276,6 +276,10 @@ nav {
 	.current {
 		background: #082136;
 		color: white;
+		&:hover {
+			color: #ffffff;
+			background: #082136;
+		}
 	}
 	.disabled {
 		color: #ffffff;
@@ -405,6 +409,13 @@ nav {
 			}
 		}
 	}
+}
+
+/* Contact Page */
+
+#contact_image {
+	margin: 0;
+	width: 50%;
 }
 
 /* Dashboard */

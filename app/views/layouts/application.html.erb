@@ -25,12 +25,12 @@
 		<header>
 			<nav class="clearfix">
 				<ul>
-					<li id="home_button"><%= link_to "Home", root_path %></li>
-					<li id="about_button"><%= link_to "About", pages_about_path %></li>
-					<li id="articles_button"><%= link_to "Articles", articles_path %></li>
-					<li id="contact_button"><%= link_to "Contact", pages_contact_path %></li>
-					<li id="sponsor_button"><%= link_to "Sponsor", pages_sponsor_path %></li>
-					<li id="ontap_button"><%= link_to "On Tap", ontaps_path %></li>
+					<%= link_to root_path do %><li id="home_button"><span>Home</span></li><%end%>
+					<%= link_to pages_about_path do %><li id="about_button"><span>About</span></li><%end%>
+					<%= link_to articles_path do %><li id="articles_button"><span>Articles</span></li><%end%>
+					<%= link_to pages_contact_path do%><li id="contact_button"><span>Contact</span></li><%end%>
+					<%= link_to pages_sponsor_path do %><li id="sponsor_button"><span>Sponsor</span></li><%end%>
+					<%= link_to ontaps_path do %><li id="ontap_button"><span>On Tap</span></li><%end%>
 				</ul>
 			</nav>
 			<nav class="side-menu">

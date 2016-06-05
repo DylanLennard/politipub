@@ -19,7 +19,7 @@ class OntapsController < ApplicationController
 
 	def index
 		@ontap_banner = Ontap.where(:published => true).last
-		@ontaps = Ontap.all
+		@ontaps = Ontap.page params[:page]
 	end
 
 	def show
