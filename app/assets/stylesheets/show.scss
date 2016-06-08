@@ -127,3 +127,11 @@
 		margin-bottom: 4rem;
 	}
 }
+
+.share-button {
+	max-height: 25px;
+	margin: 1rem .5rem 0 .5rem;
+	&:hover {
+		opacity: .7;
+	}
+}
