@@ -17,6 +17,7 @@ gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'aws-sdk', '< 2.0'
 gem 'sendgrid-ruby'
+gem 'social-share-button'
 
 group :development, :test do
   gem 'byebug'

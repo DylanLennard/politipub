@@ -18,16 +18,7 @@
 			<% end %>
 		<% end %>
 		<!-- Twitter -->
-		<%= link_to image_tag("twitter.png", class: "share-button"), @article%>
-		 <!-- Facebook -->
-		<%= link_to image_tag("Facebook.png", class: "share-button"), "javascript:fbShare('http://jsfiddle.net/stichoza/EYxTJ/', 'Fb Share', 'Facebook share popup', '@article.banner_image', 520, 350)" %>
-		<!-- Google+ -->
-		<%= link_to image_tag("Google.png", class: "share-button"), @article%>
-		<!-- StumbleUpon -->
-		<%= link_to image_tag("stumbleupon.svg", class: "share-button"), @article%>
-		<!-- LinkedIn --> 
-		<%= link_to image_tag("linkedin.png", class: "share-button"), @article%>
-
+		<%= social_share_button_tag(@article.title, :popup => "true", class: "share-button") %>
 		<!-- Article Body -->
 		<div class="article-body">
 			<%= simple_format(@article.body) %>
@@ -54,13 +45,3 @@
 		<% end %>
 	</div>
 </div>
-
-<!-- Share functions -->
-<script>
-    function fbShare(url, title, descr, image, winWidth, winHeight) {
-        var winTop = (screen.height / 2) - (winHeight / 2);
-        var winLeft = (screen.width / 2) - (winWidth / 2);
-
-        window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
-    	}
-</script>
