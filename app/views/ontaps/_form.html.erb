@@ -5,7 +5,7 @@
 
 		<%= f.collection_select :author_id, Author.all, :id, :name, label: "Author", class: "form-control" %>
 
-		<%= f.text_area :body, label: "Body", class: "text_area" %>
+		<%= f.cktext_area :body, label: "Body", class: "text_area" %>
 
 		<%= f.file_field :banner %>
 

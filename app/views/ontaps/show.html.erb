@@ -18,7 +18,7 @@
 			<% end %>
 		<% end %>
 		<div class="article-body">
-			<%= simple_format(@ontap.body) %>
+			<%= @ontap.body.html_safe %>
 			<p><em> - <%= @ontap.author.name %></em></p>
 		</div>
 	</div>

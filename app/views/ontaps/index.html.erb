@@ -22,7 +22,7 @@
 				<p><%= @ontap_banner.created_at.strftime("%B %d, %Y") %></p>
 			</div>
 			<p>
-				<%= truncate(@ontap_banner.body, length: 250) %>
+				<%= truncate(striphtml(@ontap_banner.body), length: 250) %>
 				<%= link_to "See More", @ontap_banner, id: "see_more" %>
 			</p>
 		</div>
@@ -43,7 +43,7 @@
 					<div class="inline clearfix">
 						<h4><%= article.author.name %></h4><h5> | <%= article.created_at.strftime("%B %d, %Y") %> </h5>
 					</div>
-					<p><%= article.body %></p>
+					<p><%= truncate(striphtml(article.body), length: 250) %></p>
 					<%= link_to "See More", article, id: "see_more" %>
 				</div>
 			</div>
