@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   end
   
   root 'articles#home'
+  
   resources :articles do
   	collection do
   		get 'search'
@@ -13,7 +14,13 @@ Rails.application.routes.draw do
   end
 
   resources :authors
-  resources :ontaps
+
+  resources :ontaps do
+    collection do
+      get 'search'
+    end
+  end
+
   resources :categories, only: [:index, :new, :create, :show]
 
   get 'about', :to => 'pages#about', :as => :pages_about

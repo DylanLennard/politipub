@@ -4,7 +4,7 @@
 	<!-- Searchbar -->
 
 	<div class="clearfix">
-		<%= form_tag search_articles_path, method: :get, class: "searchbar", role: "search" do %>
+		<%= form_tag search_ontaps_path, method: :get, class: "searchbar", role: "search" do %>
 			<p>
 			  <%= text_field_tag :search, params[:search], class: "search-form" %>
 			  <%= submit_tag "Search", name: nil, class: "btn btn-primary searchbar" %>

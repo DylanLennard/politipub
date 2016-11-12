@@ -1,0 +1,19 @@
+<div class="wrapper_skinny ">
+	<h1 id="index-title">Search Results</h1>
+	<!-- Search Bar -->
+	<div class="clearfix">
+		<%= form_tag search_ontaps_path, method: :get, class: "searchbar", role: "search" do %>
+			<p>
+			  <%= text_field_tag :search, params[:search], class: "search-form" %>
+			  <%= submit_tag "Search", name: nil, class: "btn btn-primary searchbar" %>
+			</p>
+		<% end %>
+	</div>
+	<!-- Results -->
+	<div class="article-block">
+	<% @ontaps.each do |ontap| %>
+		<%= link_to image_tag(ontap.banner.url(), class: "thumbnail_image"), ontap %>
+		<%= link_to ontap.title, ontap %>
+	<% end %>
+	</div>
+</div>
