@@ -3,7 +3,7 @@ Change Mason's about me
 search results view needs to be fixed
 add pagination to on tap
 Edit picture of soccer jersey with "your logo here" for sponsor page
-Tabs for politics, culture, beer, travel, 
+Tabs for politics, culture, beer, travel (category titles) 
 Politipub social media account links underneath login
 change "email me" to "email" on author profiles
 paginate articles under admin dashboard

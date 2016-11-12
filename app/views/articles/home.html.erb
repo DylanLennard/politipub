@@ -33,7 +33,7 @@
 					<div class="inline clearfix">
 						<h4><%= article.author.name %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
 					</div>
-					<p><%= truncate(article.body, length: 250) %></p>
+					<p><%= truncate(striphtml(article.body), length: 250) %></p>
 					<%= link_to "See More", article, id: "see_more" %>
 					<% if article.categories.any? %>
 						<p class="category_label"><%= render article.categories %><p>

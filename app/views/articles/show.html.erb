@@ -21,7 +21,7 @@
 		<%= social_share_button_tag(@article.title, :popup => "true", class: "share-button") %>
 		<!-- Article Body -->
 		<div class="article-body">
-			<%= simple_format(@article.body) %>
+			<%= @article.body.html_safe %>
 			<p><em> - <%= @article.author.name %></em></p>
 			<br>
 			<% if @article.categories.any? %>

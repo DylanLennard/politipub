@@ -48,6 +48,9 @@ GEM
     bootstrap_form (2.3.0)
     builder (3.2.2)
     byebug (9.0.4)
+    ckeditor (4.2.0)
+      cocaine
+      orm_adapter (~> 0.5.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
@@ -214,6 +217,7 @@ DEPENDENCIES
   aws-sdk (< 2.0)
   bootstrap_form (~> 2.3)
   byebug
+  ckeditor
   coffee-rails (~> 4.1.0)
   devise (~> 3.5, >= 3.5.6)
   elasticsearch-model
@@ -237,4 +241,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.10.6
+   1.12.5

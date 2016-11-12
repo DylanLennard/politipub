@@ -1,7 +1,9 @@
 module ArticlesHelper
 
 	def striphtml(text)
-		text.gsub(/\<.*?\>/, "")
+		filtered = text.gsub(/\<.*?\>/, "")
+		nbspfiltered = filtered.gsub("&nbsp;", "")
+		return nbspfiltered
 	end
 
 end

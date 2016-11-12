@@ -18,6 +18,7 @@ gem 'elasticsearch-rails'
 gem 'aws-sdk', '< 2.0'
 gem 'sendgrid-ruby'
 gem 'social-share-button'
+gem "ckeditor"
 
 group :development, :test do
   gem 'byebug'
