@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
 
-	before_action :authenticate_admin!, except: [:index]
+	before_action :authenticate_admin!, except: [:index, :show]
 	before_action :find_category, only: [:show]
 	
 	def index

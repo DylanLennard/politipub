@@ -2,17 +2,21 @@
 
 <div class="banner clearfix" style="background-image: url(<%=@article_banner.banner_image.url() %>)">
 	<div class="headline_block">
-		<h1><%= link_to @article_banner.title.capitalize, @article_banner %></h1>
+		<h1><%= link_to @article_banner.title, @article_banner %></h1>
 		<div id="author_title">
 			<h4><%= @article_banner.author.name %></h4>
 			<p><%= @article_banner.created_at.strftime("%B %d, %Y") %></p>
 		</div>
 		<p>
-			<%= truncate(@article_banner.body, length: 250) %>
+			<%= truncate(striphtml(@article_banner.body), length: 250) %>
 			<%= link_to "See More", @article_banner, id: "see_more" %>
 		</p>
 	</div>
 </div>
+
+<!-- Mobile Views -->
+
+
 
 <!-- Article Index -->
 

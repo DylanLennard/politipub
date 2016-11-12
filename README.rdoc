@@ -1,28 +1,29 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Links to social media need to be checked
+Change Mason's about me
+search results view needs to be fixed
+add pagination to on tap
+Edit picture of soccer jersey with "your logo here" for sponsor page
+Tabs for politics, culture, beer, travel, 
+Politipub social media account links underneath login
+change "email me" to "email" on author profiles
+paginate articles under admin dashboard
+authenticate masons profile
+article index - needs space between tags and description and see more
+Add copyright and all rights reserved to bottom of page
+Mason's bio not linking
+Adjust image dimensions on home page from 500 to 300 pixels
+Edit random article hyperlinks w/ no text decoration
+local tag redirects to article not local tagged articles
+Elastic search to search multiple models - include categories
+If not search results are found, add a not found view
+Update for mobile
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
+Mason:
+Write "On Tap" bio describing section
+Write about sponsor page
+Write or come up with image idea for sign up
+Come up with category ideas
+Email Daniel articles, article images, authors (full name, email, bio)

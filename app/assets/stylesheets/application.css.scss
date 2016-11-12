@@ -423,8 +423,16 @@ nav {
 
 .dashboard_banner {
 	text-align: center;
-	background-color: #404040;
-	margin: 0;
+	background: rgb(16,60,81); 
+	/* Old browsers */
+		background: -moz-linear-gradient(45deg, rgba(16,60,81,1) 0%, rgba(21,87,112,1) 50%, rgba(67,124,123,1) 100%); 
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, rgba(16,60,81,1) 0%,rgba(21,87,112,1) 50%,rgba(67,124,123,1) 100%); 
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, rgba(16,60,81,1) 0%,rgba(21,87,112,1) 50%,rgba(67,124,123,1) 100%); 
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#103c51', endColorstr='#437c7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		margin: 0;
 	h1 {
 		font-weight: 200;
 		color: #ffffff;
@@ -538,12 +546,12 @@ nav {
 
 /* Media Queries */
 
-@media (max-width: 640px) {
-	nav{
-		ul{
-			li{
-				font-size: 1rem;
-			}
-		}
+@media (max-width: 480px) {
+	.banner {
+		width: 100%;
+	}
+
+	.navbar{
+		display: none !important;
 	}
 }
