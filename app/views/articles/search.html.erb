@@ -11,9 +11,13 @@
 	</div>
 	<!-- Results -->
 	<div class="article-block">
-	<% @articles.each do |article| %>
-		<%= link_to image_tag(article.banner_image, class: "thumbnail_image"), article %>
-		<%= link_to article.title, article %>
+	<% if @articles.any? %>
+		<% @articles.each do |article| %>
+			<%= link_to image_tag(article.banner_image, class: "thumbnail_image"), article %>
+			<%= link_to article.title, article %>
+		<% end %>
+	<% else %>
+		<p>Sorry, no search results were found</p>
 	<% end %>
 	</div>
 	<%= paginate @articles %>

@@ -11,9 +11,13 @@
 	</div>
 	<!-- Results -->
 	<div class="article-block">
-	<% @ontaps.each do |ontap| %>
-		<%= link_to image_tag(ontap.banner.url(), class: "thumbnail_image"), ontap %>
-		<%= link_to ontap.title, ontap %>
+	<% if @ontaps.any? %>
+		<% @ontaps.each do |ontap| %>
+			<%= link_to image_tag(ontap.banner.url(), class: "thumbnail_image"), ontap %>
+			<%= link_to ontap.title, ontap %>
+		<% end %>
+	<% else %>
+		<p>Sorry, no results were found</p>
 	<% end %>
 	</div>
 </div>
