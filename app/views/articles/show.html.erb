@@ -38,7 +38,7 @@
 	<div class="row">
 		<% @random_article.each do |article| %>
 		<div class="col-3">
-			<%= link_to image_tag(article.banner_image), article %>
+			<%= link_to image_tag(article.banner_image.url(:small)), article %>
 			<h4><%= link_to article.title, article %></h4>
 			<p><%= link_to article.author.name, article.author %></p>
 		</div>

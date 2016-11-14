@@ -1,7 +1,7 @@
 Links to social media need to be checked
 Change Mason's about me
 search results view needs to be fixed
-add pagination to on tap
+add pagination to ontap
 Edit picture of soccer jersey with "your logo here" for sponsor page
 Tabs for politics, culture, beer, travel (category titles) 
 Politipub social media account links underneath login
@@ -10,14 +10,14 @@ paginate articles under admin dashboard
 authenticate masons profile
 article index - needs space between tags and description and see more
 Add copyright and all rights reserved to bottom of page
-Mason's bio not linking
+*** Mason's bio not linking (wasn't validated in local database)
 Adjust image dimensions on home page from 500 to 300 pixels
 Edit random article hyperlinks w/ no text decoration
 local tag redirects to article not local tagged articles
 Elastic search to search multiple models - include categories
-If not search results are found, add a not found view
+*** If not search results are found, add a not found view
 Update for mobile
-
+Add default image values to authors, articles, and ontap
 
 
 
