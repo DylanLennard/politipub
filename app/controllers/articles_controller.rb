@@ -43,9 +43,10 @@ class ArticlesController < ApplicationController
 
 	def search
 		if params[:search].present?
-	      @articles = Article.search(params[:search])
+		  @filter = Article.all.order("created_at DESC").page params[:page]
+	      @articles = @filter.search(params[:search], where: {published: true})
 	    else
-	      @articles = Article.all.order(:id).page params[:page]
+	      @articles = Article.all.order("created_at DESC").where(:published => true).page params[:page]
 	    end
 	end
 

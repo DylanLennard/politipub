@@ -9,22 +9,20 @@
 		<% end %>
 	</div>
 	<% @articles.each do |article| %>
-		<% unless article == @article_banner %>
-			<div class="row clearfix">
-				<%= link_to image_tag(article.banner_image.url(:medium), class: "thumbnail_image"), article %>
-				<div class="thumbnail_article">
-					<h2><%= link_to article.title.capitalize, article %></h2>
-					<div class="inline clearfix">
-						<h4><%= article.author.name %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
-					</div>
-					<p><%= truncate(striphtml(article.body), length: 250) %></p>
-					<%= link_to "See More", article, id: "see_more" %>
-					<% if article.categories.any? %>
-						<p class="category_label"><%= render article.categories %><p>
-					<% end %>
+		<div class="row clearfix">
+			<%= link_to image_tag(article.banner_image.url(:medium), class: "thumbnail_image"), article %>
+			<div class="thumbnail_article">
+				<h2><%= link_to article.title.capitalize, article %></h2>
+				<div class="inline clearfix">
+					<h4><%= article.author.name %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
 				</div>
+				<p><%= truncate(striphtml(article.body), length: 250) %></p>
+				<%= link_to "See More", article, id: "see_more" %>
+				<% if article.categories.any? %>
+					<p class="category_label"><%= render article.categories %><p>
+				<% end %>
 			</div>
-		<% end %>
+		</div>
 	<% end %>
 	<%= paginate @articles %>
 </div>

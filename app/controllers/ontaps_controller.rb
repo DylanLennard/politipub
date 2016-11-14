@@ -38,9 +38,11 @@ class OntapsController < ApplicationController
 
 	def search
 		if params[:search].present?
-	      @ontaps = Ontap.search(params[:search])
+		  @filter = Ontap.all.order("created_at DESC").page params[:page]
+	      @ontaps = @filter.search(params[:search], where: {published: true})
+
 	    else
-	      @ontaps = Ontap.all.order(:id).page params[:page]
+	      @ontaps = Ontap.all.order("created_at DESC").where(:published => true).page params[:page]
 	    end
 	end
 

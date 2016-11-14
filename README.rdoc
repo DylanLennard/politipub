@@ -8,10 +8,10 @@ Politipub social media account links underneath login
 change "email me" to "email" on author profiles
 paginate articles under admin dashboard
 authenticate masons profile
-article index - needs space between tags and description and see more
+*** article index - needs space between tags and description and see more
 Add copyright and all rights reserved to bottom of page
 *** Mason's bio not linking (wasn't validated in local database)
-Adjust image dimensions on home page from 500 to 300 pixels
+*** Adjust image dimensions on home page from 500 to 300 pixels
 Edit random article hyperlinks w/ no text decoration
 local tag redirects to article not local tagged articles
 Elastic search to search multiple models - include categories
