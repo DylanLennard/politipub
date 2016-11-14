@@ -5,9 +5,9 @@ add pagination to ontap
 Edit picture of soccer jersey with "your logo here" for sponsor page
 Tabs for politics, culture, beer, travel (category titles) 
 Politipub social media account links underneath login
-change "email me" to "email" on author profiles
+*** change "email me" to "email" on author profiles
 paginate articles under admin dashboard
-authenticate masons profile
+*** authenticate masons profile
 *** article index - needs space between tags and description and see more
 Add copyright and all rights reserved to bottom of page
 *** Mason's bio not linking (wasn't validated in local database)

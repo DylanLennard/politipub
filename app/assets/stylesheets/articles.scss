@@ -170,3 +170,15 @@ $white: #ffffff;
 		}
 	}
 }
+
+.random_article_links {
+	h4, p {
+		a { 
+			text-decoration: none;
+			color: #000;
+			&:hover {
+				color: lighten(#134665, 50%);
+			}
+		}
+	}
+}
