@@ -36,7 +36,7 @@ class AuthorsController < ApplicationController
 				"linkedin.png"=> @author.linkedin_link, "Facebook.png"=> @author.facebook_link,
 			}
 		else
-			redirect_to '/pages/dashboard'
+			redirect_to :back
 		end
 	end
 
