@@ -1,0 +1,23 @@
+<div class="dashboard_banner">
+	<div class="wrapper">
+		<h1>Articles Dashboard</h1>
+	</div>
+</div>
+<div class="wrapper clearfix">
+		<%= link_to "Create A New Admin Account", new_admin_path, class: "admin_account" %>
+		<% if current_admin.superadmin? %>
+		<%= link_to "Create A New OnTap Article", new_ontap_path, class: "admin_account" %>
+		<%= link_to "Create A New Category", new_category_path, class: "admin_account" %>
+		<% end %>
+		<%= link_to "Account Settings", edit_admin_registration_path, class: "account_settings" %>
+</div>
+<div class="wrapper clearfix" id="article_dashboard_block">
+<h1>All Articles</h1>
+<% @articles.each do |article| %>
+	<div class="article_profile_block">
+		<%= link_to image_tag(article.banner_image.url(:small), class: "profile_article_image"), article %>
+		<p><%= link_to article.title, article %></p>
+		<p><%= article.created_at.strftime("%B %d, %Y") %></p>
+	</div>
+<% end %>
+</div>

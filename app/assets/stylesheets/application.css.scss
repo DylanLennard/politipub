@@ -4,6 +4,7 @@
  *= require rails_bootstrap_forms
  *= require social-share-button
  */
+
  @import "social-share-button";
  @font-face {
   font-family: 'Open Sans';
@@ -190,6 +191,10 @@ nav {
 	width: 15%;
 	height: 100%;
 	padding: 10px;
+	.side-menu-icon {
+		width: 25%;
+		margin: 3%;
+	}
 }
 
 .menu-open {
@@ -419,86 +424,6 @@ nav {
 	width: 50%;
 }
 
-/* Dashboard */
-
-.dashboard_banner {
-	text-align: center;
-	background: rgb(16,60,81); 
-	/* Old browsers */
-		background: -moz-linear-gradient(45deg, rgba(16,60,81,1) 0%, rgba(21,87,112,1) 50%, rgba(67,124,123,1) 100%); 
-		/* FF3.6-15 */
-		background: -webkit-linear-gradient(45deg, rgba(16,60,81,1) 0%,rgba(21,87,112,1) 50%,rgba(67,124,123,1) 100%); 
-		/* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(45deg, rgba(16,60,81,1) 0%,rgba(21,87,112,1) 50%,rgba(67,124,123,1) 100%); 
-		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#103c51', endColorstr='#437c7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		margin: 0;
-	h1 {
-		font-weight: 200;
-		color: #ffffff;
-		padding: 5rem;
-		margin: 0;
-	}
-}
-
-.admin_account {
-	float:left;
-	margin: .5rem 4rem 0 0;
-	padding: 0;
-	text-decoration: none;
-	color: #000000;
-	&:hover {
-		color:lighten(#134665, 50%);
-	}
-
-}
-
-.account_settings {
-	float:right;
-	margin-top: .5rem;
-	padding: 0;
-	text-decoration: none;
-	color: #000000;
-	&:hover {
-		color:lighten(#134665, 50%);
-	}
-
-}
-
-.dashboard_body {
-	h1 {
-		color: #0d3552;
-		font-size: 2rem;
-		font-weight: 200;
-		padding-bottom: 1rem;
-		border-bottom: 1px solid black;
-	}
-	p, h4 {
-		font-weight: 200;
-		a {
-			color: #000000;
-			&:hover {
-				color:lighten(#134665, 50%);
-			}
-		}
-	}
-}
-
-.dashboard_row {
-	margin: 0;
-}
-
-.dashboard_column {
-	width: 100%;
-	p, h4 {
-		float: left;
-		margin-right: .5rem;
-	}
-	.dashboard_title {
-		font-weight: 600;
-		margin-right: .75rem;
-	}
-}
 
 /* Category Labels */
 

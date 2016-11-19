@@ -12,7 +12,7 @@ paginate articles under admin dashboard
 Add copyright and all rights reserved to bottom of page
 *** Mason's bio not linking (wasn't validated in local database)
 *** Adjust image dimensions on home page from 500 to 300 pixels
-Edit random article hyperlinks w/ no text decoration
+*** Edit random article hyperlinks w/ no text decoration
 local tag redirects to article not local tagged articles
 Elastic search to search multiple models - include categories
 *** If not search results are found, add a not found view

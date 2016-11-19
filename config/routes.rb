@@ -28,5 +28,6 @@ Rails.application.routes.draw do
   get 'sponsor', :to => 'pages#sponsor', :as => :pages_sponsor
   get 'ontap', :to => 'pages#ontap', :as => :pages_ontap
   get 'dashboard', :to => 'pages#dashboard', :as => :pages_dashboard
+  get 'articles_dashboard', to: 'pages#articles_dashboard', as: :pages_articles_dashboard
 
 end

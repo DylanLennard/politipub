@@ -3,7 +3,11 @@ class PagesController < ApplicationController
 	before_action :authenticate_admin!, only: [:dashboard]
 
 	def dashboard
-		@authors = Author.all
+		@authors = Author.limit(10)
+		@articles = Article.limit(10)
+	end
+
+	def articles_dashboard
 		@articles = Article.all
 	end
 
