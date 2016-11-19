@@ -19,6 +19,7 @@ gem 'aws-sdk', '< 2.0'
 gem 'sendgrid-ruby'
 gem 'social-share-button'
 gem "ckeditor"
+gem 'web-console', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'
