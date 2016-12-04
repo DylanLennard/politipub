@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
 
 	before_action :authenticate_admin!, except: [:index, :show]
-	before_action :find_category, only: [:show]
+	before_action :find_category, only: [:show, :destroy]
 	
 	def index
 	end
@@ -22,6 +22,11 @@ class CategoriesController < ApplicationController
 
 	def show
 		@category_articles = @category.articles
+	end
+
+	def destroy
+		@category.destroy
+		redirect_to :back
 	end
 
 	private

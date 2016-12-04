@@ -47,6 +47,8 @@ class OntapsController < ApplicationController
 	end
 
 	def destroy
+		@ontap.destroy
+		redirect_to :back
 	end
 
 	private
