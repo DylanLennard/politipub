@@ -1,9 +1,9 @@
 <div class="wrapper">
-	<h1 id="index-title">All Articles</h1>
-	<div class="clearfix">
+	<div class="clearfix search-title-container">
+		<h1 id="index-title">All Articles</h1>
 		<%= form_tag search_articles_path, method: :get, class: "searchbar", role: "search" do %>
 			<p>
-			  <%= text_field_tag :search, params[:search], class: "search-form" %>
+			  <%= text_field_tag :search, params[:search], placeholder: "Search Articles", class: "search-form" %>
 			  <%= submit_tag "Search", name: nil, class: "btn btn-primary searchbar" %>
 			</p>
 		<% end %>

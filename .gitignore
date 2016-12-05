@@ -16,3 +16,4 @@
 !/log/.keep
 /tmp
 log/development.log
+public/system

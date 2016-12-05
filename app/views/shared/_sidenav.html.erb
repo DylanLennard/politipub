@@ -1,0 +1,17 @@
+<nav class="side-menu">
+	<ul>
+		<li><%= link_to "Home", root_path %></li>
+		<li><%= link_to "All Articles", articles_path %></li>
+		<% Category.all.each do |category| %>
+			<li><%= link_to category.name, category %></li>
+		<% end %>
+		<div class="clearfix">
+			<%= image_tag("Email.png", class: "side-menu-icon") %>
+			<%= image_tag("Facebook.png", class: "side-menu-icon") %>
+			<%= image_tag("Google.png", class: "side-menu-icon") %>
+			<%= image_tag("linkedin.png", class: "side-menu-icon") %>
+			<%= image_tag("twitter.png", class: "side-menu-icon") %>
+			<%= image_tag("stumbleupon.svg", class: "side-menu-icon") %>
+		</div>
+	</ul>
+</nav>
