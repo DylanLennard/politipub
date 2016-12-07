@@ -1,0 +1,22 @@
+<table class="media-table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Title</th>
+			<th>Created</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @ontaps.each do |ontap| %>
+			<tr>
+				<td><%= ontap.id %></td>
+				<td><%= ontap.title %></td>
+				<td><%= time_ago_in_words(ontap.created_at) %> ago</td>
+				<td><%= link_to image_tag("edit.png"), edit_ontap_path(ontap) %></td>
+				<td><%= link_to image_tag("delete.png"), ontap_path(ontap), method: :delete, data: { confirm: "Are you sure?" } %> </td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

@@ -5,6 +5,8 @@ class PagesController < ApplicationController
 	def dashboard
 		@authors = Author.limit(10)
 		@articles = Article.limit(10)
+		@categories = Category.limit(10)
+		@ontaps = Ontap.limit(10)
 	end
 
 	def articles_dashboard

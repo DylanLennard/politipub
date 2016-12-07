@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
 
 	before_action :authenticate_admin!, except: [:index, :show]
-	before_action :find_category, only: [:show, :destroy]
+	before_action :find_category, only: [:show, :edit, :destroy, :update]
 	
 	def index
 	end
@@ -17,6 +17,17 @@ class CategoriesController < ApplicationController
 			redirect_to categories_path
 		else
 			render 'new'
+		end
+	end
+
+	def edit
+	end
+
+	def update
+		if @category.update(category_params)
+			redirect_to @category
+		else
+			render 'edit'
 		end
 	end
 

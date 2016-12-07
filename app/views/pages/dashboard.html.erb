@@ -3,49 +3,50 @@
 		<h1>Admin Dashboard</h1>
 	</div>
 </div>
-
-<div class="wrapper">
-	<div class="clearfix">
-		<%= link_to "Create A New Admin Account", new_admin_path, class: "admin_account" %>
-		<% if current_admin.superadmin? %>
-		<%= link_to "Create A New OnTap Article", new_ontap_path, class: "admin_account" %>
-		<%= link_to "Create A New Category", new_category_path, class: "admin_account" %>
-		<% end %>
-		<%= link_to "Account Settings", edit_admin_registration_path, class: "account_settings" %>
+<div class="dashboard-body wrapper" id="admin-dashboard">
+	<ul class="admin-tab-bar">
+		<li onclick="adminTabs('admin-articles');">
+			<p>Articles</p>
+		</li>
+		<li onclick="adminTabs('admin-authors');">
+			<p>Authors</p>
+		</li>
+		<li onclick="adminTabs('admin-categories');">
+			<p>Categories</p>
+		</li>
+		<li onclick="adminTabs('admin-ontaps');">
+			<p>OnTap Articles</p>
+		</li>
+	</ul>
+	<div id="admin-articles" class="admin-tab">
+		<h1>Articles</h1>
+		<h4><%= link_to "Add a new article", new_article_path %></h4>
+		<%= render 'pages/admin/articles' %>
+		<p><%= link_to "See all articles", pages_articles_dashboard_path %></p>
 	</div>
-	<div class="row clearfix">
-		<div class="col-50 dashboard_body">
-			<h1>Articles</h1>
-			<h4><%= link_to "Create a new article", new_article_path %></h4>
-			<% @articles.each do |article| %>
-				<div class="row clearfix dashboard_row">
-					<div class="dashboard_column">
-						<p class="dashboard_title"><%= article.title %><p>
-						<p><%= link_to "Show", article %></p>
-						<% if current_admin.id == article.admin_id && (article.published? == false) || current_admin.superadmin? %>
-							<p><%= link_to "Edit", edit_article_path(article) %></p>
-							<p><%= link_to "Delete", article, method: :delete, data: {confirm: "Are you sure you want to delete this article?"} %></p>
-						<% end %>
-					</div>
-				</div>
-			<% end %>
-			<p><%= link_to "See all articles", pages_articles_dashboard_path %></p>
-		</div>
-		<div class="col-50 dashboard_body">
-			<h1>Authors</h1>
-			<h4><%= link_to "Create new/edit profile", new_author_path %></h4>
-			<% @authors.each do |author| %>
-				<div class="row clearfix dashboard_row">
-					<div class="dashboard_column">
-						<p class="dashboard_title"><%= author.name %><p>
-						<p><%= link_to "Show", author %></p>
-						<% if current_admin.id == author.admin_id || current_admin.superadmin? %>
-							<p><%= link_to "Edit", edit_author_path(author) %></p>
-							<p><%= link_to "Delete", author, method: :delete, data: {confirm: "Are you sure you want to delete this author?"} %></p>
-						<% end %>
-					</div>
-				</div>
-			<% end %>
-		</div>
+	<div id="admin-authors" class="admin-tab">
+		<h1>Authors</h1>
+		<h4><%= link_to "Add a new author", new_author_path %></h4>
+		<%= render 'pages/admin/authors' %>
+	</div>
+	<div id="admin-categories" class="admin-tab">
+		<h1>Categories</h1>
+		<% if current_admin.superadmin? %>
+			<h4><%= link_to "Add a new category", new_category_path %></h4>
+		<%= render 'pages/admin/categories' %>
+		<% else %>
+			<p>For authorized administrators only</p>
+		<% end %>
+	</div>
+	<div id="admin-ontaps" class="admin-tab">
+		<h1>On Tap</h1>
+		<% if current_admin.superadmin? %>
+			<h4><%= link_to "Add a new On Tap article", new_ontap_path %></h4>
+			<%= render 'pages/admin/ontaps' %>
+		<% end %>
 	</div>
 </div>
+
+<script>
+	adminTabs('admin-articles');
+</script>

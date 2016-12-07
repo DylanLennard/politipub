@@ -27,3 +27,17 @@ Write about sponsor page
 Write or come up with image idea for sign up
 Come up with category ideas
 Email Daniel articles, article images, authors (full name, email, bio)
+
+
+-All Rights Reserved at bottom of page
+-Social media links on lefthand of square thing don't work
+XCapital letters from "On Tap" featured article don't show
+-Tumblr and personal website/blog links for authors
+-How do I delete an On Tap article?
+-Move search bars on Articles and On Tap
+-Messi picture for sponsor page and soldiers picture for Join Us page
+-Image on contact still not showing up
+-Add Brandon to About Us page using his profile's bio
+-Add site positions: Mason - Chief Creative Director; Daniel - Whatever you like homie; Dylan -Quality Control Manager; Brandon - Senior Beer Curator
+-Remove "election" from categories (and make it easier to remove categories like how it's simple to add them)
+-Add social media links to footer of page as well

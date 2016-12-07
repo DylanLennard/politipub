@@ -1,0 +1,18 @@
+<table class="media-table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @categories.each do |category| %>
+			<tr>
+				<td><%= category.name %></td>
+				<td><%= link_to image_tag("edit.png"), edit_category_path(category) %></td>
+				<td><%= link_to image_tag("delete.png"), category_path(category), method: :delete, data: { confirm: "Are you sure?" } %> </td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

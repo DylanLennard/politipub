@@ -21,7 +21,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :categories, only: [:index, :new, :create, :show]
+  resources :categories
 
   get 'about', :to => 'pages#about', :as => :pages_about
   get 'contact', :to => 'pages#contact', :as => :pages_contact

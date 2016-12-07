@@ -16,7 +16,7 @@
 
 	<div class="ontap_banner clearfix" style="background-image: url(<%=@ontap_banner.banner.url() %>)">
 		<div class="headline_block">
-			<h1><%= link_to @ontap_banner.title.capitalize, @ontap_banner %></h1>
+			<h1><%= link_to @ontap_banner.title, @ontap_banner %></h1>
 			<div id="author_title">
 				<h4><%= @ontap_banner.author.name %></h4>
 				<p><%= @ontap_banner.created_at.strftime("%B %d, %Y") %></p>
