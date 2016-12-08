@@ -45,3 +45,5 @@ X Author profile image set to small (cropped)
 X Fixed OnTap destroy method
 X Fixed the add author profile
 X Added social share to OnTap
+- Fix searchbar (small screens)
+- Admin dashboard articles, on taps, sort by time created

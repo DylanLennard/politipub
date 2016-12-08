@@ -18,7 +18,9 @@
 			<% end %>
 		<% end %>
 		<!-- social share -->
-		<%= social_share_button_tag(@article.title, :popup => "true", class: "share-button") %>
+		<div class="social-share-container">
+			<%= social_share_button_tag(@article.title, :popup => "true", class: "share-button") %>
+		</div>
 		<!-- Article Body -->
 		<div class="article-body">
 			<%= @article.body.html_safe %>
