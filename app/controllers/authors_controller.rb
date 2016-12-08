@@ -33,7 +33,11 @@ class AuthorsController < ApplicationController
 			@links = {
 				"twitter.png"=> @author.twitter_link,
 				"Google.png"=> @author.google_plus_link, 
-				"linkedin.png"=> @author.linkedin_link, "Facebook.png"=> @author.facebook_link,
+				"linkedin.png"=> @author.linkedin_link, 
+				"Facebook.png"=> @author.facebook_link,
+				"tumblr.png" => @author.tumblr_link,
+				"personal.png" => @author.personal_link
+
 			}
 		else
 			redirect_to :back
@@ -64,7 +68,7 @@ class AuthorsController < ApplicationController
 
 	def author_params
 		params.require(:author).permit(:name, :profile_image, :bio, :political_views, 
-			:google_plus_link, :twitter_link, :linkedin_link, :facebook_link, :email_link, :admin_id,
+			:google_plus_link, :twitter_link, :linkedin_link, :facebook_link, :email_link, :tumblr_link, :personal_link, :admin_id,
 			:validated
 			)
 	end
