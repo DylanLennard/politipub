@@ -163,7 +163,28 @@
 
 /* Contact Page */
 
-#contact_image {
+.contact-image {
 	margin: 0;
-	width: 50%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-image: image-url('mail.jpeg');
+	.contact-image-container {
+		color: #fff;
+		padding: 8rem;
+		text-align: center;
+		h4 {
+			font-size: 28px;
+		}
+		h4, p {
+			text-shadow: 9px 4px 8px rgba(0, 0, 0, 1);
+		}
+		a {
+			color: #fff;
+			&:hover {
+				color:lighten(#134665, 50%);
+			}
+		}
+	}
 }

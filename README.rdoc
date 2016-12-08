@@ -32,8 +32,8 @@ Email Daniel articles, article images, authors (full name, email, bio)
 - All Rights Reserved at bottom of page
 - Social media links on lefthand of square thing don't work
 X Capital letters from "On Tap" featured article don't show
-- Tumblr and personal website/blog links for authors
-- How do I delete an On Tap article?
+X Tumblr and personal website/blog links for authors
+X How do I delete an On Tap article?
 X Move search bars on Articles and On Tap
 - Messi picture for sponsor page and soldiers picture for Join Us page
 - Image on contact still not showing up
@@ -44,3 +44,4 @@ X Remove "election" from categories (and make it easier to remove categories lik
 X Author profile image set to small (cropped)
 X Fixed OnTap destroy method
 X Fixed the add author profile
+X Added social share to OnTap

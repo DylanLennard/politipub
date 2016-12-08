@@ -17,6 +17,7 @@
 				</ul>
 			<% end %>
 		<% end %>
+		<%= social_share_button_tag(@ontap.title, :popup => "true", class: "share-button") %>
 		<div class="article-body">
 			<%= @ontap.body.html_safe %>
 			<p><em> - <%= @ontap.author.name %></em></p>
