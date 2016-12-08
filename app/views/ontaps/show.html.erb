@@ -3,7 +3,7 @@
 <div id="links">
 	<div class="wrapper_skinny">
 		<h1><%= @ontap.title.upcase %></h1>
-		<%= link_to image_tag(@ontap.author.profile_image, class: "author-image"), @ontap.author %>
+		<%= link_to image_tag(@ontap.author.profile_image.url(:small), class: "author-image"), @ontap.author %>
 		<div class="inline clearfix wrapper">
 			<h4><%= link_to @ontap.author.name, @ontap.author %></h4>
 			<h5><%= @ontap.created_at.strftime("%B %d, %Y") %></h5>
