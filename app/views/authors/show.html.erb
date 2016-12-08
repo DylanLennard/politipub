@@ -1,7 +1,7 @@
 <div class="wrapper profile_block">
 
 	<h1 id="profile_name"><%= @author.name %></h1>
-	<%= image_tag(@author.profile_image, class: "profile_picture") %>
+	<%= image_tag(@author.profile_image.url(:small), class: "profile_picture") %>
 		<div class="author_contact">
 		<% @links.each do |k,v| %>
 			<% unless v.nil? || v.blank? %>

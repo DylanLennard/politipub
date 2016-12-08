@@ -1,5 +1,5 @@
 class OntapsController < ApplicationController
-	before_action :find_ontap, only: [:show, :update, :edit, :delete]
+	before_action :find_ontap, only: [:show, :update, :edit, :destroy]
 	before_action :authenticate_admin!, except: [:index, :home, :show, :search]
 	before_action :ontap_show, only: [:show]
 

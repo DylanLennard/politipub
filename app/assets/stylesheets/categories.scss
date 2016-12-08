@@ -1,0 +1,27 @@
+/* Category Labels */
+
+.category_button {
+	color: #ffffff !important;
+	padding: 2px 12px;
+	margin-left: 2px;
+	border-radius: 20px;
+	background-color:#0f0f0f;
+	&:hover{
+		background-color: lighten(#134665, 25%) !important;
+	} 
+}
+
+#local {
+	background-color: #082136;
+}
+
+#world {
+	background-color: #0d3552;
+}
+
+.category_label {
+	margin: 1rem 0 1rem 0 !important;
+	span {
+		margin-right: .5rem;
+	}
+}

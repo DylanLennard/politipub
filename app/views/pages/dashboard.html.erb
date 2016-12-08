@@ -4,6 +4,10 @@
 	</div>
 </div>
 <div class="dashboard-body wrapper" id="admin-dashboard">
+	<div class="clearfix">
+		<%= link_to "Create A New Admin Account", new_admin_path, class: "account" %>
+		<%= link_to "Account Settings", edit_admin_registration_path, class: "account" %>
+	</div>
 	<ul class="admin-tab-bar">
 		<li onclick="adminTabs('admin-articles');">
 			<p>Articles</p>
@@ -26,7 +30,7 @@
 	</div>
 	<div id="admin-authors" class="admin-tab">
 		<h1>Authors</h1>
-		<h4><%= link_to "Add a new author", new_author_path %></h4>
+		<h4><%= link_to "Add/edit your author profile", new_author_path %></h4>
 		<%= render 'pages/admin/authors' %>
 	</div>
 	<div id="admin-categories" class="admin-tab">
