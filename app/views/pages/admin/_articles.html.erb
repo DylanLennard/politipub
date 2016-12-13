@@ -1,8 +1,8 @@
 <table class="media-table">
 	<thead>
 		<tr>
-			<th>ID</th>
 			<th>Title</th>
+			<th>Author</th>
 			<th>Created</th>
 			<th>Edit</th>
 			<th>Delete</th>
@@ -11,8 +11,8 @@
 	<tbody>
 		<% @articles.each do |article| %>
 			<tr>
-				<td><%= article.id %></td>
 				<td><%= article.title %></td>
+				<td><%= article.author.name %></td>
 				<td><%= time_ago_in_words(article.created_at) %> ago</td>
 				<% if current_admin.id == article.admin_id && (article.published? == false) || current_admin.superadmin? %>
 					<td><%= link_to image_tag("edit.png"), edit_article_path(article) %></td>

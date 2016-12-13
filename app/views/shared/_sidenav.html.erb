@@ -5,13 +5,13 @@
 		<% Category.all.each do |category| %>
 			<li><%= link_to category.name, category %></li>
 		<% end %>
-		<div class="clearfix">
-			<%= image_tag("Email.png", class: "side-menu-icon") %>
-			<%= image_tag("Facebook.png", class: "side-menu-icon") %>
-			<%= image_tag("Google.png", class: "side-menu-icon") %>
-			<%= image_tag("linkedin.png", class: "side-menu-icon") %>
-			<%= image_tag("twitter.png", class: "side-menu-icon") %>
-			<%= image_tag("stumbleupon.svg", class: "side-menu-icon") %>
+		<div class="clearfix side-bar-links">
+			<%= link_to image_tag("Email.png", class: "side-menu-icon"), "mailto:politipub@gmail.com?Subject=" %>
+			<%= link_to image_tag("Facebook.png", class: "side-menu-icon"), url_with_protocol("www.facebook.com/politipub") %>
+			<%= link_to image_tag("Google.png", class: "side-menu-icon"), url_with_protocol("www.google.com") %>
+			<%= link_to image_tag("linkedin.png", class: "side-menu-icon"), url_with_protocol("www.linkedin.com") %>
+			<%= link_to image_tag("twitter.png", class: "side-menu-icon"), url_with_protocol("www.twitter.com/politipub") %>
+			<%= link_to image_tag("tumblr.png", class: "side-menu-icon"), url_with_protocol("www.politipub.tumblr.com/") %>
 		</div>
 	</ul>
 </nav>

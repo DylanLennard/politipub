@@ -47,3 +47,16 @@ X Fixed the add author profile
 X Added social share to OnTap
 - Fix searchbar (small screens)
 - Admin dashboard articles, on taps, sort by time created
+
+X Sign Up page text needs to spell check "contributor" and add "to our site!" after that word to end the sentence
+-Sponsor page needs an image of some sort
+X What's with the unorganized ID numbers for articles and authors?
+X When you click on the topics from the sidebar the oldest article shows first, we should make it the newest on top
+X All the capital letters aren't showing up for articles on the homepage. Maybe shift to all caps?
+-When I try to add a new article the text insert box is much smaller and doesn't show the options to edit fonts and stuff for some reason
+X Capitalize "Personal Website/Blog" on the author bio edit page
+Xhen looking at short description of articles on topic pages, <p> begins and ends the text
+XOn the "check out more from politipub" on bottom of page recommending other articles the castle image is noticeably smaller than the prague and rene pictures. Can we make it so they are more uniform?
+-I still need to develop a Terms of Service and Privacy Policy page
+XSocial media links on pop out side tab don't click
+-"Find Us On Social Media" with links needed on bottom of page

@@ -25,7 +25,7 @@
 			<div class="row clearfix">
 				<%= link_to image_tag(article.banner_image.url(:medium), class: "thumbnail_image"), article %>
 				<div class="thumbnail_article">
-					<h2><%= link_to article.title.capitalize, article %></h2>
+					<h2><%= link_to article.title, article %></h2>
 					<div class="inline clearfix">
 						<h4><%= article.author.name %></h4><h5>| <%= article.created_at.strftime("%B %d, %Y") %></h5>
 					</div>
@@ -36,14 +36,15 @@
 					<% end %>
 				</div>
 			</div>
-		<% end %>
-	<% end %>
+		<% end %> <!-- end conditional -->
+	<% end %> <!-- end 'each do' -->
 
-<!-- See More -->
-<div class="wrapper_skinny clearfix">
-	<div class="pull_right">
-		<h3><%=link_to "See More >>", articles_path %></h3>
+	<!-- See More -->
+
+	<div class="wrapper_skinny clearfix">
+		<div class="pull_right">
+			<h3><%=link_to "See More >>", articles_path %></h3>
+		</div>
 	</div>
-</div>
 
 </div>

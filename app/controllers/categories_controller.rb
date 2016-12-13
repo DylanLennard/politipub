@@ -32,7 +32,7 @@ class CategoriesController < ApplicationController
 	end
 
 	def show
-		@category_articles = @category.articles
+		@category_articles = @category.articles.order("created_at DESC")
 	end
 
 	def destroy
