@@ -8,7 +8,6 @@
 			<%= link_to image_tag(category.image(:medium), class: "category-article-image"), category %>
 			<h2><%= link_to category.name, category %></h2>
 			<p>Articles (<%= category.articles.count %>)</p>
-			<p><%= @category.description %></p>
 		</div>
 	</div>
 <% end %>
