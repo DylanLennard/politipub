@@ -45,7 +45,7 @@ X Author profile image set to small (cropped)
 X Fixed OnTap destroy method
 X Fixed the add author profile
 X Added social share to OnTap
-- Fix searchbar (small screens)
+X Fix searchbar (small screens)
 X Admin dashboard articles, on taps, sort by time created
 
 X Sign Up page text needs to spell check "contributor" and add "to our site!" after that word to end the sentence
@@ -53,10 +53,19 @@ X Sign Up page text needs to spell check "contributor" and add "to our site!" af
 X What's with the unorganized ID numbers for articles and authors?
 X When you click on the topics from the sidebar the oldest article shows first, we should make it the newest on top
 X All the capital letters aren't showing up for articles on the homepage. Maybe shift to all caps?
--When I try to add a new article the text insert box is much smaller and doesn't show the options to edit fonts and stuff for some reason
+- When I try to add a new article the text insert box is much smaller and doesn't show the options to edit fonts and stuff for some reason
 X Capitalize "Personal Website/Blog" on the author bio edit page
 Xhen looking at short description of articles on topic pages, <p> begins and ends the text
 XOn the "check out more from politipub" on bottom of page recommending other articles the castle image is noticeably smaller than the prague and rene pictures. Can we make it so they are more uniform?
 -I still need to develop a Terms of Service and Privacy Policy page
 XSocial media links on pop out side tab don't click
--"Find Us On Social Media" with links needed on bottom of page
+X"Find Us On Social Media" with links needed on bottom of page
+
+XBoth P's needs to be capitalized in PolitiPub on footer above social media links and in small words at bottom, Sign Up page, check out more from politipub on bottom of articles, browser tabs
+XSaying PolitiPub twice in the Sign Up page seems redundant, should change to "Please contact our team at politipub@gmail.com if you're interested in becoming a contributor to our site!"
+-Can we lower the blue footer on the sponsor page like how it is on the contact page?
+-Let's replace the LinkedIn link on the bottom with our Tumblr since there is no LinkedIn at the moment
+XChange my title to Chief Executive Officer
+-Add co-founder to Dylan's bio
+-Pictures of Sam and Niko (will send cute pic)
+-I love the pop out tab in the top left corner but am afraid people might not notice it. Since it contains important links to topics, could you design a tasteful "click here!" arrow graphic type thing pointing to it?

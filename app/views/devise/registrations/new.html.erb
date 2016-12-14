@@ -1,4 +1,4 @@
-<div class="wrapper_super_skinny">
+<div class="wrapper_super_skinny signup-block">
 <% if admin_signed_in? %>
   <h2 class="form_title">Sign up</h2>
 
@@ -28,6 +28,7 @@
   <%= render "devise/shared/links" %>
   <% else %>
     <h2 class="form_title">Sign up</h2>
-    <p>Please contact Politpub at politipub@gmail.com if you're interested in becoming a contributor to our site!</p>
+    <p>Please contact our team at politipub@gmail.com if you're interested in becoming a contributor to our site!</p>
+    <%= image_tag('duff.jpg', class: "duff-image") %>
   <%end %>
 </div>

@@ -25,3 +25,27 @@
 		margin-right: .5rem;
 	}
 }
+
+.category-block {
+	width: 45%;
+	float:left;
+	.category-article-image {
+		width:100%;
+	}
+	h2 {
+		font-size: 40px;
+		font-weight: 300;
+		margin: 0;
+		a {
+			text-decoration: none;
+			color: #000;
+			&:hover {
+				color:lighten(#134665, 50%);
+			}
+			
+		}
+	}
+	p {
+		margin: .5rem 0;
+	}
+}
