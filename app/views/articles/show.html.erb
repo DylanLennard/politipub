@@ -37,7 +37,7 @@
 <!-- Random Articles -->
 <div class="wrapper_skinny check_out">
 	<h3>Check out more from Politipub</h4>
-	<div class="row">
+	<div class="row clearfix">
 		<% @random_article.each do |article| %>
 		<div class="col-3 random_article_links">
 			<%= link_to image_tag(article.banner_image.url(:small)), article %>
