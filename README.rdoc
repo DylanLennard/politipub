@@ -1,15 +1,15 @@
 Links to social media need to be checked
-Change Mason's about me
-search results view needs to be fixed
-add pagination to ontap
+*** Change Mason's about me
+*** search results view needs to be fixed
+*** add pagination to ontap
 Edit picture of soccer jersey with "your logo here" for sponsor page
-Tabs for politics, culture, beer, travel (category titles) 
+*** Tabs for politics, culture, beer, travel (category titles) 
 Politipub social media account links underneath login
 *** change "email me" to "email" on author profiles
 paginate articles under admin dashboard
 *** authenticate masons profile
 *** article index - needs space between tags and description and see more
-Add copyright and all rights reserved to bottom of page
+*** Add copyright and all rights reserved to bottom of page
 *** Mason's bio not linking (wasn't validated in local database)
 *** Adjust image dimensions on home page from 500 to 300 pixels
 *** Edit random article hyperlinks w/ no text decoration
@@ -29,14 +29,14 @@ Come up with category ideas
 Email Daniel articles, article images, authors (full name, email, bio)
 
 
-- All Rights Reserved at bottom of page
-- Social media links on lefthand of square thing don't work
+X All Rights Reserved at bottom of page
+X Social media links on lefthand of square thing don't work
 X Capital letters from "On Tap" featured article don't show
 X Tumblr and personal website/blog links for authors
 X How do I delete an On Tap article?
 X Move search bars on Articles and On Tap
 - Messi picture for sponsor page and soldiers picture for Join Us page
-- Image on contact still not showing up
+X Image on contact still not showing up
 X Add Brandon to About Us page using his profile's bio
 X Add site positions: Mason - Chief Creative Director; Daniel - Whatever you like homie; Dylan -Quality Control Manager; Brandon - Senior Beer Curator
 X Remove "election" from categories (and make it easier to remove categories like how it's simple to add them)
@@ -46,7 +46,7 @@ X Fixed OnTap destroy method
 X Fixed the add author profile
 X Added social share to OnTap
 - Fix searchbar (small screens)
-- Admin dashboard articles, on taps, sort by time created
+X Admin dashboard articles, on taps, sort by time created
 
 X Sign Up page text needs to spell check "contributor" and add "to our site!" after that word to end the sentence
 -Sponsor page needs an image of some sort

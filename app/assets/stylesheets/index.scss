@@ -71,15 +71,20 @@
 .searchbar {
 	float: right;
 	display: inline;
+	width: 35%;
 	.search-form {
 		padding: 5px 12px;
-		margin-right: 2px;
-		min-width: 250px;
+		margin:0;
+		width: 60%;
+		float: left;
 	}
 	.btn {
 		background-color: #728da5;
 		border: 1px solid #728da5;
 		margin: 0;
+		float: left;
+		width: 25%;
+		height: 36px;
 		-webkit-transition: all .3s ease-in-out;
   		-moz-transition: all .3s ease-in-out;
   		-o-transition: all .3s ease-in-out;
