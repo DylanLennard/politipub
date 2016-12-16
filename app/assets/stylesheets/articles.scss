@@ -155,8 +155,14 @@ $white: #ffffff;
 }
 
 .wrapper_skinny {
-	.pull_right{
+	.see-more-home{
+		text-align: center;
+		margin: 0;
 		a{
+			border: 1px solid #000;
+			padding: 3px 12px;
+			font-size: 15px;
+			border-radius: 20px;
 			font-weight:200;
 			color: #000000;
 			text-decoration: none;
@@ -166,6 +172,7 @@ $white: #ffffff;
  			transition: all .2s ease-in-out;
 			&:hover {
 				color: lighten(#134665, 50%);
+				border: 1px solid lighten(#134665, 50%);
 			}
 		}
 	}

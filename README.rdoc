@@ -66,6 +66,6 @@ XSaying PolitiPub twice in the Sign Up page seems redundant, should change to "P
 -Can we lower the blue footer on the sponsor page like how it is on the contact page?
 -Let's replace the LinkedIn link on the bottom with our Tumblr since there is no LinkedIn at the moment
 XChange my title to Chief Executive Officer
--Add co-founder to Dylan's bio
+XAdd co-founder to Dylan's bio
 -Pictures of Sam and Niko (will send cute pic)
 -I love the pop out tab in the top left corner but am afraid people might not notice it. Since it contains important links to topics, could you design a tasteful "click here!" arrow graphic type thing pointing to it?
