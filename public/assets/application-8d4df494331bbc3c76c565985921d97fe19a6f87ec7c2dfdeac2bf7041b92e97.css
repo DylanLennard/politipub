@@ -1,0 +1,2197 @@
+/** Variables **/
+/* News Banner */
+/* line 8, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/* line 17, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block {
+  background: rgba(50, 83, 112, 0.7);
+  width: 50%;
+  float: left;
+  margin: 10rem 0 4rem 4rem;
+  -webkit-box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+  box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+}
+/* line 24, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block h1 {
+  padding: 1rem 0 0 0rem;
+  margin: 0 0 .5rem 1rem;
+}
+/* line 28, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block a {
+  color: #ffffff;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  width: 80%;
+}
+/* line 34, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block a:hover {
+  color: #8dc7ea;
+}
+/* line 38, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block #author_title {
+  display: inline-block;
+  margin: 0 0 .25rem 0;
+}
+/* line 41, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block #author_title h4 {
+  padding-left: 1rem;
+  margin: 0;
+  float: left;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+/* line 49, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block #author_title p {
+  padding: 0 0 0 .5rem;
+  float: left;
+  margin: .38rem 0 -.5rem 0;
+  color: #ffffff;
+  font-size: .8rem;
+}
+/* line 57, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block p {
+  color: white;
+  padding: 0 2rem 1rem 1rem;
+  margin: -.25rem 0 0 0;
+  font-weight: 200;
+}
+/* line 63, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block #see_more {
+  color: #858ea3;
+  font-weight: 600;
+  font-size: .8rem;
+  text-decoration: none;
+  border: none;
+}
+/* line 69, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.banner .headline_block #see_more:hover {
+  color: #8dc7ea;
+}
+
+/* Index Body */
+/* line 79, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+#more_stories {
+  font-weight: 500;
+  width: 75%;
+  border-bottom: 1px solid #000000;
+  margin-top: 3.5rem;
+}
+
+/* line 87, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_image {
+  float: left;
+  width: 45%;
+  margin: .5rem 7% 1rem 0;
+  -webkit-box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+  box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 97, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_image:hover {
+  opacity: .7;
+  transform: scale(1.02);
+}
+/* line 102, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article {
+  margin: 0;
+  float: left;
+  width: 45%;
+}
+/* line 106, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article h2, .row .thumbnail_article h4, .row .thumbnail_article h5, .row .thumbnail_article p {
+  margin: 0;
+}
+/* line 109, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: .1rem;
+}
+/* line 113, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article h2:hover {
+  color: #8dc7ea;
+}
+/* line 117, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article h4, .row .thumbnail_article p {
+  font-weight: 300;
+}
+/* line 120, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article h4 {
+  color: #728da5;
+  font-size: 1.2rem;
+}
+/* line 124, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article .inline {
+  margin-bottom: .5rem;
+}
+/* line 126, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article .inline h4 {
+  float: left;
+}
+/* line 129, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article .inline h5 {
+  float: left;
+  margin: 5px 0 0 5px;
+  font-weight: 200;
+}
+/* line 136, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article p {
+  color: #828283;
+  font-size: .8rem;
+}
+/* line 141, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article a {
+  text-decoration: none;
+  color: #000000;
+}
+/* line 144, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article a:hover {
+  color: #8dc7ea;
+}
+/* line 149, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.row .thumbnail_article #see_more {
+  color: #858ea3;
+  padding-top: 1.3rem;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+/* line 159, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.wrapper_skinny .see-more-home {
+  text-align: center;
+  margin: 0;
+}
+/* line 162, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.wrapper_skinny .see-more-home a {
+  border: 1px solid #000;
+  padding: 3px 12px;
+  font-size: 15px;
+  border-radius: 20px;
+  font-weight: 200;
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+/* line 174, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.wrapper_skinny .see-more-home a:hover {
+  color: #8dc7ea;
+  border: 1px solid #8dc7ea;
+}
+
+/* line 184, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.random_article_links h4 a, .random_article_links p a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 187, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.random_article_links h4 a:hover, .random_article_links p a:hover {
+  color: #8dc7ea;
+}
+
+/* line 194, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/articles.scss */
+.social-share-container {
+  margin-top: 1.5rem;
+}
+/* line 1, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.profile_block {
+  background-color: #ffffff;
+  padding: 1rem 1rem 3.5rem 1rem;
+  text-align: center;
+  margin: 4.5rem auto 3rem auto !important;
+  -webkit-box-shadow: 3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow: 3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+  box-shadow: 3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+}
+/* line 9, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.profile_block .profile_picture {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+/* line 14, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.profile_block #profile_name {
+  color: #0d3552;
+  width: 50%;
+  font-size: 2.5rem;
+  border-bottom: 1px solid black;
+  font-weight: 200;
+  margin: .5rem auto 1rem auto;
+  padding-bottom: 1rem;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.05);
+}
+/* line 24, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.profile_block .author_contact {
+  margin-bottom: 1rem;
+}
+/* line 27, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.profile_block h4 {
+  border-bottom: 1px solid #A2A2A2;
+  width: 30%;
+  margin: .25rem auto;
+  padding-bottom: .2rem;
+}
+/* line 33, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.profile_block .author_bio {
+  width: 80%;
+  margin: 1rem auto;
+}
+/* line 36, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.profile_block .author_bio p {
+  margin: .3rem 0 1.25rem 0;
+}
+
+/* line 43, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.wrapper .author_name {
+  color: #0d3552;
+  font-size: 2rem;
+  min-width: 60%;
+  font-weight: 200;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+  margin: .5rem 0 1rem 0;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.05);
+}
+/* line 53, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.wrapper .article_profile_block {
+  width: 20%;
+  margin: 1rem 5% 2rem 0;
+  float: left;
+}
+/* line 57, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.wrapper .article_profile_block .profile_article_image {
+  width: 100%;
+  float: left;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 64, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.wrapper .article_profile_block .profile_article_image:hover {
+  opacity: .7;
+  transform: scale(1.02);
+}
+/* line 69, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.wrapper .article_profile_block p {
+  width: 100%;
+  float: left;
+  font-size: .7rem;
+  margin: 0;
+}
+/* line 74, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.wrapper .article_profile_block p a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+}
+/* line 78, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/author_show.scss */
+.wrapper .article_profile_block p a:hover {
+  color: #8dc7ea;
+}
+/* Category Labels */
+/* line 4, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category_button {
+  color: #ffffff !important;
+  padding: 2px 12px;
+  margin-left: 2px;
+  border-radius: 20px;
+  background-color: #0f0f0f;
+}
+/* line 10, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category_button:hover {
+  background-color: #2790d0 !important;
+}
+
+/* line 15, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+#local {
+  background-color: #082136;
+}
+
+/* line 19, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+#world {
+  background-color: #0d3552;
+}
+
+/* line 23, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category_label {
+  margin: 1rem 0 1rem 0 !important;
+}
+/* line 25, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category_label span {
+  margin-right: .5rem;
+}
+
+/* line 30, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category-block {
+  width: 45%;
+  float: left;
+}
+/* line 33, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category-block .category-article-image {
+  width: 100%;
+}
+/* line 36, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category-block h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+}
+/* line 40, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category-block h2 a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 43, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category-block h2 a:hover {
+  color: #8dc7ea;
+}
+/* line 49, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/categories.scss */
+.category-block p {
+  margin: .5rem 0;
+}
+/* line 1, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.search-title-container {
+  margin-top: 2.5rem;
+}
+
+/* line 5, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.index-title {
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 1px solid black;
+  margin-top: .5rem;
+  float: left;
+}
+
+/* line 14, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  width: 45%;
+}
+/* line 19, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block .thumbnail_image {
+  width: 45%;
+}
+/* line 22, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block h2, .article-block h4, .article-block h5, .article-block p {
+  margin: 0;
+}
+/* line 25, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: .1rem;
+}
+/* line 29, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block h2:hover {
+  color: #8dc7ea;
+}
+/* line 33, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block h4, .article-block p {
+  font-weight: 300;
+}
+/* line 36, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block h4 {
+  color: #728da5;
+  font-size: 1.2rem;
+}
+/* line 40, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block .inline {
+  margin-bottom: .5rem;
+}
+/* line 42, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block .inline h4 {
+  float: left;
+}
+/* line 45, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block .inline h5 {
+  float: left;
+  margin: 5px 0 0 5px;
+  font-weight: 200;
+}
+/* line 51, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block p {
+  color: #828283;
+  font-size: .8rem;
+}
+/* line 56, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block a {
+  text-decoration: none;
+  color: #000000;
+}
+/* line 59, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block a:hover {
+  color: #8dc7ea;
+}
+/* line 63, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.article-block #see_more {
+  color: #858ea3;
+  padding-top: 1.3rem;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+/* line 71, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.searchbar {
+  float: right;
+  display: inline;
+  width: 35%;
+}
+/* line 75, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.searchbar .search-form {
+  padding: 5px 12px;
+  margin: 0;
+  width: 60%;
+  float: left;
+}
+/* line 81, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.searchbar .btn {
+  background-color: #728da5;
+  border: 1px solid #728da5;
+  margin: 0;
+  float: left;
+  width: 25%;
+  height: 36px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 92, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/index.scss */
+.searchbar .btn:hover {
+  background-color: #78bce6;
+  border: 1px solid #78bce6;
+}
+/* line 2, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/new.scss */
+.wrapper_skinny .form_title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: 1px solid #000000;
+}
+
+/* line 11, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/new.scss */
+.control-label {
+  font-weight: 700;
+}
+
+/* line 15, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/new.scss */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* line 19, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/new.scss */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+/* line 35, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/new.scss */
+.text_area {
+  min-height: 300px;
+}
+
+/* line 39, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/new.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+/* line 44, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/new.scss */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/* line 6, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+}
+/* line 16, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block {
+  background: rgba(50, 83, 112, 0.7);
+  width: 50%;
+  float: right;
+  text-align: right;
+  margin: 12rem 4rem 2rem 0;
+  -webkit-box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+  box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+}
+/* line 24, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block h1 {
+  padding: 1rem 0 0 0rem;
+  margin: 0 1rem .5rem 0;
+}
+/* line 28, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block a {
+  color: #ffffff;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  width: 80%;
+}
+/* line 34, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block a:hover {
+  color: #8dc7ea;
+}
+/* line 38, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block #author_title {
+  display: inline-block;
+  margin: 0 1rem .25rem 0;
+}
+/* line 41, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block #author_title h4 {
+  padding-left: 1rem;
+  margin: 0;
+  float: left;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+/* line 49, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block #author_title p {
+  padding: 0 0 0 .5rem;
+  float: left;
+  margin: .38rem 0 -.5rem 0;
+  color: #ffffff;
+  font-size: .8rem;
+}
+/* line 57, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block p {
+  color: white;
+  padding: 0 2rem 1rem 0;
+  margin: 0 0 0 0;
+  font-weight: 200;
+}
+/* line 63, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block #see_more {
+  color: #858ea3;
+  font-weight: 600;
+  font-size: .8rem;
+  text-decoration: none;
+  border: none;
+  margin-right: -.75rem;
+}
+/* line 70, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_banner .headline_block #see_more:hover {
+  color: #8dc7ea;
+}
+
+/* line 79, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_body_title h1 {
+  font-weight: 200;
+  width: 75%;
+  border-bottom: 1px solid #000000;
+  margin-top: 3.5rem;
+}
+
+/* line 87, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_body {
+  margin-top: 3rem !important;
+}
+/* line 90, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/ontaps.scss */
+.ontap_body .row .thumbnail_image {
+  width: 40%;
+}
+/* Dashboard */
+/* line 8, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard_banner {
+  text-align: center;
+  background: #103c51;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #103c51 0%, #155770 50%, #437c7b 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #103c51 0%, #155770 50%, #437c7b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #103c51 0%, #155770 50%, #437c7b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#103c51', endColorstr='#437c7b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  margin: 0;
+}
+/* line 20, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard_banner h1 {
+  font-weight: 200;
+  color: #ffffff;
+  padding: 6rem 0;
+  margin: 0;
+}
+
+/* line 28, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.account {
+  float: left;
+  margin: .5rem 4rem 0 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000000;
+}
+/* line 34, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.account:hover {
+  color: #8dc7ea;
+}
+
+/* line 40, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.account_settings {
+  float: right;
+  margin-top: .5rem;
+  padding: 0;
+  text-decoration: none;
+  color: #000000;
+}
+/* line 46, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.account_settings:hover {
+  color: #8dc7ea;
+}
+
+/* line 52, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard-body {
+  text-align: center;
+  min-height: 600px;
+}
+/* line 56, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard-body ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 2rem;
+  font-size: 20px;
+}
+/* line 61, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard-body ul li p {
+  border-bottom: 1px solid #000;
+}
+/* line 63, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard-body ul li p:hover {
+  color: #9BC4EC;
+  cursor: pointer;
+}
+/* line 70, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard-body .admin-tab {
+  display: none;
+}
+/* line 74, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard-body table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 79, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard-body td, .dashboard-body th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+/* line 84, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.dashboard-body td a img, .dashboard-body th a img {
+  width: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 93, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+#article_dashboard_block {
+  margin-top: 2.5rem;
+}
+
+/* About Page */
+/* line 99, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_banner {
+  min-height: 350px;
+  background: url(/assets/about_banner-271cfca6618b445c2592b64ef55d347ddad1001db30ee8da3eb8e635d1b764e5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+  box-shadow: 10px 15px 40px -8px rgba(0, 0, 0, 0.55);
+}
+
+/* line 109, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.mission_statement {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* line 112, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.mission_statement .about_title {
+  font-weight: 200;
+  border-bottom: 1px solid black;
+  margin: 2rem 0 2rem 0 !important;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+/* line 119, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.mission_statement #beer {
+  height: 45px;
+}
+
+/* line 125, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body {
+  text-align: center;
+}
+/* line 127, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body h1 {
+  font-weight: 200;
+  border-bottom: 1px solid black;
+  margin: 2rem 0 2rem 10%;
+  padding-bottom: 1rem;
+  max-width: 80%;
+}
+/* line 134, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body .row {
+  margin: 3.5rem 0;
+}
+/* line 136, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body .row .col-16 {
+  float: left;
+  width: 16%;
+  padding: 0 7%;
+}
+/* line 140, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body .row .col-16 img {
+  border-radius: 50%;
+  max-width: 100%;
+  margin-top: 4rem;
+}
+/* line 146, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body .row .col-66 {
+  float: left;
+  width: 66%;
+}
+/* line 149, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body .row .col-66 h2 {
+  font-weight: 400;
+  margin-bottom: .25rem;
+}
+/* line 153, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body .row .col-66 .about-me-title {
+  font-size: 18px;
+  margin-bottom: .5rem;
+  color: #5b5b5b;
+}
+/* line 158, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.about_body .row .col-66 p {
+  margin: 0;
+}
+
+/* line 165, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.cat-block {
+  width: 48%;
+  float: left;
+  margin: 0 1%;
+}
+
+/* Contact Page */
+/* line 173, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.contact-image {
+  margin: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/assets/mail-43e37466f8b2774d4ea690dd2b3bbc221f51434e3b8c47275cfd91747ae72d17.jpg);
+}
+/* line 180, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.contact-image .contact-image-container {
+  color: #fff;
+  padding: 8rem;
+  text-align: center;
+}
+/* line 184, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.contact-image .contact-image-container h4 {
+  font-size: 28px;
+}
+/* line 187, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.contact-image .contact-image-container h4, .contact-image .contact-image-container p {
+  text-shadow: 9px 4px 8px black;
+}
+/* line 190, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.contact-image .contact-image-container a {
+  color: #fff;
+}
+/* line 192, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.contact-image .contact-image-container a:hover {
+  color: #8dc7ea;
+}
+
+/** Sign Up **/
+/* line 201, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.signup-block {
+  min-height: 500px;
+}
+/* line 203, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/pages.scss */
+.signup-block .duff-image {
+  margin: 0 70%;
+}
+/* line 1, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links {
+  margin: -20% 0 0 0;
+  padding: 1rem 0 .5rem 0;
+}
+/* line 4, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  -webkit-box-shadow: 3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow: 3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+  box-shadow: 3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+}
+/* line 12, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny h1 {
+  color: #0d3552;
+  font-size: 3rem;
+  min-width: 60%;
+  font-weight: 200;
+  margin: .5rem 0 1rem 0;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.05);
+}
+/* line 20, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .inline {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.5rem;
+}
+/* line 24, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .inline h4, #links .wrapper_skinny .inline h5 {
+  margin: 0;
+}
+/* line 27, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .inline h4 {
+  color: #728da5;
+}
+/* line 29, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .inline h4 a {
+  text-decoration: none;
+  color: #000000;
+}
+/* line 32, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .inline h4 a:hover {
+  color: #8dc7ea;
+}
+/* line 37, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .inline h5 {
+  margin: 5px 0 0 5px;
+  font-weight: 200;
+}
+/* line 43, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .article-body p {
+  margin: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+/* line 48, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .article-body img {
+  max-width: 100%;
+}
+/* line 51, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .article-body em {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0;
+}
+/* line 56, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .wrapper_skinny .article-body a {
+  color: blue;
+  text-decoration: none;
+}
+/* line 63, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links p {
+  padding: 1rem 2.5rem;
+}
+/* line 66, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .author-image {
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 74, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links .author-image:hover {
+  opacity: .7;
+  transform: scale(1.02);
+}
+/* line 79, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links ul {
+  list-style: none;
+  padding-left: 0;
+  padding: .5rem 0;
+  text-align: center;
+}
+/* line 84, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links ul li {
+  display: inline;
+  margin-right: 1rem;
+  font-weight: 600;
+}
+/* line 88, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links ul li a {
+  text-decoration: none;
+  color: #262626;
+}
+/* line 91, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+#links ul li a:hover {
+  color: #8dc7ea;
+}
+
+/* line 99, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+.banner-show {
+  min-height: 450px;
+}
+
+/* line 103, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+.check_out h3 {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+/* line 108, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+.check_out .col-3 {
+  float: left;
+  width: 31%;
+  padding: 0 2% 0 0;
+  margin-bottom: 4rem;
+}
+/* line 112, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+.check_out .col-3 img {
+  max-width: 100%;
+  max-height: 150px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 119, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+.check_out .col-3 img:hover {
+  opacity: .7;
+  transform: scale(1.02);
+}
+/* line 124, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+.check_out .col-3 h4, .check_out .col-3 p {
+  margin: 0;
+}
+
+/* line 131, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+.share-button {
+  max-height: 25px;
+  margin: 1rem .5rem 0 .5rem;
+}
+/* line 134, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/show.scss */
+.share-button:hover {
+  opacity: .7;
+}
+/*
+
+
+
+
+ */
+/* line 4, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-twitter {
+  background-image: url(/assets/social-share-button/twitter-7b64ce0117a85c5d52ed45c27707af61d9b0e0d590284baa287cfe87867b9ae1.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-facebook {
+  background-image: url(/assets/social-share-button/facebook-03210e1663ee772e93ed5d344cdb36657b68342821aaebe982f2f984915990b3.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-google_bookmark {
+  background-image: url(/assets/social-share-button/google_bookmark-bb4c960c0421cb7dce602d10e744692bcc1c54f323410f4965d508f96e2255ce.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-google_plus {
+  background-image: url(/assets/social-share-button/google_plus-50c049fbb29cd3346f1bf9349017b644bcd00a53b56bd156728850f57bd85c0a.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-weibo {
+  background-image: url(/assets/social-share-button/weibo-a345a6ca554e6f388da9eb35746bb0425cb018c16408ba82852c66d375245d6f.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-qq {
+  background-image: url(/assets/social-share-button/qq-4dbae8223fc7823f6d73bc7fbe113eb894f4c174ec3ae93103ca382c78a2bf67.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-delicious {
+  background-image: url(/assets/social-share-button/delicious-0c55f72f821aae5352691f13eb64bf3435573e2169d0720477ed367b2f1ed28e.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-linkedin {
+  background-image: url(/assets/social-share-button/linkedin-b7fd42895b291003c444a9c2acf867ea813671e0b725a5d7c05dbb13f5c0fdd3.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-tumblr {
+  background-image: url(/assets/social-share-button/tumblr-330a37f93cce7c27a750188d0bfdbed3a22f566b807e64d21131dcdc94e08ec3.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-pinterest {
+  background-image: url(/assets/social-share-button/pinterest-86203d156197cce4087fee058b920d275c535df5fd59d8caa83da0ef41d1ec7f.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-douban {
+  background-image: url(/assets/social-share-button/douban-46298c27e3bc6d59951c0bbc464339a5ba1b44e3b25b571874f1baacd7af2495.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-wechat {
+  background-image: url(/assets/social-share-button/wechat-d8852cc3396a7a53eba39595d2e9f638c93a34ab1a0f41bae4ff391b63815f56.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-vkontakte {
+  background-image: url(/assets/social-share-button/vkontakte-0c2b68277fade991d74efcbdb6f7b359a35e65156cbada9625a3fe8f73151c14.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-xing {
+  background-image: url(/assets/social-share-button/xing-0ebccb4042c8c7220e471c4f569df2bf27da227db425525819b6848c86a1603e.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-email {
+  background-image: url(/assets/social-share-button/email-7067143cbe69d9d8cf25e67fda1a315d133c2b79074a09088bd712cc5c81135d.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-reddit {
+  background-image: url(/assets/social-share-button/reddit-f5fc462f44dbeff78983b3b64cb69b6c777a22906767bdb0b283014ac79b37de.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-hacker_news {
+  background-image: url(/assets/social-share-button/hacker_news-d89b13fec49355a787389a776f2e03a0a38314abf93777b8865f8c5f146eaf8d.svg);
+}
+
+/* line 22, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog {
+  width: 300px;
+  position: fixed;
+  background: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  z-index: 11001;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+/* line 33, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog .wechat-popup-header {
+  font-weight: bold;
+}
+/* line 37, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog .wechat-dialog-qr {
+  text-align: center;
+  margin: 25px 0px;
+}
+/* line 42, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog .wechat-popup-close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #999;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* line 53, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog .wechat-popup-footer {
+  text-align: left;
+  line-height: 22px;
+  color: #666;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("OpenSans-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/** Variables **/
+/* General Page Properties */
+/* line 24, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 28, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.main {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  min-height: 100vh;
+}
+
+/* line 35, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.main, .rotated, .side-menu {
+  -webkit-transition-duration: .5s;
+  -moz-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+/* line 42, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.main-open {
+  left: 15%;
+  background-color: #ffffff;
+}
+
+/* line 47, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.wrapper_super {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* line 52, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.wrapper_wide {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 57, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 62, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.wrapper_skinny {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* line 67, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.wrapper_more_skinny {
+  width: 50%;
+  margin: auto;
+}
+
+/* line 72, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.wrapper_super_skinny {
+  width: 40%;
+  margin: auto;
+}
+
+/* line 77, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.margin-top {
+  margin-top: 10px;
+}
+
+/* line 81, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.row {
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+}
+
+/* line 86, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.col-50 {
+  width: 50%;
+  float: left;
+}
+
+/* line 91, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 96, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 100, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pull_right {
+  float: right;
+}
+
+/* line 104, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pull_left {
+  float: left;
+}
+
+/* Upper Banner */
+/* line 111, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#logo {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 1rem 0;
+  max-width: 100%;
+}
+
+/* line 119, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#upper_buttons p {
+  font-size: 1rem;
+  margin: 1rem 0 -1.5rem 0;
+  font-weight: 400;
+}
+/* line 123, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#upper_buttons p a {
+  text-decoration: none;
+  color: #000000;
+}
+/* line 126, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#upper_buttons p a:hover {
+  color: #8dc7ea;
+}
+/* line 131, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#upper_buttons img {
+  margin: .5rem 0 -1.5rem 0;
+  -webkit-transition-duration: .5s;
+  -moz-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+/* Navigation Bar */
+/* line 143, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* line 147, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+nav ul li {
+  width: 16.667%;
+  display: inline-block;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: .25rem 0 .2rem 0;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 1.25rem;
+  font-family: 'Hind', sans-serif;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 162, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/** Side Bar **/
+/* line 172, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.side-menu {
+  background-color: #ffffff;
+  border-right: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: -20%;
+  width: 15%;
+  height: 100%;
+  padding: 10px;
+}
+/* line 175, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.side-menu li {
+  width: 100%;
+  padding: 1rem 0;
+  -webkit-transition-duration: .1s;
+  -moz-transition-duration: .1s;
+  -o-transition-duration: .1s;
+  transition-duration: .1s;
+}
+/* line 182, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.side-menu li:hover {
+  background-color: #cee7f6;
+}
+/* line 185, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.side-menu li a {
+  color: #000000;
+}
+/* line 195, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.side-menu .side-menu-icon {
+  width: 25%;
+  margin: 3%;
+}
+/* line 198, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.side-menu .side-menu-icon:hover {
+  opacity: .8;
+}
+
+/* line 204, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.menu-open {
+  left: 0px;
+}
+
+/* line 208, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.rotated {
+  transition-property: transform;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+/* line 215, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#home_button {
+  background-color: #082136;
+}
+/* line 217, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#home_button:hover {
+  background-color: #78bce6;
+}
+
+/* line 221, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#about_button {
+  background-color: #0d3552;
+}
+/* line 223, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#about_button:hover {
+  background-color: #78bce6;
+}
+
+/* line 227, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#articles_button {
+  background-color: #134665;
+}
+/* line 229, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#articles_button:hover {
+  background-color: #78bce6;
+}
+
+/* line 233, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#category_button {
+  background-color: #4b6d89;
+}
+/* line 235, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#category_button:hover {
+  background-color: #78bce6;
+}
+
+/* line 239, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#ontap_button {
+  background-color: #728da5;
+}
+/* line 241, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#ontap_button:hover {
+  background-color: #78bce6;
+}
+
+/* line 245, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#contact_button {
+  background-color: #0a2135;
+}
+/* line 247, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+#contact_button:hover {
+  background-color: #78bce6;
+}
+
+/* Pagination */
+/* line 254, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination:before, .pagination:after {
+  content: " ";
+  display: table;
+}
+
+/* line 259, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination:after {
+  clear: both;
+}
+
+/* line 263, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination {
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+  max-width: 100%;
+}
+/* line 267, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
+  padding: 0.75rem 1rem;
+  margin: 0 .35rem;
+  border-radius: .25rem;
+  line-height: 1.25;
+  text-decoration: none;
+  background: #4b6d89;
+  font-weight: 700;
+  font-size: .8rem;
+  color: #ffffff;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 281, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination a:hover, .pagination .previous_page:hover, .pagination .current:hover, .pagination .next_page:hover {
+  background: #8dc7ea;
+  color: #ffffff;
+}
+/* line 286, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination .current {
+  background: #082136;
+  color: white;
+}
+/* line 289, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination .current:hover {
+  color: #ffffff;
+  background: #082136;
+}
+/* line 294, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination .disabled {
+  color: #ffffff;
+  background: #cccccc;
+}
+/* line 297, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.pagination .disabled:hover {
+  color: #ffffff;
+  background: #cccccc;
+}
+
+/* Footer */
+/* line 306, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer {
+  width: 100%;
+  background-color: #134665;
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+}
+/* line 312, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer .footer-banner {
+  width: 20%;
+}
+/* line 315, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer p {
+  padding-top: 1.5rem;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+/* line 321, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer .footer-links {
+  margin: 1rem;
+  text-align: center;
+}
+/* line 324, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer .footer-links .footer-link-row {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* line 328, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer .footer-links .footer-link-row li {
+  display: inline;
+  margin: 0 .5rem;
+}
+/* line 331, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer .footer-links .footer-link-row li img {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: .25rem;
+}
+/* line 335, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer .footer-links .footer-link-row li img:hover {
+  background-color: #62b2e2;
+}
+/* line 342, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer .rights-reserved {
+  color: #fff;
+}
+/* line 344, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.footer .rights-reserved p {
+  padding: 0 0 1.5rem 0;
+  font-size: 10px;
+}
+
+/* Devise */
+/* line 353, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.form_title {
+  border-bottom: 1px solid black;
+  padding-bottom: .3rem;
+  margin-top: 2rem;
+}
+
+/* line 359, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.devise-link {
+  text-decoration: none;
+  margin: 30px 0;
+  color: #0d3552;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+/* line 365, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.devise-link:hover {
+  color: #8dc7ea;
+}
+
+/* line 370, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.form-control {
+  margin-top: 10px;
+}
+
+/* line 374, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.btn-primary {
+  margin: 20px 0;
+  background-color: #4b6d89;
+  border-radius: 0;
+}
+/* line 378, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.btn-primary:hover {
+  background-color: #8dc7ea;
+}
+
+/* line 383, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.btn-danger {
+  margin: 20px 0;
+  background-color: #AA3939;
+  border-radius: 0;
+  color: #ffffff;
+}
+/* line 388, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.btn-danger:hover {
+  background-color: #c55151;
+}
+
+/* line 393, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.btn-primary, .btn-danger, .devise-link, .form-control {
+  -webkit-transition-duration: .3s;
+  -moz-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+/* Forms */
+/* line 402, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.aboutme_text {
+  min-height: 300px;
+}
+
+/* Alerts */
+/* line 408, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+.alert {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 5;
+  left: 3;
+  width: 300px;
+  border-radius: 5px;
+  padding: 2px 11px 8px 11px;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  /* line 423, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+  .banner {
+    width: 100%;
+  }
+
+  /* line 427, /Users/Admin/Documents/Rails/Politipub/app/assets/stylesheets/application.css.scss */
+  #navbar {
+    display: none;
+  }
+}
+.rails-bootstrap-forms-date-select select,
+.rails-bootstrap-forms-time-select select,
+.rails-bootstrap-forms-datetime-select select {
+  display: inline-block;
+  width: auto;
+}
+
+.rails-bootstrap-forms-error-summary {
+  margin-top: 10px;
+}
+/* line 4, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-twitter {
+  background-image: url(/assets/social-share-button/twitter-7b64ce0117a85c5d52ed45c27707af61d9b0e0d590284baa287cfe87867b9ae1.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-facebook {
+  background-image: url(/assets/social-share-button/facebook-03210e1663ee772e93ed5d344cdb36657b68342821aaebe982f2f984915990b3.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-google_bookmark {
+  background-image: url(/assets/social-share-button/google_bookmark-bb4c960c0421cb7dce602d10e744692bcc1c54f323410f4965d508f96e2255ce.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-google_plus {
+  background-image: url(/assets/social-share-button/google_plus-50c049fbb29cd3346f1bf9349017b644bcd00a53b56bd156728850f57bd85c0a.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-weibo {
+  background-image: url(/assets/social-share-button/weibo-a345a6ca554e6f388da9eb35746bb0425cb018c16408ba82852c66d375245d6f.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-qq {
+  background-image: url(/assets/social-share-button/qq-4dbae8223fc7823f6d73bc7fbe113eb894f4c174ec3ae93103ca382c78a2bf67.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-delicious {
+  background-image: url(/assets/social-share-button/delicious-0c55f72f821aae5352691f13eb64bf3435573e2169d0720477ed367b2f1ed28e.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-linkedin {
+  background-image: url(/assets/social-share-button/linkedin-b7fd42895b291003c444a9c2acf867ea813671e0b725a5d7c05dbb13f5c0fdd3.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-tumblr {
+  background-image: url(/assets/social-share-button/tumblr-330a37f93cce7c27a750188d0bfdbed3a22f566b807e64d21131dcdc94e08ec3.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-pinterest {
+  background-image: url(/assets/social-share-button/pinterest-86203d156197cce4087fee058b920d275c535df5fd59d8caa83da0ef41d1ec7f.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-douban {
+  background-image: url(/assets/social-share-button/douban-46298c27e3bc6d59951c0bbc464339a5ba1b44e3b25b571874f1baacd7af2495.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-wechat {
+  background-image: url(/assets/social-share-button/wechat-d8852cc3396a7a53eba39595d2e9f638c93a34ab1a0f41bae4ff391b63815f56.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-vkontakte {
+  background-image: url(/assets/social-share-button/vkontakte-0c2b68277fade991d74efcbdb6f7b359a35e65156cbada9625a3fe8f73151c14.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-xing {
+  background-image: url(/assets/social-share-button/xing-0ebccb4042c8c7220e471c4f569df2bf27da227db425525819b6848c86a1603e.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-email {
+  background-image: url(/assets/social-share-button/email-7067143cbe69d9d8cf25e67fda1a315d133c2b79074a09088bd712cc5c81135d.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-reddit {
+  background-image: url(/assets/social-share-button/reddit-f5fc462f44dbeff78983b3b64cb69b6c777a22906767bdb0b283014ac79b37de.svg);
+}
+/* line 16, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-hacker_news {
+  background-image: url(/assets/social-share-button/hacker_news-d89b13fec49355a787389a776f2e03a0a38314abf93777b8865f8c5f146eaf8d.svg);
+}
+
+/* line 22, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog {
+  width: 300px;
+  position: fixed;
+  background: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  z-index: 11001;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+/* line 33, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog .wechat-popup-header {
+  font-weight: bold;
+}
+/* line 37, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog .wechat-dialog-qr {
+  text-align: center;
+  margin: 25px 0px;
+}
+/* line 42, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog .wechat-popup-close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #999;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* line 53, /Users/Admin/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.4/app/assets/stylesheets/social-share-button.scss */
+.ss-wechat-dialog .wechat-popup-footer {
+  text-align: left;
+  line-height: 22px;
+  color: #666;
+}
