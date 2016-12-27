@@ -163,8 +163,21 @@
 
 .cat-block {
 	width: 48%;
+	h2 {
+		font-weight: 400;
+		margin-bottom: .25rem;
+	}
+	.about-me-title {
+		font-size: 18px;
+		color: #5b5b5b;
+		margin: 0 0 .5rem 0;
+	}
 	float: left;
-	margin: 0 1%;
+	margin: 2rem 1%;
+	img {
+		width: 30%;
+		border-radius: 50%;
+	}
 }
 
 /* Contact Page */

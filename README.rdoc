@@ -49,7 +49,7 @@ X Fix searchbar (small screens)
 X Admin dashboard articles, on taps, sort by time created
 
 X Sign Up page text needs to spell check "contributor" and add "to our site!" after that word to end the sentence
--Sponsor page needs an image of some sort
+X Sponsor page needs an image of some sort
 X What's with the unorganized ID numbers for articles and authors?
 X When you click on the topics from the sidebar the oldest article shows first, we should make it the newest on top
 X All the capital letters aren't showing up for articles on the homepage. Maybe shift to all caps?
@@ -63,9 +63,9 @@ X"Find Us On Social Media" with links needed on bottom of page
 
 XBoth P's needs to be capitalized in PolitiPub on footer above social media links and in small words at bottom, Sign Up page, check out more from politipub on bottom of articles, browser tabs
 XSaying PolitiPub twice in the Sign Up page seems redundant, should change to "Please contact our team at politipub@gmail.com if you're interested in becoming a contributor to our site!"
--Can we lower the blue footer on the sponsor page like how it is on the contact page?
--Let's replace the LinkedIn link on the bottom with our Tumblr since there is no LinkedIn at the moment
-XChange my title to Chief Executive Officer
-XAdd co-founder to Dylan's bio
--Pictures of Sam and Niko (will send cute pic)
--I love the pop out tab in the top left corner but am afraid people might not notice it. Since it contains important links to topics, could you design a tasteful "click here!" arrow graphic type thing pointing to it?
+X Can we lower the blue footer on the sponsor page like how it is on the contact page?
+X Let's replace the LinkedIn link on the bottom with our Tumblr since there is no LinkedIn at the moment
+X Change my title to Chief Executive Officer
+X Add co-founder to Dylan's bio
+X Pictures of Sam and Niko (will send cute pic)
+X I love the pop out tab in the top left corner but am afraid people might not notice it. Since it contains important links to topics, could you design a tasteful "click here!" arrow graphic type thing pointing to it?
