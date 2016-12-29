@@ -69,3 +69,8 @@ X Change my title to Chief Executive Officer
 X Add co-founder to Dylan's bio
 X Pictures of Sam and Niko (will send cute pic)
 X I love the pop out tab in the top left corner but am afraid people might not notice it. Since it contains important links to topics, could you design a tasteful "click here!" arrow graphic type thing pointing to it?
+- Footer at the end of the article
+- Two extra categories ()
+- Add analytics, need to add email for domain, send to mason
+- Look at legal shit
+- 
