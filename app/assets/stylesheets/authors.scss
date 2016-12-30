@@ -1,3 +1,84 @@
-// Place all the styles related to the Authors controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.profile_block {
+	background-color: #ffffff;
+	padding: 1rem 1rem 3.5rem 1rem;
+	text-align: center;
+	margin: 4.5rem auto 3rem auto !important;
+	-webkit-box-shadow: 3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+	-moz-box-shadow:    3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+	box-shadow:         3px -3px 28px 0px rgba(50, 50, 50, 0.55);
+	.profile_picture {
+		max-width: 200px;
+		border-radius: 50%;
+		margin-bottom: 0;
+	}
+	#profile_name {
+		color: #0d3552;
+		width: 50%;
+		font-size: 2.5rem;
+		border-bottom: 1px solid black;	
+		font-weight: 200;
+		margin: .5rem auto 1rem auto;
+		padding-bottom: 1rem;
+		text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.05);
+	}
+	.author_contact {
+		margin-bottom: 1rem;
+	}
+	h4 {
+		border-bottom: 1px solid #A2A2A2;
+		width: 30%;
+		margin: .25rem auto;
+		padding-bottom: .2rem;
+	}
+	.author_bio {
+		width: 80%;
+		margin: 1rem auto;
+		p {
+			margin: .3rem 0 1.25rem 0;
+		}	
+	}
+}	
+
+.wrapper {
+	.author_name {
+		color: #0d3552;
+		font-size: 2rem;
+		min-width: 60%;
+		font-weight: 200;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid black;
+		margin: .5rem 0 1rem 0;
+		text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.05);
+		}
+	.article_profile_block {
+		width: 20%;
+		margin: 1rem 5% 2rem 0;
+		float: left;
+		.profile_article_image {
+			width: 100%;
+			float: left;
+			-webkit-transition: all .3s ease-in-out;
+  			-moz-transition: all .3s ease-in-out;
+  			-o-transition: all .3s ease-in-out;
+ 			transition: all .3s ease-in-out;
+			&:hover {
+				opacity: .7;
+				transform: scale(1.02);
+			}
+		}
+		p {
+			width: 100%;
+			float: left;
+			font-size: .7rem;
+			margin: 0;
+			a {
+				text-decoration: none;
+				color: $black;
+				font-size: 1rem;
+				&:hover {
+					color: $text-hover-default;
+				}
+			}
+		}
+	}
+}

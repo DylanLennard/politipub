@@ -18,20 +18,20 @@
 		margin: 0;
 	h1 {
 		font-weight: 200;
-		color: #ffffff;
+		color: $white;
 		padding: 6rem 0;
 		margin: 0;
 	}
 }
 
 .account {
-	float:left;
+	float: left;
 	margin: .5rem 4rem 0 0;
 	padding: 0;
 	text-decoration: none;
-	color: #000000;
+	color: $black;
 	&:hover {
-		color:lighten(#134665, 50%);
+		color: $text-hover-default;
 	}
 
 }
@@ -41,9 +41,9 @@
 	margin-top: .5rem;
 	padding: 0;
 	text-decoration: none;
-	color: #000000;
+	color: $black;
 	&:hover {
-		color:lighten(#134665, 50%);
+		color: $text-hover-default;
 	}
 
 }
@@ -183,14 +183,12 @@
 /* Contact Page */
 
 .contact-image {
+	@include banner-default;
 	margin: 0;
 	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 	background-image: image-url('mail.jpeg');
 	.contact-image-container {
-		color: #fff;
+		color: $white;
 		padding: 8rem;
 		text-align: center;
 		h4 {
@@ -202,7 +200,7 @@
 		a {
 			color: #fff;
 			&:hover {
-				color:lighten(#134665, 50%);
+				color: $text-hover-default;
 			}
 		}
 	}

@@ -1,0 +1,28 @@
+/** Variables **/
+$black: #000000;
+$white: #ffffff;
+$base-color: #134665;
+$text-hover-default: lighten(#134665, 50%);
+
+
+/** Mixins **/
+@mixin link-default {
+	text-decoration: none;
+	color: $white;
+	&:hover {
+		color: $text-hover-default;
+	}
+}
+
+@mixin ul-default {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+@mixin banner-default {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 0;
+}

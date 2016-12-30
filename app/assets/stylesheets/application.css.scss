@@ -1,26 +1,29 @@
 /*
- *= require_tree .
  *= require_self
  *= require rails_bootstrap_forms
- *= require social-share-button
  */
 
- @import "social-share-button";
- @font-face {
+/** Imports **/
+@import "master";
+@import "social-share-button";
+@import "articles";
+@import "authors";
+@import "categories";
+@import "forms";
+@import "normalize";
+@import "ontaps";
+@import "pages";
+
+@font-face {
   font-family: 'Open Sans';
   src:url('OpenSans-Light.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
+/** General Page Properties **/
 
-/** Variables **/
-$black: #000000;
-$white: #ffffff;
-
-/* General Page Properties */
-
-*	 {
+body {
 	font-family:'Open Sans', sans-serif;
 }
 
@@ -40,7 +43,7 @@ $white: #ffffff;
 
 .main-open {
 	left: 15%;
-	background-color: #ffffff;
+	background-color: $white;
 }
 
 .wrapper_super {
@@ -121,9 +124,9 @@ $white: #ffffff;
 		font-weight: 400;
 		a {
 			text-decoration: none;
-			color: #000000;
+			color: $black;
 			&:hover {
-				color:lighten(#134665, 50%);
+				color: $text-hover-default;
 			}
 		}
 	}
@@ -140,14 +143,12 @@ $white: #ffffff;
 
 nav {
 	ul {
-		list-style: none;
-		padding-left: 0;
-		margin: 0;
+		@include ul-default;
 		li {
 			width: 16.667%;
 			display: inline-block;
 			float: left;
-			color: #ffffff;
+			color: $white;
 			text-align: center;
 			padding: .25rem 0 .2rem 0;
 			letter-spacing: 1px;
@@ -284,7 +285,7 @@ nav {
 	}
 	.current {
 		background: #082136;
-		color: white;
+		color: $white;
 		&:hover {
 			color: #ffffff;
 			background: #082136;
@@ -304,7 +305,7 @@ nav {
 
 .footer {
 	width: 100%;
-	background-color: #134665;
+	background-color: $base-color;
 	margin-top: 2rem;
 	text-align: center;
 	color: #fff;
@@ -339,9 +340,24 @@ nav {
 			}
 		}
 	}
+	.footer-menu {
+		width: 100%;
+		margin-bottom: 1rem;
+		.wrapper {
+			ul {
+				@include ul-default;
+				li {
+					display: inline;
+					a {
+						@include link-default;
+					}
+				}
+			}
+		}
+	}
 	.rights-reserved {
 		color: #fff;
-		p {
+		p {	
 			padding: 0 0 1.5rem 0;
 			font-size: 10px;
 		}
@@ -367,7 +383,7 @@ nav {
 	font-size: 1.1rem;
 	font-weight: 400;
     &:hover {
-		color:lighten(#134665, 50%);
+		color: $text-hover-default;
 	}
 }
 
@@ -380,7 +396,7 @@ nav {
 	background-color: #4b6d89;
 	border-radius: 0;
     &:hover {
-		background-color:lighten(#134665, 50%);
+		background-color: $text-hover-default;
 	}
 }
 
@@ -399,12 +415,6 @@ nav {
     -moz-transition-duration: .3s;
     -o-transition-duration: .3s;
     transition-duration: .3s;
-}
-
-/* Forms */
-
-.aboutme_text {
-	min-height:300px;
 }
 
 /* Alerts */
