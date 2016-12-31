@@ -15,6 +15,20 @@
 //= require turbolinks
 //= require ckeditor/init
 //= require_tree .
+
+function sideMenu(){
+	$(document).ready(function() {
+        $("#squares").bind('click',function(){
+        	$(this).toggleClass("rotated");
+        	$(".side-menu").toggleClass("menu-open");
+        	$(".main").toggleClass("main-open");
+        	return false;
+        });
+        $(".overlay").ready(function() { 
+		$('.overlay').fadeOut(2500)});
+    });
+}
+
 function adminTabs(tabName) {
 	var i;
 	var x = document.getElementsByClassName('admin-tab');
