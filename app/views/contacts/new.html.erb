@@ -1,0 +1,54 @@
+<div class="wrapper_skinny signup-block">
+	<h1 class="form_title">Sign Up</h1>
+	<div class="form-body">
+		<div class="field-body">
+			<%= form_for @contact, url: contact_path do |f| %>
+
+				<div class="field">
+					<%= f.label :email, "First Name", class: "label"  %>
+					<%= f.text_field :first_name, autofocus: true, class: "input" %>
+				</div>
+
+				<div class="field">
+					<%= f.label :last_name, "Last Name", class: "label"  %>
+					<%= f.text_field :last_name, autofocus: true, class: "input" %>
+				</div>
+
+				<div class="field">
+					<%= f.label :email, class: "label"  %>
+					<%= f.email_field :email, autofocus: true, class: "input" %>
+				</div>
+
+				<div class="field">
+					<%= f.label :article_title, "Name of your article", class: "label"  %>
+					<%= f.text_field :article_title, autofocus: true, class: "input" %>
+				</div>
+
+				<div class="field">
+					<%= f.label :article_sample, "Paste a sample of your article (500 characters minimum)", class: "label"  %>
+					<%= f.text_area :article_sample, autofocus: true, class: "text-area" %>
+				</div>
+
+				<div class="field">
+					<%= f.label :article_category, "What category best describes your article", class: "label"  %>
+					<br/>
+					<%= f.select :article_category, ['','Travel', 'Politics', 'World', 'Culture', 'Religion', 'Technology', 'Other'], class: "input" %>
+				</div>
+
+				<div class="field">
+					<%= f.label :social_media, "Please provide a link to your social media account or website", class: "label"  %>
+					<%= f.text_field :social_media, autofocus: true, class: "input" %>
+				</div>
+
+				<div class="field">
+					<%= f.label :reason, "Why are you submitting to PolitiPub?",class: "label"  %>
+					<%= f.text_area :reason, autofocus: true, class: "text-area" %>
+				</div>
+
+				<div class="actions">
+					<%= f.submit "Submit", class: "btn btn-primary" %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
