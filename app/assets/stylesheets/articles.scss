@@ -83,12 +83,18 @@
 	.search-form {
 		padding: 5px 12px;
 		margin:0;
-		width: 60%;
+		width: 58%;
+		margin-right: 2%;
 		float: left;
+		border-radius: 10px;
+		border: 1px solid $base-color;
+		&:focus {
+			border: 1px solid $text-hover-default;
+			border-radius: 10px;
+			outline: 0;
+		}
 	}
 	.btn {
-		background-color: #728da5;
-		border: 1px solid #728da5;
 		margin: 0;
 		float: left;
 		width: 25%;
@@ -97,10 +103,6 @@
   		-moz-transition: all .3s ease-in-out;
   		-o-transition: all .3s ease-in-out;
  		transition: all .3s ease-in-out;
-		&:hover{
-			background-color: lighten(#134665, 45%);
-			border: 1px solid lighten(#134665, 45%);
-		}
 	}
 }
 
