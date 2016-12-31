@@ -1,6 +1,7 @@
 class Article < ActiveRecord::Base
 	belongs_to :admin
 	belongs_to :author
+	validates_presence_of :banner_image
 	has_many :article_categories
 	has_many :categories, through: :article_categories
 	searchkick
