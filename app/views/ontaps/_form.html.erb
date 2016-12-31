@@ -1,19 +1,37 @@
-<div class="wrapper_skinny">
-	<%= bootstrap_form_for @ontap do |f| %>
 
-		<%= f.text_field :title, label: "Title", class: "form-control" %>
+	<div class="field-body">
+		<%= form_for @ontap do |f| %>
+			<div class="field">
+				<%= f.label :title, "Title", class: "label" %>
+				<%= f.text_field :title, class: "input" %>
+			</div>
 
-		<%= f.collection_select :author_id, Author.all, :id, :name, label: "Author", class: "form-control" %>
+			<div class="field">
+				<%= f.label :author_id, "Author", class: "label" %>
+				<br/>
+				<%= f.collection_select :author_id, Author.all, :id, :name,
+					class: "input" %>
+			</div>
 
-		<%= f.cktext_area :body, label: "Body", class: "text_area" %>
+			<div class="field">
+				<%= f.label :body, "Body", class: "ckelabel label" %>
+				<%= f.cktext_area :body %>
+			</div>
 
-		<%= f.file_field :banner, required: :true %>
+			<div class="field">
+				<%= f.label :banner, "Banner Image", class: "label" %>
+				<%= f.file_field :banner, required: :true, class: "input" %>
+			</div>
 
-		<% if current_admin.superadmin == true %>
-			<%= f.check_box :published, label: "Published" %>
+			<div class="field">
+				<% if current_admin.superadmin == true %>
+					<%= f.label :published, "Published?", class: "label" %>
+					<%= f.check_box :published, class: "input" %>
+				<% end %>
+			</div>
+
+			<div class="actions">
+				<%= f.submit "Submit", class: "btn btn-primary" %>
+			</div>
 		<% end %>
-
-		<%= f.submit "Submit", class: "btn btn-primary" %>
-
-	<% end %>
-</div>
+	</div>
