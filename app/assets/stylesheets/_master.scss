@@ -32,3 +32,8 @@ $font-heavy: 600;
 	background-position: center center;
 	padding: 0;
 }
+
+@mixin image-hover {
+	opacity: .7;
+	cursor: pointer;
+}

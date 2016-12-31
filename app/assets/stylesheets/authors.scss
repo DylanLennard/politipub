@@ -23,6 +23,15 @@
 	}
 	.author_contact {
 		margin-bottom: 1rem;
+		a {
+			.share-button {
+				max-height: 25px;
+				margin: 1rem .5rem 0 .5rem;
+				&:hover {
+					@include image-hover
+				}
+			}
+		}
 	}
 	h4 {
 		border-bottom: 1px solid #A2A2A2;
@@ -55,6 +64,7 @@
 		margin: 1rem 5% 2rem 0;
 		float: left;
 		.profile_article_image {
+			margin-bottom: .5rem;
 			width: 100%;
 			float: left;
 			-webkit-transition: all .3s ease-in-out;
@@ -62,8 +72,7 @@
   			-o-transition: all .3s ease-in-out;
  			transition: all .3s ease-in-out;
 			&:hover {
-				opacity: .7;
-				transform: scale(1.02);
+				@include image-hover;
 			}
 		}
 		p {

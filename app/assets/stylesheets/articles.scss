@@ -326,7 +326,7 @@
 				max-height: 25px;
 				margin: 1rem .5rem 0 .5rem;
 				&:hover {
-					opacity: .7;
+					@include image-hover;
 				}
 			}
 		}
@@ -364,7 +364,7 @@
   		-o-transition: all .3s ease-in-out;
  		transition: all .3s ease-in-out;
 		&:hover {
-			opacity: .7;
+			@include image-hover;
 			transform:scale(1.02);
 		}
 	}
@@ -405,7 +405,7 @@
   			-o-transition: all .3s ease-in-out;
  			transition: all .3s ease-in-out;
 			&:hover {
-				opacity: .7;
+				@include image-hover;
 				transform:scale(1.02);
 			}
 		}
