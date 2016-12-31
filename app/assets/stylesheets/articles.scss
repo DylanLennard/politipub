@@ -18,7 +18,7 @@
 			margin: 0 0 .5rem 1rem;
 		}
 		a {
-			font-weight: 300;
+			font-weight: $font-light;
 			border-bottom: 1px solid $white;
 			width: 80%;
 			@include link-default;
@@ -32,7 +32,7 @@
 				float: left;
 				color: $white;
 				font-size: 1.25rem;
-				font-weight: 400;
+				font-weight: $font-slim;
 			}
 			p {
 				padding: 0 0 0 .5rem;
@@ -43,14 +43,14 @@
 			}
 		}
 		p {
-			color: white;
+			color: $white;
 			padding:0 2rem 1rem 1rem;
 			margin: -.25rem 0 0 0;
-			font-weight: 200;
+			font-weight: $font-light;
 		}
 		#see_more {
 			color: #858ea3;
-			font-weight: 600;
+			font-weight: $font-heavy;
 			font-size: .8rem;
 			text-decoration: none;
 			border: none;
@@ -64,74 +64,16 @@
 
 /** Index **/
 
-.search-title-container {
-	margin-top: 2.5rem;
-}
-
 .index-title {
-	font-weight: 500;
+	font-weight: $font-medium;
 	width: 60%;
 	border-bottom: 1px solid black;
 	margin-top: .5rem;
 	float: left;
 }
 
-
-.article-block{
-	display: inline-block;
-	float: left;
-	margin: 0;
-	width: 45%;
-	.thumbnail_image {
-		width: 45%;
-	}
-	h2, h4, h5, p {
-			margin: 0;
-	}
-	h2 {
-		font-weight: 500;
-		font-size: 1.8rem;
-		margin-bottom: .1rem;
-		&:hover {
-			color: $text-hover-default;
-		}
-	}
-	h4, p {
-			font-weight: 300;
-		}
-		h4 {
-			color: #728da5;
-			font-size: 1.2rem;
-	}
-	.inline {
-		margin-bottom: .5rem;
-		h4 {
-			float:left;
-		}
-		h5 {
-			float:left;
-			margin: 5px 0 0 5px;
-			font-weight: 200;
-		}
-	}
-	p {
-		color: #828283;
-		font-size: .8rem;
-	}
-
-	a {
-		text-decoration: none;
-		color: $white;
-		&:hover {
-			color: $text-hover-default;
-		}
-	}
-	#see_more {
-			color: #858ea3;
-			padding-top: 1.3rem;
-			font-weight: 600;
-			font-size: .8rem;
-	}
+.search-title-container {
+	margin-top: 2.5rem;
 }
 
 .searchbar {
@@ -162,15 +104,6 @@
 	}
 }
 
-/** Show **/
-
-#more_stories {
-	font-weight: 500;
-	width: 75%;
-	border-bottom: 1px solid $black;
-	margin-top: 3.5rem;
-}
-
 .row {
 	.thumbnail_image {
 		float: left;
@@ -195,7 +128,7 @@
 			margin: 0;
 		}
 		h2 {
-			font-weight: 500;
+			font-weight: $font-medium;
 			font-size: 1.8rem;
 			margin-bottom: .1rem;
 			&:hover {
@@ -203,7 +136,7 @@
 			}
 		}
 		h4, p {
-			font-weight: 300;
+			font-weight: $font-light;
 		}
 		h4 {
 			color: #728da5;
@@ -217,7 +150,7 @@
 			h5 {
 				float:left;
 				margin: 5px 0 0 5px;
-				font-weight: 200;
+				font-weight: $font-light;
 			}
 		}
 		
@@ -234,56 +167,117 @@
 			}
 		}
 
-		#see_more {
+		.see-more {
 			color: #858ea3;
 			padding-top: 1.3rem;
-			font-weight: 600;
+			font-weight: $font-heavy;
 			font-size: .8rem;
 		}
 	}
 }
 
+
+/** ??? **/
+
+.article-block{
+	display: inline-block;
+	float: left;
+	margin: 0;
+	width: 45%;
+	.thumbnail_image {
+		width: 45%;
+	}
+	h2, h4, h5, p {
+			margin: 0;
+	}
+	h2 {
+		font-weight: $font-medium;
+		font-size: 1.8rem;
+		margin-bottom: .1rem;
+		&:hover {
+			color: $text-hover-default;
+		}
+	}
+	h4, p {
+			font-weight: $font-light;
+		}
+		h4 {
+			color: #728da5;
+			font-size: 1.2rem;
+	}
+	.inline {
+		margin-bottom: .5rem;
+		h4 {
+			float:left;
+		}
+		h5 {
+			float:left;
+			margin: 5px 0 0 5px;
+			font-weight: $font-light;
+		}
+	}
+	p {
+		color: #828283;
+		font-size: .8rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+		&:hover {
+			color: $text-hover-default;
+		}
+	}
+	.see-more {
+		font-size: .8rem;
+		padding-top: 1.3rem;
+		font-weight: $font-heavy;
+		color: #858ea3;
+		&:hover {
+			color: $text-hover-default;
+
+		}
+	}
+}
+
+/** Show **/
+
+#more_stories {
+	font-weight: $font-medium;
+	width: 75%;
+	border-bottom: 1px solid $black;
+	margin-top: 3.5rem;
+}
+
 .wrapper_skinny {
-	.see-more-home{
+	.see-more-home {
 		text-align: center;
 		margin: 0;
-		a{
-			border: 1px solid #000;
+		a {
+			border: 1px solid $black;
 			padding: 3px 12px;
 			font-size: 15px;
 			border-radius: 20px;
-			font-weight:200;
-			color: #000000;
+			font-weight: $font-light;
+			color: $black;
 			text-decoration: none;
 			-webkit-transition: all .2s ease-in-out;
   			-moz-transition: all .2s ease-in-out;
   			-o-transition: all .2s ease-in-out;
  			transition: all .2s ease-in-out;
 			&:hover {
-				color: lighten(#134665, 50%);
-				border: 1px solid lighten(#134665, 50%);
-			}
-		}
-	}
-}
-
-.random_article_links {
-	h4, p {
-		a { 
-			text-decoration: none;
-			color: $black;
-			&:hover {
 				color: $text-hover-default;
+				border: 1px solid $text-hover-default;
 			}
 		}
 	}
-}
-
-.social-share-container {
-	margin-top: 1.5rem;
 }
 
 /** Show **/
+
+.banner-show {
+	min-height: 450px;
+}
 
 #links {
 	margin: -20% 0 0 0;
@@ -300,13 +294,13 @@
 			color: #0d3552;
 			font-size: 3rem;
 			min-width: 60%;
-			font-weight: 200;
+			font-weight: $font-light;
 			margin: .5rem 0 1rem 0;
 			text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.05);
 		}
 		.inline {
 			text-align:center;
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid $black;
 			padding-bottom: 1.5rem;
 			h4, h5 {
 				margin: 0;
@@ -322,8 +316,18 @@
 				}
 			}
 			h5 {
-				margin: 5px 0 0 5px;
-				font-weight: 200;
+				margin: 5px 0 0 0;
+				font-weight: $font-light;
+			}
+		}
+		.social-share-container {
+			margin-top: 1.5rem;
+			.share-button {
+				max-height: 25px;
+				margin: 1rem .5rem 0 .5rem;
+				&:hover {
+					opacity: .7;
+				}
 			}
 		}
 		.article-body {
@@ -331,6 +335,7 @@
 				margin: 0;
 				padding-bottom: 0;
 				text-align: left;
+				font-weight: $font-light;
 			}
 			img {
 				max-width: 100%;
@@ -370,8 +375,8 @@
 		text-align:center;
 		li {
 			display: inline;
-			margin-right: 1rem;
-			font-weight: 600;
+			margin: 0 .5rem;
+			font-weight: $font-heavy;
 			a {
 				text-decoration: none;
 				color: #262626;
@@ -382,22 +387,18 @@
 		}
 	}
 }
-
-.banner-show {
-	min-height: 450px;
-}
 .check_out {
 	h3{
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid $black;
 		padding-bottom: 1rem;
-		font-weight: 400;
+		font-weight: $font-slim;
 	}
 	.col-3 {
 		float: left;
 		width: 31%;
 		padding: 0 2% 0 0;
 		img {
-			max-width:100%;
+			max-width: 100%;
 			max-height: 150px;
 			-webkit-transition: all .3s ease-in-out;
   			-moz-transition: all .3s ease-in-out;
@@ -411,14 +412,20 @@
 		h4, p {
 			margin: 0;
 		}
+		p {
+			font-weight: $font-light;
+		}
 		margin-bottom: 4rem;
 	}
-}
-
-.share-button {
-	max-height: 25px;
-	margin: 1rem .5rem 0 .5rem;
-	&:hover {
-		opacity: .7;
+	.random_article_links {
+		h4, p {
+			a { 
+				text-decoration: none;
+				color: $black;
+				&:hover {
+					color: $text-hover-default;
+				}
+			}
+		}
 	}
 }

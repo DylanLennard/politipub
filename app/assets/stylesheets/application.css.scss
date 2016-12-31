@@ -121,7 +121,7 @@ body {
 	p {
 		font-size: 1rem;
 		margin: 1rem 0 -1.5rem 0;
-		font-weight: 400;
+		font-weight: $font-slim;
 		a {
 			text-decoration: none;
 			color: $black;
@@ -152,9 +152,8 @@ nav {
 			text-align: center;
 			padding: .25rem 0 .2rem 0;
 			letter-spacing: 1px;
-			font-weight: 200;
 			font-size: 1.25rem;
-			font-family:'Hind', sans-serif;
+			font-weight: $font-light;
 			-webkit-transition: all .3s ease-in-out;
   			-moz-transition: all .3s ease-in-out;
   			-o-transition: all .3s ease-in-out;
@@ -362,59 +361,6 @@ nav {
 			font-size: 10px;
 		}
 	}
-}
-
-/* Devise */
-
-.form_title {
-	font-weight: 500;
-	border-bottom: 1px solid black;
-	margin-top: 1.5rem;
-}
-
-.login-form {
-	margin-bottom: 2rem;
-}
-
-.devise-link {
-	text-decoration: none;
-	margin: 30px 0;
-	color: #0d3552;
-	font-size: 1.1rem;
-	font-weight: 400;
-    &:hover {
-		color: $text-hover-default;
-	}
-}
-
-.form-control {
-	margin-top: 10px;
-}
-
-.btn-primary {
-	margin: 20px 0;
-	background-color: #4b6d89;
-	border-radius: 0;
-    &:hover {
-		background-color: $text-hover-default;
-	}
-}
-
-.btn-danger {
-	margin: 20px 0;
-	background-color: #AA3939;
-	border-radius: 0;
-	color: #ffffff;
-    &:hover {
-		background-color:lighten(#AA3939, 10%);
-	}
-}
-
-.btn-primary, .btn-danger, .devise-link, .form-control {
-	-webkit-transition-duration: .3s;
-    -moz-transition-duration: .3s;
-    -o-transition-duration: .3s;
-    transition-duration: .3s;
 }
 
 /* Alerts */

@@ -17,7 +17,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#103c51', endColorstr='#437c7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 		margin: 0;
 	h1 {
-		font-weight: 200;
+		font-weight: $font-light;
 		color: $white;
 		padding: 6rem 0;
 		margin: 0;
@@ -58,7 +58,7 @@
 			margin-right: 2rem;
 			font-size: 20px;
 			p{
-				border-bottom: 1px solid #000;
+				border-bottom: 1px solid $black;
 				&:hover{
 					color: #9BC4EC;
 					cursor: pointer;
@@ -109,7 +109,7 @@
 	text-align: center;
 	margin-bottom: 2rem;
 	.about_title {
-		font-weight: 200;
+		font-weight: $font-light;
 		border-bottom: 1px solid black;
 		margin: 2rem 0 2rem 0 !important;
 		padding-bottom: 1rem;
@@ -124,8 +124,8 @@
 .about_body{
 	text-align: center;
 	h1 {
-		font-weight: 200;
-		border-bottom: 1px solid black;
+		font-weight: $font-light;
+		border-bottom: 1px solid $black;
 		margin: 2rem 0 2rem 10%;
 		padding-bottom: 1rem;
 		max-width: 80%;
@@ -146,7 +146,7 @@
 			float:left;
 			width: 66%;
 			h2 {
-				font-weight: 400;
+				font-weight: $font-slim;
 				margin-bottom: .25rem;
 			}
 			.about-me-title {
@@ -164,7 +164,7 @@
 .cat-block {
 	width: 48%;
 	h2 {
-		font-weight: 400;
+		font-weight: $font-slim;
 		margin-bottom: .25rem;
 	}
 	.about-me-title {
