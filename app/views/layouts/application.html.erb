@@ -17,7 +17,7 @@
 			<% if admin_signed_in? %>
 				<p class="pull_right"><%= link_to "Admin Dashboard", pages_dashboard_path %> | <%= link_to "Logout", destroy_admin_session_path, method: :delete, confirm: ("Are you sure you want to logout?") %></p>
 			<% else %>
-			<p class="pull_right"><%= link_to "Login", new_admin_session_path %> | <%= link_to "Sign Up", new_admin_registration_path %> </p>
+			<p class="pull_right"><%= link_to "Login", new_admin_session_path %> | <%= link_to "Sign Up", contact_path %> </p>
 			<% end %>
 		</div>
 		<div class="wrapper_wide">
