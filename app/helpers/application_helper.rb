@@ -2,7 +2,7 @@ module ApplicationHelper
 	def striphtml(text)
 		filtered = text.gsub(/\<.*?\>/, "")
 		nbspfiltered = filtered.gsub("&nbsp;", "")
-		rsquofiltered = filtered.gsub("&rsquo;", "'")
+		rsquofiltered = nbspfiltered.gsub("&rsquo;", "'")
 		return rsquofiltered
 	end
 	
