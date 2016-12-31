@@ -1,4 +1,6 @@
 class ContactMailer < ActionMailer::Base
+  default from: "PolitiPub <noreply@yourdomain.com>"
+  default to: "Mason Matthews <politipub@gmail.com>"
   def new_contact(contact)
     @contact = contact
 
