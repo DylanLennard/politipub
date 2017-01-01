@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-
+	before_action :title
 	before_action :authenticate_admin!, except: [:index, :show]
 	before_action :find_category, only: [:show, :edit, :destroy, :update]
 	
@@ -49,6 +49,10 @@ class CategoriesController < ApplicationController
 
 	def find_category
 		@category = Category.find(params[:id])
+	end
+	
+	def title
+		@title = "Categories"
 	end
 
 end

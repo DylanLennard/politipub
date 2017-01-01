@@ -1,4 +1,6 @@
 class ContactsController < ApplicationController
+	before_action :title
+	
 	def new
 		@contact = Contact.new
 	end
@@ -21,4 +23,8 @@ class ContactsController < ApplicationController
 	    params.require(:contact).permit(:first_name, :last_name, :email, :article_title,
 	    	:article_sample, :article_category, :social_media, :reason)
   	end
+
+  	def title
+		@title = "Contact Us"
+	end
 end

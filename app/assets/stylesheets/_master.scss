@@ -17,6 +17,7 @@ $font-heavy: 600;
 	color: $white;
 	&:hover {
 		color: $text-hover-default;
+		cursor: pointer;
 	}
 }
 

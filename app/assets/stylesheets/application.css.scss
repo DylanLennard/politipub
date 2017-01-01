@@ -4,16 +4,17 @@
  */
 
 /** Imports **/
+@import "normalize";
 @import "master";
 @import "social-share-button";
 @import "articles";
 @import "authors";
 @import "categories";
 @import "forms";
-@import "normalize";
 @import "ontaps";
 @import "pages";
 @import "navbar";
+@import "search";
 
 @font-face {
   font-family: 'Open Sans';
@@ -241,6 +242,7 @@ body {
 					display: inline;
 					a {
 						@include link-default;
+						font-weight: $font-light;
 					}
 				}
 			}

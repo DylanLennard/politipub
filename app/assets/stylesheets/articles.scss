@@ -64,46 +64,12 @@
 
 /** Index **/
 
-.index-title {
+.index-title, #index-title {
 	font-weight: $font-medium;
 	width: 60%;
 	border-bottom: 1px solid black;
 	margin-top: .5rem;
 	float: left;
-}
-
-.search-title-container {
-	margin-top: 2.5rem;
-}
-
-.searchbar {
-	float: right;
-	display: inline;
-	width: 35%;
-	.search-form {
-		padding: 5px 12px;
-		margin:0;
-		width: 58%;
-		margin-right: 2%;
-		float: left;
-		border-radius: 10px;
-		border: 1px solid $base-color;
-		&:focus {
-			border: 1px solid $text-hover-default;
-			border-radius: 10px;
-			outline: 0;
-		}
-	}
-	.btn {
-		margin: 0;
-		float: left;
-		width: 25%;
-		height: 36px;
-		-webkit-transition: all .3s ease-in-out;
-  		-moz-transition: all .3s ease-in-out;
-  		-o-transition: all .3s ease-in-out;
- 		transition: all .3s ease-in-out;
-	}
 }
 
 .row {
@@ -225,7 +191,7 @@
 
 	a {
 		text-decoration: none;
-		color: $white;
+		color: $black;
 		&:hover {
 			color: $text-hover-default;
 		}

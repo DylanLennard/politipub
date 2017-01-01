@@ -7,7 +7,7 @@
 
 		<%= f.cktext_area :body, label: "Body", class: "text_area" %>
 
-		<%= f.file_field :banner_image, required: :true %>
+		<%= f.file_field :banner_image %>
 
 		<%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb|%>
 			<% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox")	+ cb.text } %>

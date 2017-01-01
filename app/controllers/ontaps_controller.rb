@@ -2,6 +2,7 @@ class OntapsController < ApplicationController
 	before_action :find_ontap, only: [:show, :update, :edit, :destroy]
 	before_action :authenticate_admin!, except: [:index, :home, :show, :search]
 	before_action :ontap_show, only: [:show]
+	before_action :title
 
 	def new
 		@ontap = current_admin.ontaps.build
@@ -66,5 +67,9 @@ class OntapsController < ApplicationController
 		unless admin_signed_in? || @ontap.published?
 			redirect_to root_path
 		end
+	end
+
+	def title
+		@title = "On Tap"
 	end
 end

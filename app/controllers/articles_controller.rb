@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
 	before_action :find_article, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_admin!, except: [:index, :home, :show, :search]	
 	before_action :article_show, only: [:show]
-
+	before_action :title, except: [:home]
 
 	def home
 		@article_banner = Article.where(:published => true).last
@@ -70,5 +70,9 @@ class ArticlesController < ApplicationController
 
 	def find_article
 		@article = Article.find(params[:id])
+	end
+
+	def title
+		@title = "Articles"
 	end
 end

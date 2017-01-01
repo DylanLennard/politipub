@@ -1,6 +1,7 @@
 class AuthorsController < ApplicationController
 	before_action :find_author, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_admin!, except: [:show]
+	before_action :title
 
 	def index
 		@authors = Author.all.order('name DESC')
@@ -71,5 +72,9 @@ class AuthorsController < ApplicationController
 			:google_plus_link, :twitter_link, :linkedin_link, :facebook_link, :email_link, :tumblr_link, :personal_link, :admin_id,
 			:validated
 			)
+	end
+
+	def title
+		@title = "Authors"
 	end
 end
